@@ -24,8 +24,8 @@ test('collectPlaylistGuideKeys includes ids, base ids, names, and display names'
   assert(keys.ids.has('CCTV1.cn'))
   assert(keys.names.has('cctv1'))
   assert(keys.names.has('cctv1综合'))
-  assert.equal(keys.outputIdById.get('CCTV1.cn@HD'), 'CCTV-1')
-  assert.equal(keys.outputIdByName.get('cctv1'), 'CCTV-1')
+  assert.equal(keys.outputIdById.get('CCTV1.cn@HD'), 'CCTV-1 综合')
+  assert.equal(keys.outputIdByName.get('cctv1'), 'CCTV-1 综合')
 })
 
 test('buildFilteredXmltv keeps matching programs and rewrites channel ids to playlist ids', () => {
@@ -85,6 +85,78 @@ test('buildFilteredXmltv keeps matching programs and rewrites channel ids to pla
   assert.doesNotMatch(result.xml, /Random.cn/)
   assert.match(result.xml, /新闻三十分/)
   assert.match(result.xml, /World News/)
+})
+
+test('buildFilteredXmltv uses one canonical playlist id across channel variants', () => {
+  const entries = [
+    {
+      attributes: {
+        'tvg-id': 'CCTV1.cn@HD',
+        'tvg-name': 'CCTV-1',
+      },
+      displayName: 'CCTV-1',
+      name: 'CCTV-1 (1080p)',
+    },
+    {
+      attributes: {
+        'tvg-id': '326',
+        'tvg-name': 'CCTV1',
+      },
+      displayName: 'CCTV-1',
+      name: 'CCTV1',
+    },
+  ]
+  const xml = `<tv>
+  <channel id="CCTV1.cn"><display-name>CCTV-1</display-name></channel>
+  <channel id="326"><display-name>CCTV1</display-name></channel>
+  <programme start="20260617120000 +0800" stop="20260617123000 +0800" channel="CCTV1.cn">
+    <title>新闻三十分</title>
+  </programme>
+  <programme start="20260617123000 +0800" stop="20260617130000 +0800" channel="326">
+    <title>今日说法</title>
+  </programme>
+</tv>`
+
+  const result = buildFilteredXmltv({
+    documents: [{ id: 'cn', xml }],
+    entries,
+    generatedAt: '2026-06-17T12:00:00.000Z',
+  })
+
+  assert.equal(result.channelCount, 1)
+  assert.equal(result.programCount, 2)
+  assert.match(result.xml, /channel id="CCTV-1"/)
+  assert.match(result.xml, /channel="CCTV-1"/)
+  assert.doesNotMatch(result.xml, /channel id="CCTV1"/)
+  assert.doesNotMatch(result.xml, /channel="CCTV1"/)
+})
+
+test('buildFilteredXmltv does not match prefix-compatible but different channel names', () => {
+  const entries = [
+    {
+      attributes: {
+        'tvg-name': 'CCTV-1',
+      },
+      displayName: 'CCTV-1',
+      name: 'CCTV-1',
+    },
+  ]
+  const xml = `<tv>
+  <channel id="local-cctv11"><display-name>CCTV11</display-name></channel>
+  <programme start="20260617120000 +0800" stop="20260617123000 +0800" channel="local-cctv11">
+    <title>青春戏苑</title>
+  </programme>
+</tv>`
+
+  const result = buildFilteredXmltv({
+    documents: [{ id: 'cn', xml }],
+    entries,
+    generatedAt: '2026-06-17T12:00:00.000Z',
+  })
+
+  assert.equal(result.channelCount, 0)
+  assert.equal(result.programCount, 0)
+  assert.doesNotMatch(result.xml, /青春戏苑/)
 })
 
 test('decodeXmltvPayload decompresses gzip payloads even when the URL has no gz extension', () => {

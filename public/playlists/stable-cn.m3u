@@ -1,28 +1,26 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CCTV1.cn@HD" tvg-logo="https://i.imgur.com/TpA3cUl.png" group-title="央视频道" tvg-name="CCTV-1" x-smart-source="iptv-org-cn" x-smart-description="央视综合频道，覆盖新闻、专题、文艺和生活服务节目。" x-smart-tags="央视,综合,新闻" x-smart-resolution="1080",CCTV-1
 http://69.30.245.50/live/cctv1.m3u8
-#EXTINF:-1 tvg-id="CCTV1.cn@SD" tvg-logo="https://i.imgur.com/TpA3cUl.png" group-title="央视频道" tvg-name="CCTV-1" x-smart-source="iptv-org-cn" x-smart-description="央视综合频道，覆盖新闻、专题、文艺和生活服务节目。" x-smart-tags="央视,综合,新闻" x-smart-resolution="720",CCTV-1
-http://74.91.26.218:82/live/cctv1hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="https://i.imgur.com/uHU6Vc0.png" tvg-id="CCTV1.cn" tvg-chno="1" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-1 综合
-https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV1" tvg-id="326" tvg-logo="https://tb.zbds.top/logo/CCTV1.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视综合频道，覆盖新闻、专题、文艺和生活服务节目。" x-smart-tags="央视,综合,新闻",CCTV1
+#EXTINF:-1 tvg-name="CCTV1" tvg-id="326" tvg-logo="https://tb.zbds.top/logo/CCTV1.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视综合频道，覆盖新闻、专题、文艺和生活服务节目。" x-smart-tags="央视,综合,新闻",CCTV-1
 http://124.116.183.146:9901/tsfile/live/0001_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="https://i.imgur.com/uHU6Vc0.png" tvg-id="CCTV1.cn" tvg-chno="1" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视综合频道，覆盖新闻、专题、文艺和生活服务节目。" x-smart-tags="央视,综合,新闻",CCTV-1
+https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
+#EXTINF:-1 tvg-name="CCTV2" tvg-id="283" tvg-logo="https://tb.zbds.top/logo/CCTV2.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视财经频道，关注宏观经济、产业动态、消费服务和商业观察。" x-smart-tags="央视,财经,经济",CCTV-2
+http://123.129.70.178:9901/tsfile/live/0002_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-2 财经" tvg-logo="https://i.imgur.com/6C9JEYt.png" tvg-id="CCTV2.cn" tvg-chno="2" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视财经频道，关注宏观经济、产业动态、消费服务和商业观察。" x-smart-tags="央视,财经,经济",CCTV-2
+https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV2.cn@SD" tvg-logo="https://i.imgur.com/ILamhwU.png" group-title="央视频道" tvg-name="CCTV-2" x-smart-source="iptv-org-cn" x-smart-description="央视财经频道，关注宏观经济、产业动态、消费服务和商业观察。" x-smart-tags="央视,财经,经济" x-smart-resolution="720",CCTV-2
 http://74.91.26.218:82/live/cctv2hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-2 财经" tvg-logo="https://i.imgur.com/6C9JEYt.png" tvg-id="CCTV2.cn" tvg-chno="2" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-2 财经
-https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV2" tvg-id="283" tvg-logo="https://tb.zbds.top/logo/CCTV2.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视财经频道，关注宏观经济、产业动态、消费服务和商业观察。" x-smart-tags="央视,财经,经济",CCTV2
-http://123.129.70.178:9901/tsfile/live/0002_1.m3u8
+#EXTINF:-1 tvg-name="CCTV3" tvg-id="250" tvg-logo="https://tb.zbds.top/logo/CCTV3.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视综艺频道，播出晚会、文艺演出、综艺节目和娱乐内容。" x-smart-tags="央视,综艺,文艺",CCTV-3
+http://124.116.183.146:9901/tsfile/live/0003_1.m3u8
 #EXTINF:-1 tvg-id="CCTV3.cn@SD" tvg-logo="https://i.imgur.com/iFlkIuw.png" group-title="央视频道" tvg-name="CCTV-3" x-smart-source="iptv-org-cn" x-smart-description="央视综艺频道，播出晚会、文艺演出、综艺节目和娱乐内容。" x-smart-tags="央视,综艺,文艺" x-smart-resolution="720",CCTV-3
 http://74.91.26.218:82/live/cctv3hd.m3u8
-#EXTINF:-1 tvg-name="CCTV3" tvg-id="250" tvg-logo="https://tb.zbds.top/logo/CCTV3.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视综艺频道，播出晚会、文艺演出、综艺节目和娱乐内容。" x-smart-tags="央视,综艺,文艺",CCTV3
-http://124.116.183.146:9901/tsfile/live/0003_1.m3u8
+#EXTINF:-1 tvg-name="CCTV4" tvg-id="278" tvg-logo="https://tb.zbds.top/logo/CCTV4.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视中文国际频道，面向全球华语观众提供新闻、文化和专题节目。" x-smart-tags="央视,中文国际,文化",CCTV-4
+http://124.116.183.146:9901/tsfile/live/0004_1.m3u8
 #EXTINF:-1 tvg-name="CCTV-4 中文国际（亚） Ⓨ" tvg-logo="https://i.imgur.com/ovUSVEQ.png" tvg-id="CCTV4Asia.cn" tvg-chno="4" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-4 中文国际（亚） Ⓨ
 https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live
 #EXTINF:-1 tvg-id="CCTV4Asia.cn@SD" tvg-logo="https://i.imgur.com/tWt4Wou.png" group-title="央视频道" tvg-name="CCTV-4 Asia" x-smart-source="iptv-org-zho" x-smart-resolution="720",CCTV-4 Asia
 http://74.91.26.218:82/live/cctv4hd.m3u8
-#EXTINF:-1 tvg-name="CCTV4" tvg-id="278" tvg-logo="https://tb.zbds.top/logo/CCTV4.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视中文国际频道，面向全球华语观众提供新闻、文化和专题节目。" x-smart-tags="央视,中文国际,文化",CCTV4
-http://124.116.183.146:9901/tsfile/live/0004_1.m3u8
 #EXTINF:-1 tvg-id="CCTV4K.cn@HD" tvg-logo="https://i.imgur.com/fxusYlX.png" group-title="央视频道" tvg-name="CCTV-4K" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-4K
 http://198.204.240.250:82/live/cctv4k.m3u8
 #EXTINF:-1 tvg-name="CCTV4K" tvg-id="CCTV4K" tvg-logo="https://tb.zbds.top/logo/CCTV4K.png" group-title="央视频道" x-smart-source="zbds-iptv4",CCTV4K
@@ -31,76 +29,74 @@ http://vip1.xinketongxun.fun:8082/tsfile/live/1026_1.m3u8
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="央视频道" tvg-name="CCTV-4 Europe" x-smart-source="iptv-org-zho",CCTV-4 Europe
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
-#EXTINF:-1 tvg-name="CCTV-5 体育" tvg-logo="https://i.imgur.com/Mut2omN.png" tvg-id="CCTV5.cn" tvg-chno="7" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-5 体育
-https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://i.imgur.com/UNjmQVS.png" tvg-id="CCTV5Plus.cn" tvg-chno="8" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-5+ 体育赛事
-https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV5" tvg-id="326" tvg-logo="https://tb.zbds.top/logo/CCTV5.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视体育频道，直播重点赛事，并提供体育新闻、评论和专题节目。" x-smart-tags="央视,体育,赛事",CCTV5
+#EXTINF:-1 tvg-name="CCTV5" tvg-id="326" tvg-logo="https://tb.zbds.top/logo/CCTV5.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视体育频道，直播重点赛事，并提供体育新闻、评论和专题节目。" x-smart-tags="央视,体育,赛事",CCTV-5
 http://124.116.183.146:9901/tsfile/live/0005_1.m3u8
-#EXTINF:-1 tvg-name="CCTV5+" tvg-id="88" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视体育赛事频道，聚焦大型赛事直播、赛事集锦和体育专题。" x-smart-tags="央视,体育,赛事",CCTV5+
+#EXTINF:-1 tvg-name="CCTV-5 体育" tvg-logo="https://i.imgur.com/Mut2omN.png" tvg-id="CCTV5.cn" tvg-chno="7" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视体育频道，直播重点赛事，并提供体育新闻、评论和专题节目。" x-smart-tags="央视,体育,赛事",CCTV-5
+https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
+#EXTINF:-1 tvg-name="CCTV5+" tvg-id="88" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视体育赛事频道，聚焦大型赛事直播、赛事集锦和体育专题。" x-smart-tags="央视,体育,赛事",CCTV-5+
 http://222.169.85.8:9901/tsfile/live/0116_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://i.imgur.com/UNjmQVS.png" tvg-id="CCTV5Plus.cn" tvg-chno="8" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视体育赛事频道，聚焦大型赛事直播、赛事集锦和体育专题。" x-smart-tags="央视,体育,赛事",CCTV-5+
+https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV6.cn@HD" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="央视频道" tvg-name="CCTV-6" x-smart-source="iptv-org-cn" x-smart-description="央视电影频道，播出电影作品、电影资讯、影人访谈和影视专题。" x-smart-tags="央视,电影,影视" x-smart-resolution="1080",CCTV-6
 http://69.30.245.50/live/cctv6.m3u8
-#EXTINF:-1 tvg-name="CCTV6" tvg-id="214" tvg-logo="https://tb.zbds.top/logo/CCTV6.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视电影频道，播出电影作品、电影资讯、影人访谈和影视专题。" x-smart-tags="央视,电影,影视",CCTV6
+#EXTINF:-1 tvg-name="CCTV6" tvg-id="214" tvg-logo="https://tb.zbds.top/logo/CCTV6.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视电影频道，播出电影作品、电影资讯、影人访谈和影视专题。" x-smart-tags="央视,电影,影视",CCTV-6
 http://222.169.85.8:9901/tsfile/live/0006_1.m3u8
+#EXTINF:-1 tvg-name="CCTV7" tvg-id="282" tvg-logo="https://tb.zbds.top/logo/CCTV7.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视国防军事频道，关注军事新闻、国防教育、军旅纪实和装备专题。" x-smart-tags="央视,军事,国防",CCTV-7
+http://124.116.183.146:9901/tsfile/live/0007_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-7 国防军事" tvg-logo="https://i.imgur.com/GhXlUpM.png" tvg-id="CCTV7.cn" tvg-chno="10" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视国防军事频道，关注军事新闻、国防教育、军旅纪实和装备专题。" x-smart-tags="央视,军事,国防",CCTV-7
+https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV7.cn@SD" tvg-logo="https://i.imgur.com/CKcPMQC.png" group-title="央视频道" tvg-name="CCTV-7" x-smart-source="iptv-org-cn" x-smart-description="央视国防军事频道，关注军事新闻、国防教育、军旅纪实和装备专题。" x-smart-tags="央视,军事,国防" x-smart-resolution="720",CCTV-7
 http://74.91.26.218:82/live/cctv7hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-7 国防军事" tvg-logo="https://i.imgur.com/GhXlUpM.png" tvg-id="CCTV7.cn" tvg-chno="10" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-7 国防军事
-https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV7" tvg-id="282" tvg-logo="https://tb.zbds.top/logo/CCTV7.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视国防军事频道，关注军事新闻、国防教育、军旅纪实和装备专题。" x-smart-tags="央视,军事,国防",CCTV7
-http://124.116.183.146:9901/tsfile/live/0007_1.m3u8
+#EXTINF:-1 tvg-name="CCTV8" tvg-id="269" tvg-logo="https://tb.zbds.top/logo/CCTV8.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视电视剧频道，播出国产剧、经典剧、海外剧和剧集专题。" x-smart-tags="央视,电视剧,剧集",CCTV-8
+http://124.116.183.146:9901/tsfile/live/0008_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-8 电视剧" tvg-logo="https://i.imgur.com/Qg1opg9.png" tvg-id="CCTV8.cn" tvg-chno="11" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视电视剧频道，播出国产剧、经典剧、海外剧和剧集专题。" x-smart-tags="央视,电视剧,剧集",CCTV-8
+https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV8.cn@SD" tvg-logo="https://i.imgur.com/GyHaZ8X.png" group-title="央视频道" tvg-name="CCTV-8" x-smart-source="iptv-org-cn" x-smart-description="央视电视剧频道，播出国产剧、经典剧、海外剧和剧集专题。" x-smart-tags="央视,电视剧,剧集" x-smart-resolution="720",CCTV-8
 http://74.91.26.218:82/live/cctv8hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-8 电视剧" tvg-logo="https://i.imgur.com/Qg1opg9.png" tvg-id="CCTV8.cn" tvg-chno="11" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-8 电视剧
-https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV8K.cn@HD" tvg-logo="https://i.imgur.com/fxVPMJF.png" group-title="央视频道" tvg-name="CCTV-8K" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-8K
 http://192.151.150.154/live/cctv8k.m3u8
-#EXTINF:-1 tvg-name="CCTV8" tvg-id="269" tvg-logo="https://tb.zbds.top/logo/CCTV8.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视电视剧频道，播出国产剧、经典剧、海外剧和剧集专题。" x-smart-tags="央视,电视剧,剧集",CCTV8
-http://124.116.183.146:9901/tsfile/live/0008_1.m3u8
-#EXTINF:-1 tvg-name="CCTV-9 纪录" tvg-logo="https://i.imgur.com/Ruyzhu5.png" tvg-id="CCTV9.cn" tvg-chno="12" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-9 纪录
-https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV9" tvg-id="283" tvg-logo="https://tb.zbds.top/logo/CCTV9.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视纪录频道，播出自然、人文、历史、科学和社会纪录片。" x-smart-tags="央视,纪录,人文",CCTV9
+#EXTINF:-1 tvg-name="CCTV9" tvg-id="283" tvg-logo="https://tb.zbds.top/logo/CCTV9.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视纪录频道，播出自然、人文、历史、科学和社会纪录片。" x-smart-tags="央视,纪录,人文",CCTV-9
 http://124.116.183.146:9901/tsfile/live/0009_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-9 纪录" tvg-logo="https://i.imgur.com/Ruyzhu5.png" tvg-id="CCTV9.cn" tvg-chno="12" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视纪录频道，播出自然、人文、历史、科学和社会纪录片。" x-smart-tags="央视,纪录,人文",CCTV-9
+https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
+#EXTINF:-1 tvg-name="CCTV10" tvg-id="220" tvg-logo="https://tb.zbds.top/logo/CCTV10.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视科教频道，提供科学探索、教育服务、文化知识和科普节目。" x-smart-tags="央视,科教,科学",CCTV-10
+http://222.169.85.8:9901/tsfile/live/0010_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-10 科教" tvg-logo="https://i.imgur.com/W8JNs1s.png" tvg-id="CCTV10.cn" tvg-chno="13" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视科教频道，提供科学探索、教育服务、文化知识和科普节目。" x-smart-tags="央视,科教,科学",CCTV-10
+https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV10.cn@SD" tvg-logo="https://i.imgur.com/sSSO7UD.png" group-title="央视频道" tvg-name="CCTV-10" x-smart-source="iptv-org-cn" x-smart-description="央视科教频道，提供科学探索、教育服务、文化知识和科普节目。" x-smart-tags="央视,科教,科学" x-smart-resolution="720",CCTV-10
 http://74.91.26.218:82/live/cctv10hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-10 科教" tvg-logo="https://i.imgur.com/W8JNs1s.png" tvg-id="CCTV10.cn" tvg-chno="13" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-10 科教
-https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV10" tvg-id="220" tvg-logo="https://tb.zbds.top/logo/CCTV10.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视科教频道，提供科学探索、教育服务、文化知识和科普节目。" x-smart-tags="央视,科教,科学",CCTV10
-http://222.169.85.8:9901/tsfile/live/0010_1.m3u8
+#EXTINF:-1 tvg-name="CCTV11" tvg-id="184" tvg-logo="https://tb.zbds.top/logo/CCTV11.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视戏曲频道，播出戏曲剧目、名家演出、戏曲教学和文化专题。" x-smart-tags="央视,戏曲,文化",CCTV-11
+http://182.150.23.74:808/hls/11/index.m3u8
 #EXTINF:-1 tvg-id="CCTV11.cn@SD" tvg-logo="https://i.imgur.com/CjOWx7L.png" group-title="央视频道" tvg-name="CCTV-11" x-smart-source="iptv-org-cn" x-smart-description="央视戏曲频道，播出戏曲剧目、名家演出、戏曲教学和文化专题。" x-smart-tags="央视,戏曲,文化" x-smart-resolution="720",CCTV-11
 http://74.91.26.218:82/live/cctv11hd.m3u8
-#EXTINF:-1 tvg-name="CCTV11" tvg-id="184" tvg-logo="https://tb.zbds.top/logo/CCTV11.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视戏曲频道，播出戏曲剧目、名家演出、戏曲教学和文化专题。" x-smart-tags="央视,戏曲,文化",CCTV11
-http://182.150.23.74:808/hls/11/index.m3u8
+#EXTINF:-1 tvg-name="CCTV12" tvg-id="217" tvg-logo="https://tb.zbds.top/logo/CCTV12.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视社会与法频道，关注法治资讯、社会议题、普法服务和纪实节目。" x-smart-tags="央视,法治,社会",CCTV-12
+http://222.169.85.8:9901/tsfile/live/0012_1.m3u8
 #EXTINF:-1 tvg-id="CCTV12.cn@SD" tvg-logo="https://i.imgur.com/3yTuiOM.png" group-title="央视频道" tvg-name="CCTV-12" x-smart-source="iptv-org-cn" x-smart-description="央视社会与法频道，关注法治资讯、社会议题、普法服务和纪实节目。" x-smart-tags="央视,法治,社会" x-smart-resolution="720",CCTV-12
 http://74.91.26.218:82/live/cctv12hd.m3u8
-#EXTINF:-1 tvg-name="CCTV12" tvg-id="217" tvg-logo="https://tb.zbds.top/logo/CCTV12.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视社会与法频道，关注法治资讯、社会议题、普法服务和纪实节目。" x-smart-tags="央视,法治,社会",CCTV12
-http://222.169.85.8:9901/tsfile/live/0012_1.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn@HD" tvg-logo="https://i.imgur.com/6MTar6J.png" group-title="央视频道" tvg-name="CCTV-13" x-smart-source="iptv-org-cn" x-smart-description="央视新闻频道，提供新闻直播、突发报道、时事解读和深度专题。" x-smart-tags="央视,新闻,时事" x-smart-resolution="1080",CCTV-13
 http://go.bkpcp.top/mg/cctv13
 #EXTINF:-1 tvg-id="CCTV13.cn@SD" tvg-logo="https://i.imgur.com/6MTar6J.png" group-title="央视频道" tvg-name="CCTV-13" x-smart-source="iptv-org-cn" x-smart-description="央视新闻频道，提供新闻直播、突发报道、时事解读和深度专题。" x-smart-tags="央视,新闻,时事" x-smart-resolution="1080",CCTV-13
 https://cdn3.163189.xyz/163189/cctv13
-#EXTINF:-1 tvg-name="CCTV-13 新闻" tvg-logo="https://i.imgur.com/pPO8uJN.png" tvg-id="CCTV13.cn" tvg-chno="16" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-13 新闻
-https://node1.olelive.com:6443/live/CCTV13HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV13" tvg-id="CCTV13" tvg-logo="https://tb.zbds.top/logo/CCTV13.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视新闻频道，提供新闻直播、突发报道、时事解读和深度专题。" x-smart-tags="央视,新闻,时事",CCTV13
+#EXTINF:-1 tvg-name="CCTV13" tvg-id="CCTV13" tvg-logo="https://tb.zbds.top/logo/CCTV13.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视新闻频道，提供新闻直播、突发报道、时事解读和深度专题。" x-smart-tags="央视,新闻,时事",CCTV-13
 http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
 #EXTINF:-1 tvg-id="CCTV14.cn@HD" tvg-logo="https://i.imgur.com/c5SXW7i.png" group-title="央视频道" tvg-name="CCTV-14" x-smart-source="iptv-org-cn" x-smart-description="央视少儿频道，面向儿童和家庭播出动画、教育、益智和亲子节目。" x-smart-tags="央视,少儿,动画" x-smart-resolution="1080",CCTV-14
 http://74.91.26.218:82/live/cctv14hd.m3u8
-#EXTINF:-1 tvg-name="CCTV14" tvg-id="268" tvg-logo="https://tb.zbds.top/logo/CCTV14.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视少儿频道，面向儿童和家庭播出动画、教育、益智和亲子节目。" x-smart-tags="央视,少儿,动画",CCTV14
+#EXTINF:-1 tvg-name="CCTV14" tvg-id="268" tvg-logo="https://tb.zbds.top/logo/CCTV14.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视少儿频道，面向儿童和家庭播出动画、教育、益智和亲子节目。" x-smart-tags="央视,少儿,动画",CCTV-14
 http://124.116.183.146:9901/tsfile/live/0014_1.m3u8
 #EXTINF:-1 tvg-id="CCTV15.cn@SD" tvg-logo="https://i.imgur.com/CCV0eRG.png" group-title="央视频道" tvg-name="CCTV-15" x-smart-source="iptv-org-cn" x-smart-description="央视音乐频道，播出音乐现场、MV、音乐会、晚会和音乐专题。" x-smart-tags="央视,音乐,演出" x-smart-resolution="1080",CCTV-15
 https://xykt-fix.github.io/play/a02e/index.m3u8
-#EXTINF:-1 tvg-name="CCTV15" tvg-id="259" tvg-logo="https://tb.zbds.top/logo/CCTV15.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视音乐频道，播出音乐现场、MV、音乐会、晚会和音乐专题。" x-smart-tags="央视,音乐,演出",CCTV15
+#EXTINF:-1 tvg-name="CCTV15" tvg-id="259" tvg-logo="https://tb.zbds.top/logo/CCTV15.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视音乐频道，播出音乐现场、MV、音乐会、晚会和音乐专题。" x-smart-tags="央视,音乐,演出",CCTV-15
 http://183.223.157.33:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="CCTV16.cn@HD" tvg-logo="https://i.imgur.com/ZzV6JQp.png" group-title="央视频道" tvg-name="CCTV-16" x-smart-source="iptv-org-cn" x-smart-description="央视奥林匹克频道，聚焦奥运赛事、运动人物、训练故事和体育专题。" x-smart-tags="央视,奥运,体育" x-smart-resolution="1080",CCTV-16
 http://74.91.26.218:82/live/cctv16hd.m3u8
-#EXTINF:-1 tvg-name="CCTV16" tvg-id="69" tvg-logo="https://tb.zbds.top/logo/CCTV16.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视奥林匹克频道，聚焦奥运赛事、运动人物、训练故事和体育专题。" x-smart-tags="央视,奥运,体育",CCTV16
+#EXTINF:-1 tvg-name="CCTV16" tvg-id="69" tvg-logo="https://tb.zbds.top/logo/CCTV16.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视奥林匹克频道，聚焦奥运赛事、运动人物、训练故事和体育专题。" x-smart-tags="央视,奥运,体育",CCTV-16
 http://183.11.239.36:808/hls/169/index.m3u8
 #EXTINF:-1 tvg-id="CCTV17.cn@HD" tvg-logo="https://i.imgur.com/jSQURxS.png" group-title="央视频道" tvg-name="CCTV-17" x-smart-source="iptv-org-cn" x-smart-description="央视农业农村频道，关注三农资讯、乡村振兴、农业服务和农村生活。" x-smart-tags="央视,农业,乡村" x-smart-resolution="1080",CCTV-17
 http://74.91.26.218:82/live/cctv17hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-17 农业农村" tvg-logo="https://i.imgur.com/XMsoHut.png" tvg-id="CCTV17.cn" tvg-chno="20" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-17 农业农村
-https://node1.olelive.com:6443/live/CCTV17HD/hls.m3u8
-#EXTINF:-1 tvg-name="CCTV17" tvg-id="120" tvg-logo="https://tb.zbds.top/logo/CCTV17.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视农业农村频道，关注三农资讯、乡村振兴、农业服务和农村生活。" x-smart-tags="央视,农业,乡村",CCTV17
+#EXTINF:-1 tvg-name="CCTV17" tvg-id="120" tvg-logo="https://tb.zbds.top/logo/CCTV17.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视农业农村频道，关注三农资讯、乡村振兴、农业服务和农村生活。" x-smart-tags="央视,农业,乡村",CCTV-17
 http://222.169.85.8:9901/tsfile/live/0007_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-17 农业农村" tvg-logo="https://i.imgur.com/XMsoHut.png" tvg-id="CCTV17.cn" tvg-chno="20" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视农业农村频道，关注三农资讯、乡村振兴、农业服务和农村生活。" x-smart-tags="央视,农业,乡村",CCTV-17
+https://node1.olelive.com:6443/live/CCTV17HD/hls.m3u8
 #EXTINF:-1 tvg-id="CGTN.cn@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/960px-CGTN.svg.png" group-title="央视频道" tvg-name="CGTN" x-smart-source="iptv-org-zho" x-smart-description="中国国际电视台英语频道，提供全球新闻、评论和中国视角报道。" x-smart-tags="新闻,国际,英语" x-smart-resolution="1080",CGTN
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-name="CGTN" tvg-id="CGTN" tvg-logo="https://tb.zbds.top/logo/CGTN.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国国际电视台英语频道，提供全球新闻、评论和中国视角报道。" x-smart-tags="新闻,国际,英语",CGTN

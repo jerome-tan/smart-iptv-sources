@@ -26,8 +26,7 @@ export function collectPlaylistGuideKeys(entries) {
       entry.name,
       entry.normalizedName,
     ]) {
-      const key = normalizeGuideName(name)
-      if (key) {
+      for (const key of guideNameCandidates(name)) {
         names.add(key)
         remember(outputIdByName, key, outputId)
       }
@@ -139,9 +138,9 @@ function guideIdCandidates(value) {
 
 function preferredOutputId(entry) {
   return [
-    entry.attributes?.['tvg-name'],
     entry.displayName,
     entry.normalizedName,
+    entry.attributes?.['tvg-name'],
     entry.name,
     entry.attributes?.['tvg-id'],
   ]
@@ -167,26 +166,31 @@ function resolveOutputId(block, keys) {
 
   const displayNames = childTexts(block, 'display-name')
   for (const name of displayNames) {
-    const key = normalizeGuideName(name)
-    const outputId = keys.outputIdByName.get(key) ?? compatibleNameOutputId(key, keys.outputIdByName)
-    if (outputId) {
-      return outputId
+    for (const key of guideNameCandidates(name)) {
+      const outputId = keys.outputIdByName.get(key)
+      if (outputId) {
+        return outputId
+      }
     }
   }
 
   return null
 }
 
-function compatibleNameOutputId(key, outputIdByName) {
-  if (!key || key.length < 4) {
-    return null
+function guideNameCandidates(value) {
+  const key = normalizeGuideName(value)
+  if (!key) {
+    return []
   }
-  for (const [candidate, outputId] of outputIdByName.entries()) {
-    if (candidate.length >= 4 && (key.startsWith(candidate) || candidate.startsWith(key))) {
-      return outputId
-    }
+  const aliases = [key]
+  const cctvBaseKey = key.replace(
+    /^(cctv\d+\+?)(综合|财经|综艺|中文国际|体育|体育赛事|电影|国防军事|电视剧|纪录|科教|戏曲|社会与法|新闻|少儿|音乐|奥林匹克|农业农村)$/u,
+    '$1',
+  )
+  if (cctvBaseKey !== key) {
+    aliases.push(cctvBaseKey)
   }
-  return null
+  return aliases
 }
 
 function normalizeGuideName(value) {
