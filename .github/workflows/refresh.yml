@@ -11,6 +11,9 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ee9139deeec8d018acdfb0b8c2f9d31c
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,6 +31,16 @@ jobs:
 
       - name: Validate generated output
         run: npm run validate
+
+      - name: Deploy generated output to Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: >
+          npx --yes wrangler pages deploy public
+          --project-name smart-iptv-sources
+          --branch main
+          --commit-hash "$GITHUB_SHA"
+          --commit-message "chore: refresh curated IPTV sources"
+          --commit-dirty=true
 
       - name: Commit refreshed output
         run: |
