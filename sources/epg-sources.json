@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "id": "placeholder",
+      "name": "待配置节目单源",
+      "url": null,
+      "enabled": false
+    }
+  ]
+}
+

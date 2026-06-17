@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "name": "Smart IPTV Sources",
+  "updatedAt": "2026-06-17T00:00:00Z",
+  "playlists": [
+    {
+      "id": "stable-cn",
+      "name": "国内精选直播",
+      "description": "适合中国大陆网络环境优先使用的精选直播列表",
+      "region": "CN",
+      "quality": "recommended",
+      "url": "/playlists/stable-cn.m3u",
+      "epgUrl": "/epg/stable-cn.xml.gz"
+    }
+  ]
+}
+

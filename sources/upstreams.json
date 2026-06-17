@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "id": "iptv-org-cn",
+      "name": "iptv-org China",
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "region": "CN",
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-zho",
+      "name": "iptv-org Chinese",
+      "url": "https://iptv-org.github.io/iptv/languages/zho.m3u",
+      "region": "CN",
+      "enabled": true
+    },
+    {
+      "id": "free-tv-china",
+      "name": "Free-TV China",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_china.m3u8",
+      "region": "CN",
+      "enabled": true
+    }
+  ]
+}
+
