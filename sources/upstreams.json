@@ -22,6 +22,14 @@
       "enabled": true
     },
     {
+      "id": "zbds-iptv4",
+      "name": "ZBDS IPTV4",
+      "url": "https://live.zbds.top/tv/iptv4.m3u",
+      "region": "CN",
+      "priority": 20,
+      "enabled": true
+    },
+    {
       "id": "iptv-org-hk",
       "name": "iptv-org Hong Kong",
       "url": "https://iptv-org.github.io/iptv/countries/hk.m3u",

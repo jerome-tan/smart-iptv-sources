@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "version": "202606171007",
-  "updatedAt": "2026-06-17T10:07:23.231Z",
+  "version": "202606171107",
+  "updatedAt": "2026-06-17T11:07:21.036Z",
   "playlists": {
     "stable-cn": {
-      "streamCount": 65,
-      "channelCount": 64,
+      "streamCount": 744,
+      "channelCount": 715,
       "healthUrl": "/health.json",
       "url": "/playlists/stable-cn.m3u"
     }
