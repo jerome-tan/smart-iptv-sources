@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-17T03:45:35.555Z",
+  "updatedAt": "2026-06-17T08:13:20.165Z",
   "summary": {
     "channels": 176,
-    "publishedChannels": 51,
-    "publishedStreams": 52,
+    "publishedChannels": 57,
+    "publishedStreams": 57,
     "streams": {
-      "ok": 52,
-      "httpError": 46,
-      "networkError": 50,
-      "timeout": 32,
+      "ok": 57,
+      "httpError": 58,
+      "networkError": 24,
+      "timeout": 41,
       "unchecked": 0
     },
     "upstreams": {
@@ -59,7 +59,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "http://cdn6.163189.xyz/163189/8tv",
-      "checkedAt": "2026-06-17T03:45:38.390Z",
+      "checkedAt": "2026-06-17T08:13:20.412Z",
       "error": null
     },
     {
@@ -71,7 +71,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/21/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.391Z",
+      "checkedAt": "2026-06-17T08:13:20.413Z",
       "error": "fetch failed"
     },
     {
@@ -83,7 +83,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.391Z",
+      "checkedAt": "2026-06-17T08:13:20.413Z",
       "error": null
     },
     {
@@ -93,10 +93,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://14.152.88.77/liveplay-kk.rtxapp.com/live/program/live/bjwshd/4000000/mnf.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.392Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:20.414Z",
+      "error": "timeout"
     },
     {
       "channelName": "重庆卫视",
@@ -107,7 +107,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/22/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.392Z",
+      "checkedAt": "2026-06-17T08:13:20.415Z",
       "error": "fetch failed"
     },
     {
@@ -119,7 +119,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://live.cztv.cc:85/live/xwpd.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.392Z",
+      "checkedAt": "2026-06-17T08:13:20.415Z",
       "error": "fetch failed"
     },
     {
@@ -131,7 +131,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/23/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.393Z",
+      "checkedAt": "2026-06-17T08:13:20.416Z",
       "error": "fetch failed"
     },
     {
@@ -141,10 +141,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.19.68/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226465/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.393Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:20.417Z",
+      "error": "timeout"
     },
     {
       "channelName": "敦煌电视台",
@@ -153,10 +153,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://117.156.28.119/270000001111/1110000028/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.435Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:20.617Z",
+      "error": "timeout"
     },
     {
       "channelName": "风尚购物",
@@ -167,7 +167,7 @@
       "sourceId": "iptv-org-cn",
       "status": "timeout",
       "url": "http://183.207.248.71/cntv/live1/fengshanggw/fengshanggw",
-      "checkedAt": "2026-06-17T03:45:38.438Z",
+      "checkedAt": "2026-06-17T08:13:20.626Z",
       "error": "timeout"
     },
     {
@@ -177,10 +177,10 @@
       "published": false,
       "resolution": 720,
       "sourceId": "iptv-org-zho",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:38.441Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:20.627Z",
+      "error": "timeout"
     },
     {
       "channelName": "凤凰资讯",
@@ -189,10 +189,10 @@
       "published": false,
       "resolution": 720,
       "sourceId": "iptv-org-zho",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:39.715Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:20.715Z",
+      "error": "timeout"
     },
     {
       "channelName": "高台电视台",
@@ -201,10 +201,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://117.156.28.119/270000001111/1110000146/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:41.158Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:21.265Z",
+      "error": "timeout"
     },
     {
       "channelName": "广东卫视",
@@ -215,7 +215,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/26/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.407Z",
+      "checkedAt": "2026-06-17T08:13:22.739Z",
       "error": "fetch failed"
     },
     {
@@ -225,10 +225,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://117.156.28.119/270000001111/1110000149/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.408Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:22.953Z",
+      "error": "timeout"
     },
     {
       "channelName": "河南卫视",
@@ -239,7 +239,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/30/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.443Z",
+      "checkedAt": "2026-06-17T08:13:28.415Z",
       "error": "fetch failed"
     },
     {
@@ -251,7 +251,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/31/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.448Z",
+      "checkedAt": "2026-06-17T08:13:28.416Z",
       "error": "fetch failed"
     },
     {
@@ -263,7 +263,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/32/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.452Z",
+      "checkedAt": "2026-06-17T08:13:28.615Z",
       "error": "fetch failed"
     },
     {
@@ -275,7 +275,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/34/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.489Z",
+      "checkedAt": "2026-06-17T08:13:28.617Z",
       "error": "fetch failed"
     },
     {
@@ -285,10 +285,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.135.138.59:18890/PLTV/88888910/224/3221225655/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.497Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:28.625Z",
+      "error": "timeout"
     },
     {
       "channelName": "家庭影院",
@@ -297,10 +297,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.19.153/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226462/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.498Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:28.626Z",
+      "error": "timeout"
     },
     {
       "channelName": "江苏卫视",
@@ -309,10 +309,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226200/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.534Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:28.627Z",
+      "error": "timeout"
     },
     {
       "channelName": "江西卫视",
@@ -321,10 +321,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.115.163:8080/PLTV/88888910/224/3221225705/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:43.905Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:28.715Z",
+      "error": "timeout"
     },
     {
       "channelName": "辽宁卫视",
@@ -333,10 +333,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.39.37/PLTV/88888888/224/3221226209/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:44.723Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:28.824Z",
+      "error": "timeout"
     },
     {
       "channelName": "青海卫视",
@@ -347,7 +347,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://live.geermurmt.com/qhws/sd/live.m3u8",
-      "checkedAt": "2026-06-17T03:45:46.169Z",
+      "checkedAt": "2026-06-17T08:13:28.828Z",
       "error": "fetch failed"
     },
     {
@@ -359,7 +359,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://livealone302.iqilu.com/iqilu/qlpd.m3u8",
-      "checkedAt": "2026-06-17T03:45:46.181Z",
+      "checkedAt": "2026-06-17T08:13:29.266Z",
       "error": null
     },
     {
@@ -371,7 +371,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://livealone302.iqilu.com/iqilu/shpd.m3u8",
-      "checkedAt": "2026-06-17T03:45:46.442Z",
+      "checkedAt": "2026-06-17T08:13:29.296Z",
       "error": null
     },
     {
@@ -383,7 +383,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://livealone302.iqilu.com/iqilu/typd.m3u8",
-      "checkedAt": "2026-06-17T03:45:47.628Z",
+      "checkedAt": "2026-06-17T08:13:30.954Z",
       "error": null
     },
     {
@@ -393,10 +393,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.115.163:8080/PLTV/88888910/224/3221225697/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:47.651Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:34.165Z",
+      "error": "timeout"
     },
     {
       "channelName": "山东卫视",
@@ -405,10 +405,10 @@
       "published": false,
       "resolution": 720,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://125.210.152.18:9090/live/SDWSHD_H265.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.169Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:34.166Z",
+      "error": "timeout"
     },
     {
       "channelName": "山西卫视",
@@ -419,7 +419,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://118.81.195.79:9003/hls/19/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.419Z",
+      "checkedAt": "2026-06-17T08:13:34.167Z",
       "error": "fetch failed"
     },
     {
@@ -431,7 +431,7 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "http://162.19.247.76:22222/live/taishi/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.460Z",
+      "checkedAt": "2026-06-17T08:13:34.375Z",
       "error": "timeout"
     },
     {
@@ -441,10 +441,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.115.163:8080/PLTV/88888910/224/3221225698/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.506Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:36.625Z",
+      "error": "timeout"
     },
     {
       "channelName": "徐州經濟生活",
@@ -453,10 +453,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221225947/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.507Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:36.626Z",
+      "error": "timeout"
     },
     {
       "channelName": "云南卫视",
@@ -467,7 +467,7 @@
       "sourceId": "iptv-org-cn",
       "status": "timeout",
       "url": "https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.544Z",
+      "checkedAt": "2026-06-17T08:13:36.627Z",
       "error": "timeout"
     },
     {
@@ -479,7 +479,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_349.m3u8",
-      "checkedAt": "2026-06-17T03:45:48.915Z",
+      "checkedAt": "2026-06-17T08:13:36.715Z",
       "error": null
     },
     {
@@ -491,7 +491,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_346.m3u8",
-      "checkedAt": "2026-06-17T03:45:49.466Z",
+      "checkedAt": "2026-06-17T08:13:36.823Z",
       "error": null
     },
     {
@@ -503,7 +503,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_348.m3u8",
-      "checkedAt": "2026-06-17T03:45:49.734Z",
+      "checkedAt": "2026-06-17T08:13:38.588Z",
       "error": null
     },
     {
@@ -513,10 +513,10 @@
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://39.134.115.163:8080/PLTV/88888910/224/3221225703/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:49.775Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:39.366Z",
+      "error": "timeout"
     },
     {
       "channelName": "ABN China",
@@ -527,7 +527,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://mediaserver.abnvideos.com/streams/abnchina.m3u8",
-      "checkedAt": "2026-06-17T03:45:49.893Z",
+      "checkedAt": "2026-06-17T08:13:39.835Z",
       "error": null
     },
     {
@@ -539,7 +539,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://play.kankanlive.com/live/1711956137852982.m3u8",
-      "checkedAt": "2026-06-17T03:45:52.664Z",
+      "checkedAt": "2026-06-17T08:13:40.161Z",
       "error": null
     },
     {
@@ -551,7 +551,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://janya-digimix.akamaized.net/vglive-sk-999451/chinese/ngrp:angelchinese_all/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:45:52.939Z",
+      "checkedAt": "2026-06-17T08:13:42.167Z",
       "error": null
     },
     {
@@ -563,7 +563,7 @@
       "sourceId": "iptv-org-cn",
       "status": "timeout",
       "url": "https://hplayer1.juyun.tv/camera/154379194.m3u8",
-      "checkedAt": "2026-06-17T03:45:53.180Z",
+      "checkedAt": "2026-06-17T08:13:42.168Z",
       "error": "timeout"
     },
     {
@@ -575,7 +575,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://jmp2.uk/plu-5ebac49ce4dc8b00078b23bc.m3u8",
-      "checkedAt": "2026-06-17T03:45:53.512Z",
+      "checkedAt": "2026-06-17T08:13:42.375Z",
       "error": null
     },
     {
@@ -587,7 +587,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:45:53.514Z",
+      "checkedAt": "2026-06-17T08:13:43.989Z",
       "error": null
     },
     {
@@ -599,7 +599,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:54.791Z",
+      "checkedAt": "2026-06-17T08:13:44.342Z",
       "error": null
     },
     {
@@ -611,7 +611,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://go.bkpcp.top/mg/bjws",
-      "checkedAt": "2026-06-17T03:45:55.391Z",
+      "checkedAt": "2026-06-17T08:13:44.624Z",
       "error": null
     },
     {
@@ -621,10 +621,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://223.111.191.105/downflv.brtvcloud.com/kkkkasd/winfr.m3u8",
-      "checkedAt": "2026-06-17T03:45:56.081Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:44.626Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV 风云音乐",
@@ -635,7 +635,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:45:56.435Z",
+      "checkedAt": "2026-06-17T08:13:44.628Z",
       "error": null
     },
     {
@@ -647,19 +647,19 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://69.30.245.50/live/cctv1.m3u8",
-      "checkedAt": "2026-06-17T03:45:56.439Z",
+      "checkedAt": "2026-06-17T08:13:44.698Z",
       "error": null
     },
     {
       "channelName": "CCTV-1",
       "groupTitle": "General",
-      "httpStatus": 206,
-      "published": true,
+      "httpStatus": 404,
+      "published": false,
       "resolution": 720,
       "sourceId": "iptv-org-cn",
-      "status": "ok",
+      "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv1hd.m3u8",
-      "checkedAt": "2026-06-17T03:45:56.461Z",
+      "checkedAt": "2026-06-17T08:13:44.797Z",
       "error": null
     },
     {
@@ -669,10 +669,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:45:56.545Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:44.821Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-10",
@@ -683,7 +683,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv10hd.m3u8",
-      "checkedAt": "2026-06-17T03:45:57.413Z",
+      "checkedAt": "2026-06-17T08:13:44.930Z",
       "error": null
     },
     {
@@ -695,7 +695,7 @@
       "sourceId": "free-tv-china",
       "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:45:57.415Z",
+      "checkedAt": "2026-06-17T08:13:45.174Z",
       "error": "timeout"
     },
     {
@@ -707,19 +707,19 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
-      "checkedAt": "2026-06-17T03:45:57.825Z",
+      "checkedAt": "2026-06-17T08:13:45.601Z",
       "error": null
     },
     {
       "channelName": "CCTV-12",
       "groupTitle": "Lifestyle",
-      "httpStatus": 404,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 720,
       "sourceId": "iptv-org-cn",
-      "status": "http-error",
+      "status": "ok",
       "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
-      "checkedAt": "2026-06-17T03:45:58.005Z",
+      "checkedAt": "2026-06-17T08:13:45.703Z",
       "error": null
     },
     {
@@ -731,7 +731,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://go.bkpcp.top/mg/cctv13",
-      "checkedAt": "2026-06-17T03:45:58.234Z",
+      "checkedAt": "2026-06-17T08:13:45.809Z",
       "error": null
     },
     {
@@ -743,7 +743,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://cdn3.163189.xyz/163189/cctv13",
-      "checkedAt": "2026-06-17T03:45:58.402Z",
+      "checkedAt": "2026-06-17T08:13:45.944Z",
       "error": null
     },
     {
@@ -755,7 +755,7 @@
       "sourceId": "free-tv-china",
       "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV13HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:45:58.766Z",
+      "checkedAt": "2026-06-17T08:13:46.216Z",
       "error": "timeout"
     },
     {
@@ -767,20 +767,20 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
-      "checkedAt": "2026-06-17T03:45:59.029Z",
+      "checkedAt": "2026-06-17T08:13:46.934Z",
       "error": null
     },
     {
       "channelName": "CCTV-15",
       "groupTitle": "Music",
-      "httpStatus": null,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "ok",
       "url": "https://xykt-fix.github.io/play/a02e/index.m3u8",
-      "checkedAt": "2026-06-17T03:45:59.650Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:47.013Z",
+      "error": null
     },
     {
       "channelName": "CCTV-16",
@@ -791,7 +791,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv16hd.m3u8",
-      "checkedAt": "2026-06-17T03:45:59.701Z",
+      "checkedAt": "2026-06-17T08:13:47.366Z",
       "error": null
     },
     {
@@ -803,7 +803,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv17hd.m3u8",
-      "checkedAt": "2026-06-17T03:46:00.193Z",
+      "checkedAt": "2026-06-17T08:13:47.566Z",
       "error": null
     },
     {
@@ -813,10 +813,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV17HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:00.524Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:47.644Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-2",
@@ -827,7 +827,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv2hd.m3u8",
-      "checkedAt": "2026-06-17T03:46:01.009Z",
+      "checkedAt": "2026-06-17T08:13:47.740Z",
       "error": null
     },
     {
@@ -837,21 +837,21 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:01.091Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:47.817Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-3",
       "groupTitle": "Entertainment",
-      "httpStatus": 206,
-      "published": true,
+      "httpStatus": 404,
+      "published": false,
       "resolution": 720,
       "sourceId": "iptv-org-cn",
-      "status": "ok",
+      "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
-      "checkedAt": "2026-06-17T03:46:01.183Z",
+      "checkedAt": "2026-06-17T08:13:49.492Z",
       "error": null
     },
     {
@@ -863,20 +863,20 @@
       "sourceId": "free-tv-china",
       "status": "ok",
       "url": "https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live",
-      "checkedAt": "2026-06-17T03:46:01.378Z",
+      "checkedAt": "2026-06-17T08:13:49.570Z",
       "error": null
     },
     {
       "channelName": "CCTV-4 America",
       "groupTitle": "General",
-      "httpStatus": null,
-      "published": false,
+      "httpStatus": 200,
+      "published": true,
       "resolution": 1080,
       "sourceId": "iptv-org-zho",
-      "status": "timeout",
+      "status": "ok",
       "url": "https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8",
-      "checkedAt": "2026-06-17T03:46:01.956Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:49.679Z",
+      "error": null
     },
     {
       "channelName": "CCTV-4 Asia",
@@ -887,7 +887,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv4hd.m3u8",
-      "checkedAt": "2026-06-17T03:46:05.417Z",
+      "checkedAt": "2026-06-17T08:13:50.168Z",
       "error": null
     },
     {
@@ -899,7 +899,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:06.155Z",
+      "checkedAt": "2026-06-17T08:13:50.248Z",
       "error": null
     },
     {
@@ -911,7 +911,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://198.204.240.250:82/live/cctv4k.m3u8",
-      "checkedAt": "2026-06-17T03:46:06.167Z",
+      "checkedAt": "2026-06-17T08:13:50.472Z",
       "error": null
     },
     {
@@ -921,10 +921,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:06.168Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:50.572Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-5+ 体育赛事",
@@ -933,10 +933,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:06.768Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:51.142Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-6",
@@ -947,7 +947,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://69.30.245.50/live/cctv6.m3u8",
-      "checkedAt": "2026-06-17T03:46:07.654Z",
+      "checkedAt": "2026-06-17T08:13:52.627Z",
       "error": null
     },
     {
@@ -959,7 +959,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
-      "checkedAt": "2026-06-17T03:46:07.843Z",
+      "checkedAt": "2026-06-17T08:13:52.723Z",
       "error": null
     },
     {
@@ -969,10 +969,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:08.048Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:52.821Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-8",
@@ -983,7 +983,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
-      "checkedAt": "2026-06-17T03:46:08.375Z",
+      "checkedAt": "2026-06-17T08:13:53.174Z",
       "error": null
     },
     {
@@ -993,22 +993,22 @@
       "published": false,
       "resolution": null,
       "sourceId": "free-tv-china",
-      "status": "network-error",
+      "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:08.560Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:13:53.256Z",
+      "error": "timeout"
     },
     {
       "channelName": "CCTV-8K",
       "groupTitle": "Undefined",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://192.151.150.154/live/cctv8k.m3u8",
-      "checkedAt": "2026-06-17T03:46:08.588Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:53.362Z",
+      "error": null
     },
     {
       "channelName": "CCTV-9 纪录",
@@ -1019,140 +1019,140 @@
       "sourceId": "free-tv-china",
       "status": "timeout",
       "url": "https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8",
-      "checkedAt": "2026-06-17T03:46:09.219Z",
+      "checkedAt": "2026-06-17T08:13:53.492Z",
       "error": "timeout"
     },
     {
       "channelName": "CCTV-Billiards",
       "groupTitle": "Sports",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:09.404Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:54.216Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Culture of Quality",
       "groupTitle": "Undefined",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:09.711Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:54.420Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Golf & Tennis",
       "groupTitle": "Sports",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:09.957Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:54.613Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Health",
       "groupTitle": "Lifestyle",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:09.970Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:54.761Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Nostalgia Theater",
       "groupTitle": "Classic",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:10.557Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:54.883Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Storm Football",
       "groupTitle": "Sports",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:14.820Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:55.029Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Storm Theater",
       "groupTitle": "Movies",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:16.590Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:55.175Z",
+      "error": null
     },
     {
       "channelName": "CCTV-The First Theater",
       "groupTitle": "Movies",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:17.221Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:55.324Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Weapon & Technology",
       "groupTitle": "Documentary",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:17.405Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:55.447Z",
+      "error": null
     },
     {
       "channelName": "CCTV-Women's Fashion",
       "groupTitle": "Lifestyle",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:17.714Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:55.593Z",
+      "error": null
     },
     {
       "channelName": "CCTV-World Geography",
       "groupTitle": "Education",
-      "httpStatus": null,
+      "httpStatus": 404,
       "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-cn",
-      "status": "timeout",
+      "status": "http-error",
       "url": "http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub",
-      "checkedAt": "2026-06-17T03:46:17.960Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:55.644Z",
+      "error": null
     },
     {
       "channelName": "CETV-1",
@@ -1163,7 +1163,7 @@
       "sourceId": "free-tv-china",
       "status": "network-error",
       "url": "http://txycsbl.centv.cn/zb/0628cetv1.m3u8",
-      "checkedAt": "2026-06-17T03:46:17.972Z",
+      "checkedAt": "2026-06-17T08:13:55.716Z",
       "error": "fetch failed"
     },
     {
@@ -1175,7 +1175,7 @@
       "sourceId": "free-tv-china",
       "status": "network-error",
       "url": "http://txycsbl.centv.cn/zb/0822cetv2.m3u8",
-      "checkedAt": "2026-06-17T03:46:17.987Z",
+      "checkedAt": "2026-06-17T08:13:55.784Z",
       "error": "fetch failed"
     },
     {
@@ -1187,7 +1187,7 @@
       "sourceId": "free-tv-china",
       "status": "network-error",
       "url": "http://txycsbl.centv.cn/zb/0822cetv3.m3u8",
-      "checkedAt": "2026-06-17T03:46:17.996Z",
+      "checkedAt": "2026-06-17T08:13:55.818Z",
       "error": "fetch failed"
     },
     {
@@ -1199,44 +1199,44 @@
       "sourceId": "free-tv-china",
       "status": "network-error",
       "url": "http://txycsbl.centv.cn/zb/0822cetv4.m3u8",
-      "checkedAt": "2026-06-17T03:46:18.002Z",
+      "checkedAt": "2026-06-17T08:13:56.014Z",
       "error": "fetch failed"
     },
     {
       "channelName": "CGNTV Chinese",
       "groupTitle": "Religious",
-      "httpStatus": null,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 1080,
       "sourceId": "iptv-org-zho",
-      "status": "timeout",
+      "status": "ok",
       "url": "https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8",
-      "checkedAt": "2026-06-17T03:46:18.009Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:56.014Z",
+      "error": null
     },
     {
       "channelName": "CGTN",
       "groupTitle": "News",
-      "httpStatus": null,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 1080,
       "sourceId": "iptv-org-zho",
-      "status": "timeout",
+      "status": "ok",
       "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
-      "checkedAt": "2026-06-17T03:46:18.560Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:56.421Z",
+      "error": null
     },
     {
       "channelName": "CGTN Global Biz",
       "groupTitle": "Business",
-      "httpStatus": null,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 1080,
       "sourceId": "iptv-org-zho",
-      "status": "timeout",
+      "status": "ok",
       "url": "https://amg01314-amg01314c6-distrotv-us-10220.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnglobalbiz-distrotvus/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:22.822Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:56.422Z",
+      "error": null
     },
     {
       "channelName": "Channel 8",
@@ -1247,7 +1247,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://app.viloud.tv/hls/channel/57148804a268f59e0c1af0c1b67a2f7e.m3u8",
-      "checkedAt": "2026-06-17T03:46:24.594Z",
+      "checkedAt": "2026-06-17T08:13:57.031Z",
       "error": null
     },
     {
@@ -1259,7 +1259,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://app.viloud.tv/hls/channel/aaf404bee904cff424bb5d1f6fdf9333.m3u8",
-      "checkedAt": "2026-06-17T03:46:25.221Z",
+      "checkedAt": "2026-06-17T08:13:57.244Z",
       "error": null
     },
     {
@@ -1271,31 +1271,31 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8",
-      "checkedAt": "2026-06-17T03:46:25.407Z",
+      "checkedAt": "2026-06-17T08:13:57.530Z",
       "error": null
     },
     {
       "channelName": "China Travel",
       "groupTitle": "Culture;Documentary;Travel",
-      "httpStatus": null,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 1080,
       "sourceId": "iptv-org-zho",
-      "status": "timeout",
+      "status": "ok",
       "url": "https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:25.714Z",
-      "error": "timeout"
+      "checkedAt": "2026-06-17T08:13:57.661Z",
+      "error": null
     },
     {
       "channelName": "CreaTV Community Channel 15 (San Jose CA)",
       "groupTitle": "General",
-      "httpStatus": 403,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": 720,
       "sourceId": "iptv-org-zho",
-      "status": "http-error",
+      "status": "ok",
       "url": "https://reflect-creatv.cablecast.tv/live-13/live/live.m3u8",
-      "checkedAt": "2026-06-17T03:46:25.963Z",
+      "checkedAt": "2026-06-17T08:13:57.727Z",
       "error": null
     },
     {
@@ -1307,7 +1307,7 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "http://23.237.10.66:16372",
-      "checkedAt": "2026-06-17T03:46:26.012Z",
+      "checkedAt": "2026-06-17T08:13:58.295Z",
       "error": "timeout"
     },
     {
@@ -1319,7 +1319,7 @@
       "sourceId": "iptv-org-zho",
       "status": "network-error",
       "url": "http://seb.sason.top/sc/hsxw_fhd.m3u8",
-      "checkedAt": "2026-06-17T03:46:26.563Z",
+      "checkedAt": "2026-06-17T08:13:58.571Z",
       "error": "fetch failed"
     },
     {
@@ -1331,7 +1331,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8",
-      "checkedAt": "2026-06-17T03:46:26.578Z",
+      "checkedAt": "2026-06-17T08:13:58.597Z",
       "error": null
     },
     {
@@ -1343,7 +1343,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://pulltv1.wanfudaluye.com/live/tv1.m3u8",
-      "checkedAt": "2026-06-17T03:46:30.823Z",
+      "checkedAt": "2026-06-17T08:13:58.716Z",
       "error": null
     },
     {
@@ -1355,7 +1355,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://pulltv2.wanfudaluye.com/live/tv2.m3u8",
-      "checkedAt": "2026-06-17T03:46:32.014Z",
+      "checkedAt": "2026-06-17T08:13:59.143Z",
       "error": null
     },
     {
@@ -1367,19 +1367,19 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://amg01314-amg01314c8-distrotv-us-10218.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtndiscoveringchina-distrotvus/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:32.064Z",
+      "checkedAt": "2026-06-17T08:13:59.501Z",
       "error": null
     },
     {
       "channelName": "God Stands TV Chinese",
       "groupTitle": "Religious",
-      "httpStatus": 404,
-      "published": false,
+      "httpStatus": 206,
+      "published": true,
       "resolution": null,
       "sourceId": "iptv-org-zho",
-      "status": "http-error",
+      "status": "ok",
       "url": "https://online.godstands.tv:5443/WebRTCApp/streams/chineselive.m3u8",
-      "checkedAt": "2026-06-17T03:46:32.097Z",
+      "checkedAt": "2026-06-17T08:13:59.815Z",
       "error": null
     },
     {
@@ -1391,7 +1391,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://live.streamingfast.net/osmflivech2.m3u8",
-      "checkedAt": "2026-06-17T03:46:32.140Z",
+      "checkedAt": "2026-06-17T08:14:00.082Z",
       "error": null
     },
     {
@@ -1403,7 +1403,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8",
-      "checkedAt": "2026-06-17T03:46:32.187Z",
+      "checkedAt": "2026-06-17T08:14:00.096Z",
       "error": null
     },
     {
@@ -1415,7 +1415,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594",
-      "checkedAt": "2026-06-17T03:46:32.787Z",
+      "checkedAt": "2026-06-17T08:14:00.674Z",
       "error": null
     },
     {
@@ -1427,20 +1427,20 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://stream.hrbtv.net/yspd/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:33.708Z",
+      "checkedAt": "2026-06-17T08:14:00.822Z",
       "error": null
     },
     {
       "channelName": "Hebei TV",
       "groupTitle": "General",
-      "httpStatus": 206,
-      "published": true,
+      "httpStatus": null,
+      "published": false,
       "resolution": 2160,
       "sourceId": "iptv-org-cn",
-      "status": "ok",
+      "status": "network-error",
       "url": "https://event.pull.hebtv.com/live/live101.m3u8",
-      "checkedAt": "2026-06-17T03:46:33.714Z",
-      "error": null
+      "checkedAt": "2026-06-17T08:14:01.005Z",
+      "error": "fetch failed"
     },
     {
       "channelName": "Home Plus",
@@ -1451,7 +1451,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://homeplushls.wns.live/hls/stream.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.014Z",
+      "checkedAt": "2026-06-17T08:14:01.255Z",
       "error": null
     },
     {
@@ -1463,7 +1463,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.106Z",
+      "checkedAt": "2026-06-17T08:14:01.492Z",
       "error": null
     },
     {
@@ -1475,7 +1475,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.157Z",
+      "checkedAt": "2026-06-17T08:14:01.540Z",
       "error": null
     },
     {
@@ -1487,7 +1487,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "http://streamipcf.akamaized.net/live/_definst_/smil:liveabr.smil/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.391Z",
+      "checkedAt": "2026-06-17T08:14:01.710Z",
       "error": null
     },
     {
@@ -1499,7 +1499,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv6.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.451Z",
+      "checkedAt": "2026-06-17T08:14:01.729Z",
       "error": null
     },
     {
@@ -1511,7 +1511,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv2.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.530Z",
+      "checkedAt": "2026-06-17T08:14:01.813Z",
       "error": null
     },
     {
@@ -1523,7 +1523,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv3.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.599Z",
+      "checkedAt": "2026-06-17T08:14:01.886Z",
       "error": null
     },
     {
@@ -1535,7 +1535,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.603Z",
+      "checkedAt": "2026-06-17T08:14:02.271Z",
       "error": null
     },
     {
@@ -1547,7 +1547,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv5.m3u8",
-      "checkedAt": "2026-06-17T03:46:34.710Z",
+      "checkedAt": "2026-06-17T08:14:03.119Z",
       "error": null
     },
     {
@@ -1559,7 +1559,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.272Z",
+      "checkedAt": "2026-06-17T08:14:03.424Z",
       "error": null
     },
     {
@@ -1571,7 +1571,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.292Z",
+      "checkedAt": "2026-06-17T08:14:03.442Z",
       "error": null
     },
     {
@@ -1583,7 +1583,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.307Z",
+      "checkedAt": "2026-06-17T08:14:03.552Z",
       "error": null
     },
     {
@@ -1595,7 +1595,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/3ffc4824dce54b92be185555923ce382/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.474Z",
+      "checkedAt": "2026-06-17T08:14:03.662Z",
       "error": null
     },
     {
@@ -1607,7 +1607,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://liveh34.vtvprime.vn/hls/KIX/04.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.513Z",
+      "checkedAt": "2026-06-17T08:14:03.790Z",
       "error": null
     },
     {
@@ -1619,7 +1619,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://cdn4.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.533Z",
+      "checkedAt": "2026-06-17T08:14:03.809Z",
       "error": null
     },
     {
@@ -1631,7 +1631,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.639Z",
+      "checkedAt": "2026-06-17T08:14:03.813Z",
       "error": null
     },
     {
@@ -1643,7 +1643,7 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "http://103.154.3.101:5001/live/1736.m3u8",
-      "checkedAt": "2026-06-17T03:46:35.672Z",
+      "checkedAt": "2026-06-17T08:14:04.454Z",
       "error": "timeout"
     },
     {
@@ -1655,7 +1655,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://tglmp04.akamaized.net/out/v1/898b1cbac7c747e3b1f3deb460e9b67e/manifest.mpd",
-      "checkedAt": "2026-06-17T03:46:35.791Z",
+      "checkedAt": "2026-06-17T08:14:04.467Z",
       "error": null
     },
     {
@@ -1667,7 +1667,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_nanchang.m3u8",
-      "checkedAt": "2026-06-17T03:46:36.164Z",
+      "checkedAt": "2026-06-17T08:14:04.600Z",
       "error": null
     },
     {
@@ -1679,7 +1679,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8",
-      "checkedAt": "2026-06-17T03:46:36.165Z",
+      "checkedAt": "2026-06-17T08:14:04.640Z",
       "error": null
     },
     {
@@ -1691,7 +1691,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://1.24.190.98:10080/hls/40/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:36.185Z",
+      "checkedAt": "2026-06-17T08:14:04.760Z",
       "error": "fetch failed"
     },
     {
@@ -1703,7 +1703,7 @@
       "sourceId": "iptv-org-zho",
       "status": "network-error",
       "url": "https://indihuy.streamized.net/atm/DASH/newtvcomprehensive/manifest.mpd",
-      "checkedAt": "2026-06-17T03:46:36.185Z",
+      "checkedAt": "2026-06-17T08:14:04.761Z",
       "error": "fetch failed"
     },
     {
@@ -1715,7 +1715,7 @@
       "sourceId": "iptv-org-zho",
       "status": "network-error",
       "url": "https://indihuy.streamized.net/atm/DASH/newtvfinance/manifest.mpd",
-      "checkedAt": "2026-06-17T03:46:36.201Z",
+      "checkedAt": "2026-06-17T08:14:04.789Z",
       "error": "fetch failed"
     },
     {
@@ -1727,7 +1727,7 @@
       "sourceId": "iptv-org-zho",
       "status": "network-error",
       "url": "https://indihuy.streamized.net/atm/DASH/newtvvariety/manifest.mpd",
-      "checkedAt": "2026-06-17T03:46:36.214Z",
+      "checkedAt": "2026-06-17T08:14:04.816Z",
       "error": "fetch failed"
     },
     {
@@ -1739,7 +1739,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://ntd02.akamaized.net/HD-NY/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:36.226Z",
+      "checkedAt": "2026-06-17T08:14:04.825Z",
       "error": null
     },
     {
@@ -1751,7 +1751,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://live.ntdtv.com/aplive200/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:36.570Z",
+      "checkedAt": "2026-06-17T08:14:04.826Z",
       "error": null
     },
     {
@@ -1763,7 +1763,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://live.ntdtv.com/mllive860/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:37.060Z",
+      "checkedAt": "2026-06-17T08:14:04.888Z",
       "error": null
     },
     {
@@ -1775,7 +1775,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://live.ntdtv.com/cwlive220/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:37.964Z",
+      "checkedAt": "2026-06-17T08:14:05.395Z",
       "error": null
     },
     {
@@ -1787,7 +1787,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://live.ntdtv.com/cnlive900/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:37.992Z",
+      "checkedAt": "2026-06-17T08:14:05.402Z",
       "error": null
     },
     {
@@ -1799,7 +1799,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://live.ntdtv.com/uwlive990/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:38.024Z",
+      "checkedAt": "2026-06-17T08:14:05.477Z",
       "error": null
     },
     {
@@ -1811,7 +1811,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3",
-      "checkedAt": "2026-06-17T03:46:38.201Z",
+      "checkedAt": "2026-06-17T08:14:05.534Z",
       "error": null
     },
     {
@@ -1823,19 +1823,19 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "https://live3.tdm.com.mo/ch3/ch3.live/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:38.552Z",
+      "checkedAt": "2026-06-17T08:14:05.561Z",
       "error": "timeout"
     },
     {
       "channelName": "Peace TV Chinese",
       "groupTitle": "Religious",
-      "httpStatus": 200,
-      "published": true,
+      "httpStatus": 404,
+      "published": false,
       "resolution": 1080,
       "sourceId": "iptv-org-zho",
-      "status": "ok",
+      "status": "http-error",
       "url": "https://dzkyvlfyge.erbvr.com/PeaceTvChinese/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:38.653Z",
+      "checkedAt": "2026-06-17T08:14:05.562Z",
       "error": null
     },
     {
@@ -1847,7 +1847,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://video10.qtv.com.cn/drm/qtv1at/manifest.m3u8",
-      "checkedAt": "2026-06-17T03:46:38.891Z",
+      "checkedAt": "2026-06-17T08:14:05.647Z",
       "error": null
     },
     {
@@ -1859,7 +1859,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://video10.qtv.com.cn/drm/qtv2at/manifest.m3u8",
-      "checkedAt": "2026-06-17T03:46:39.171Z",
+      "checkedAt": "2026-06-17T08:14:05.695Z",
       "error": null
     },
     {
@@ -1871,7 +1871,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8",
-      "checkedAt": "2026-06-17T03:46:39.248Z",
+      "checkedAt": "2026-06-17T08:14:05.722Z",
       "error": null
     },
     {
@@ -1883,7 +1883,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://video10.qtv.com.cn/drm/qtv4at/manifest.m3u8",
-      "checkedAt": "2026-06-17T03:46:39.698Z",
+      "checkedAt": "2026-06-17T08:14:06.219Z",
       "error": null
     },
     {
@@ -1895,7 +1895,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://video10.qtv.com.cn/drm/qtv5at/manifest.m3u8",
-      "checkedAt": "2026-06-17T03:46:39.758Z",
+      "checkedAt": "2026-06-17T08:14:06.296Z",
       "error": null
     },
     {
@@ -1907,7 +1907,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://video10.qtv.com.cn/drm/qtv6at/manifest.m3u8",
-      "checkedAt": "2026-06-17T03:46:39.954Z",
+      "checkedAt": "2026-06-17T08:14:08.258Z",
       "error": null
     },
     {
@@ -1919,7 +1919,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8",
-      "checkedAt": "2026-06-17T03:46:40.038Z",
+      "checkedAt": "2026-06-17T08:14:08.844Z",
       "error": null
     },
     {
@@ -1931,7 +1931,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8",
-      "checkedAt": "2026-06-17T03:46:40.171Z",
+      "checkedAt": "2026-06-17T08:14:09.976Z",
       "error": null
     },
     {
@@ -1943,7 +1943,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8",
-      "checkedAt": "2026-06-17T03:46:40.251Z",
+      "checkedAt": "2026-06-17T08:14:10.088Z",
       "error": null
     },
     {
@@ -1955,7 +1955,7 @@
       "sourceId": "iptv-org-zho",
       "status": "network-error",
       "url": "http://seb.sason.top/sc/sllive_fhd.m3u8",
-      "checkedAt": "2026-06-17T03:46:40.580Z",
+      "checkedAt": "2026-06-17T08:14:10.530Z",
       "error": "fetch failed"
     },
     {
@@ -1967,7 +1967,7 @@
       "sourceId": "iptv-org-cn",
       "status": "network-error",
       "url": "http://223.166.234.114:7777/tsfile/live/1033_1.m3u8",
-      "checkedAt": "2026-06-17T03:46:40.591Z",
+      "checkedAt": "2026-06-17T08:14:10.620Z",
       "error": "fetch failed"
     },
     {
@@ -1979,7 +1979,7 @@
       "sourceId": "iptv-org-cn",
       "status": "http-error",
       "url": "https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8",
-      "checkedAt": "2026-06-17T03:46:40.617Z",
+      "checkedAt": "2026-06-17T08:14:10.767Z",
       "error": null
     },
     {
@@ -1991,7 +1991,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598",
-      "checkedAt": "2026-06-17T03:46:40.711Z",
+      "checkedAt": "2026-06-17T08:14:10.819Z",
       "error": null
     },
     {
@@ -2001,10 +2001,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://61.173.144.157:9901/tsfile/live/1001_1.m3u8?authid=0&key=txiptv&playlive=1",
-      "checkedAt": "2026-06-17T03:46:40.791Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:14:10.835Z",
+      "error": "timeout"
     },
     {
       "channelName": "STV News and General",
@@ -2013,10 +2013,10 @@
       "published": false,
       "resolution": null,
       "sourceId": "iptv-org-cn",
-      "status": "network-error",
+      "status": "timeout",
       "url": "http://61.173.144.157:9901/tsfile/live/1000_1.m3u8?authid=0&key=txiptv&playlive=1",
-      "checkedAt": "2026-06-17T03:46:40.888Z",
-      "error": "fetch failed"
+      "checkedAt": "2026-06-17T08:14:11.132Z",
+      "error": "timeout"
     },
     {
       "channelName": "Taiwan Indigenous TV (原住民電視)",
@@ -2027,7 +2027,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "http://streamipcf.akamaized.net/live/_definst_/live_720/key_b1500.m3u8",
-      "checkedAt": "2026-06-17T03:46:41.183Z",
+      "checkedAt": "2026-06-17T08:14:11.254Z",
       "error": null
     },
     {
@@ -2039,7 +2039,7 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "https://live3.tdm.com.mo/ch6/hd_ch6.live/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:41.239Z",
+      "checkedAt": "2026-06-17T08:14:11.267Z",
       "error": "timeout"
     },
     {
@@ -2051,7 +2051,7 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "http://61.244.22.4/ch1/ch1.live/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:41.311Z",
+      "checkedAt": "2026-06-17T08:14:11.986Z",
       "error": "timeout"
     },
     {
@@ -2063,7 +2063,7 @@
       "sourceId": "iptv-org-zho",
       "status": "timeout",
       "url": "https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:41.457Z",
+      "checkedAt": "2026-06-17T08:14:12.146Z",
       "error": "timeout"
     },
     {
@@ -2075,7 +2075,7 @@
       "sourceId": "iptv-org-zho",
       "status": "http-error",
       "url": "https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(abe4ead2-1a88-4330-9f41-382fcf94bba2)/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:43.675Z",
+      "checkedAt": "2026-06-17T08:14:12.251Z",
       "error": null
     },
     {
@@ -2087,7 +2087,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/43ea5771aa44421591f9dfd2b71f1b9b/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:44.565Z",
+      "checkedAt": "2026-06-17T08:14:12.371Z",
       "error": null
     },
     {
@@ -2099,7 +2099,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:45.051Z",
+      "checkedAt": "2026-06-17T08:14:12.455Z",
       "error": null
     },
     {
@@ -2111,7 +2111,7 @@
       "sourceId": "free-tv-china",
       "status": "http-error",
       "url": "https://brics.bonus-tv.ru/cdn/brics/chinese/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:45.803Z",
+      "checkedAt": "2026-06-17T08:14:13.561Z",
       "error": null
     },
     {
@@ -2123,7 +2123,7 @@
       "sourceId": "iptv-org-zho",
       "status": "ok",
       "url": "http://38.64.72.148/hls/modn/list/4005/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:45.900Z",
+      "checkedAt": "2026-06-17T08:14:13.878Z",
       "error": null
     },
     {
@@ -2135,7 +2135,7 @@
       "sourceId": "iptv-org-zho",
       "status": "network-error",
       "url": "http://seb.sason.top/sc/tvbsxw_fhd.m3u8",
-      "checkedAt": "2026-06-17T03:46:46.503Z",
+      "checkedAt": "2026-06-17T08:14:14.142Z",
       "error": "fetch failed"
     },
     {
@@ -2147,7 +2147,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8",
-      "checkedAt": "2026-06-17T03:46:46.517Z",
+      "checkedAt": "2026-06-17T08:14:14.234Z",
       "error": null
     },
     {
@@ -2159,7 +2159,7 @@
       "sourceId": "iptv-org-cn",
       "status": "timeout",
       "url": "https://klmysjtzb.rcsxzx.com/hls/klmy2.m3u8",
-      "checkedAt": "2026-06-17T03:46:46.552Z",
+      "checkedAt": "2026-06-17T08:14:14.279Z",
       "error": "timeout"
     },
     {
@@ -2171,7 +2171,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://110.153.180.106:55555/out_3/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:47.262Z",
+      "checkedAt": "2026-06-17T08:14:14.393Z",
       "error": null
     },
     {
@@ -2183,7 +2183,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://110.153.180.106:55555/out_2/index.m3u8",
-      "checkedAt": "2026-06-17T03:46:47.710Z",
+      "checkedAt": "2026-06-17T08:14:15.256Z",
       "error": null
     },
     {
@@ -2195,7 +2195,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1",
-      "checkedAt": "2026-06-17T03:46:47.970Z",
+      "checkedAt": "2026-06-17T08:14:16.105Z",
       "error": null
     },
     {
@@ -2207,7 +2207,7 @@
       "sourceId": "iptv-org-cn",
       "status": "ok",
       "url": "https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8",
-      "checkedAt": "2026-06-17T03:46:48.321Z",
+      "checkedAt": "2026-06-17T08:14:16.577Z",
       "error": null
     }
   ]
