@@ -1,0 +1,42 @@
+name: Refresh Curated Sources
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Generate curated playlist with stream checks
+        run: npm run generate:check-streams
+
+      - name: Validate generated output
+        run: npm run validate
+
+      - name: Commit refreshed output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/index.json public/version.json public/health.json public/playlists/stable-cn.m3u
+          if git diff --cached --quiet; then
+            echo "No source changes to commit."
+          else
+            git commit -m "chore: refresh curated IPTV sources"
+            git push
+          fi

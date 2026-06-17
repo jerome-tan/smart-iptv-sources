@@ -1,0 +1,18 @@
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+
+/index.json
+  Cache-Control: public, max-age=300
+
+/version.json
+  Cache-Control: public, max-age=300
+
+/health.json
+  Cache-Control: public, max-age=300
+
+/playlists/*
+  Cache-Control: public, max-age=300
+
+/epg/*
+  Cache-Control: public, max-age=3600

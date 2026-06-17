@@ -71,6 +71,25 @@ npm run validate
 `npm run validate` checks the static output shape, playlist files, health file
 references, upstream source definitions, and curation rule references.
 
+## GitHub Actions
+
+- `Validate Sources` runs tests, generates static output without stream probes,
+  and validates the repository on pushes and pull requests.
+- `Refresh Curated Sources` runs every 12 hours or manually from
+  `workflow_dispatch`. It runs `npm run generate:check-streams`, validates the
+  output, and commits refreshed files under `public/` when they change.
+
+## Cloudflare Pages
+
+Create a Pages project from this repository with:
+
+- Build command: `npm run validate`
+- Build output directory: `public`
+
+The generated `public/_headers` file enables cross-origin reads and short cache
+windows for playlist metadata. The scheduled GitHub Action refreshes `public/`
+and pushes a commit, which can trigger a new Cloudflare Pages deployment.
+
 ## Notes
 
 This project does not host or retransmit video content. Playlists only reference
