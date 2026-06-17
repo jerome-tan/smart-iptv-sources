@@ -20,7 +20,30 @@
       "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_china.m3u8",
       "region": "CN",
       "enabled": true
+    },
+    {
+      "id": "iptv-org-hk",
+      "name": "iptv-org Hong Kong",
+      "url": "https://iptv-org.github.io/iptv/countries/hk.m3u",
+      "region": "HK",
+      "priority": 10,
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-uk",
+      "name": "iptv-org United Kingdom",
+      "url": "https://iptv-org.github.io/iptv/countries/uk.m3u",
+      "region": "UK",
+      "priority": 10,
+      "enabled": true
+    },
+    {
+      "id": "iptv-org-us",
+      "name": "iptv-org United States",
+      "url": "https://iptv-org.github.io/iptv/countries/us.m3u",
+      "region": "US",
+      "priority": 10,
+      "enabled": true
     }
   ]
 }
-

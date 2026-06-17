@@ -10,8 +10,113 @@
       "upstreamSourceIds": [
         "iptv-org-cn",
         "iptv-org-zho",
-        "free-tv-china"
+        "free-tv-china",
+        "iptv-org-hk",
+        "iptv-org-uk",
+        "iptv-org-us"
       ],
+      "channelGroups": {
+        "defaultGroup": "其他精选",
+        "groupOrder": [
+          "央视频道",
+          "地方卫视",
+          "香港",
+          "英国",
+          "美国",
+          "其他精选"
+        ],
+        "restrictedSourceRegions": [
+          "HK",
+          "UK",
+          "US"
+        ],
+        "rules": [
+          {
+            "name": "央视频道",
+            "sort": "cctv",
+            "patterns": [
+              "^CCTV",
+              "^CGTN"
+            ]
+          },
+          {
+            "name": "地方卫视",
+            "patterns": [
+              "卫视$",
+              "^BRTV 北京卫视$",
+              "^Beijing Satellite TV$",
+              "^Beijing TV$",
+              "^Hunan TV$",
+              "^Zhejiang TV",
+              "^Hebei TV$",
+              "^Anhui TV$",
+              "^Jiangsu TV$",
+              "^Dragon TV$",
+              "^Shenzhen TV$",
+              "^Guangdong TV$",
+              "^Sichuan TV$",
+              "^Tianjin TV$",
+              "^Chongqing TV$",
+              "^Liaoning TV$",
+              "^Shandong TV$",
+              "^Henan TV$",
+              "^Hubei TV$",
+              "^Jiangxi TV$"
+            ]
+          },
+          {
+            "name": "香港",
+            "patterns": [
+              "^RTHK",
+              "^TVB",
+              "TVBS",
+              "ViuTV",
+              "^HOY",
+              "^Phoenix (Chinese|Hong Kong|InfoNews|Movies)",
+              "Hong Kong International Business Channel"
+            ]
+          },
+          {
+            "name": "英国",
+            "sourceRegions": [
+              "UK"
+            ],
+            "patterns": [
+              "^BBC One",
+              "^BBC Two",
+              "^BBC News$",
+              "^ITV",
+              "^Channel 4$",
+              "^Channel 5$",
+              "^Sky News$",
+              "^GB News$",
+              "^TalkTV$"
+            ]
+          },
+          {
+            "name": "美国",
+            "sourceRegions": [
+              "US"
+            ],
+            "patterns": [
+              "^ABC News$",
+              "^CBS News$",
+              "^CBS News 24/7$",
+              "^NBC News NOW$",
+              "^PBS$",
+              "^PBS Kids$",
+              "^Bloomberg TV$",
+              "^Bloomberg Television$",
+              "^Bloomberg TV US$",
+              "^Fox Weather$",
+              "^Scripps News$",
+              "^CNBC$",
+              "^Cheddar News$",
+              "^Newsmax$"
+            ]
+          }
+        ]
+      },
       "includeNot24x7": false,
       "keepUnknownResolution": true,
       "maxSourcesPerChannel": 3,

@@ -79,6 +79,7 @@ export function curateEntries(entries, overrides = {}, options = {}) {
     duplicateUrl: 0,
     invalidUrl: 0,
     lowResolution: 0,
+    notSelectedRegion: 0,
     not24x7: 0,
   }
   const seenUrls = new Set()
@@ -130,10 +131,19 @@ export function curateEntries(entries, overrides = {}, options = {}) {
     }
     seenUrls.add(urlKey)
 
+    const groupInfo = classifyChannel(displayName, entry, settings.channelGroups)
+    if (!groupInfo) {
+      rejected.notSelectedRegion += 1
+      continue
+    }
+
     const enriched = {
       ...entry,
       displayName,
+      displayGroup: groupInfo.name,
+      groupRank: groupInfo.rank,
       score: scoreEntry(entry, preferredUrls),
+      sortKey: groupInfo.sortKey,
     }
     const channelEntries = grouped.get(displayName) ?? []
     channelEntries.push(enriched)
@@ -160,7 +170,7 @@ export function formatM3u(entries) {
     const attributes = {
       ...entry.attributes,
       'tvg-name': entry.attributes['tvg-name'] ?? entry.displayName,
-      'group-title': entry.groupTitle || entry.attributes['group-title'] || '未分组',
+      'group-title': entry.displayGroup || entry.groupTitle || entry.attributes['group-title'] || '未分组',
       'x-smart-source': entry.sourceId,
     }
     if (entry.resolution != null) {
@@ -196,7 +206,7 @@ export function buildHealthReport({
     }
     return {
       channelName: entry.displayName,
-      groupTitle: entry.groupTitle || '未分组',
+      groupTitle: entry.displayGroup || entry.groupTitle || '未分组',
       httpStatus: result.httpStatus ?? null,
       published: publishedUrls.has(entry.url),
       resolution: entry.resolution,
@@ -412,15 +422,122 @@ function compareEntries(left, right) {
 }
 
 function compareOutputEntries(left, right) {
-  const groupCompare = outputGroupRank(left.groupTitle) - outputGroupRank(right.groupTitle)
+  const groupCompare = (left.groupRank ?? outputGroupRank(left.groupTitle)) - (right.groupRank ?? outputGroupRank(right.groupTitle))
   if (groupCompare !== 0) {
     return groupCompare
+  }
+  const sortCompare = compareSortKeys(left.sortKey, right.sortKey)
+  if (sortCompare !== 0) {
+    return sortCompare
   }
   const nameCompare = left.displayName.localeCompare(right.displayName, 'zh-Hans-CN')
   if (nameCompare !== 0) {
     return nameCompare
   }
   return compareEntries(left, right)
+}
+
+function classifyChannel(displayName, entry, channelGroups) {
+  if (!channelGroups) {
+    return {
+      name: entry.groupTitle || '未分组',
+      rank: outputGroupRank(entry.groupTitle),
+      sortKey: null,
+    }
+  }
+
+  const matchedRule = (channelGroups.rules ?? []).find((rule) => matchesChannelRule(rule, displayName, entry))
+  if (matchedRule) {
+    return {
+      name: matchedRule.name,
+      rank: groupRank(matchedRule.name, channelGroups),
+      sortKey: sortKeyForRule(matchedRule, displayName),
+    }
+  }
+
+  if ((channelGroups.restrictedSourceRegions ?? []).includes(entry.sourceRegion)) {
+    return null
+  }
+
+  const fallbackGroup = channelGroups.defaultGroup ?? entry.groupTitle ?? '未分组'
+  return {
+    name: fallbackGroup,
+    rank: groupRank(fallbackGroup, channelGroups),
+    sortKey: null,
+  }
+}
+
+function matchesChannelRule(rule, displayName, entry) {
+  if (rule.sourceRegions && !rule.sourceRegions.includes(entry.sourceRegion)) {
+    return false
+  }
+
+  const fields = [
+    displayName,
+    entry.name,
+    entry.attributes?.['tvg-name'],
+  ].filter(Boolean)
+  const haystack = fields.join(' ')
+
+  return (rule.patterns ?? []).some((pattern) => {
+    const regex = new RegExp(pattern, 'iu')
+    return fields.some((field) => regex.test(field)) || regex.test(haystack)
+  })
+}
+
+function groupRank(groupName, channelGroups) {
+  const rank = (channelGroups.groupOrder ?? []).indexOf(groupName)
+  return rank === -1 ? 100 : rank
+}
+
+function sortKeyForRule(rule, displayName) {
+  if (rule.sort === 'cctv') {
+    return cctvSortKey(displayName)
+  }
+  return null
+}
+
+function cctvSortKey(displayName) {
+  const cctvNumber = displayName.match(/^CCTV[-\s]*(\d+)/i)?.[1]
+  if (cctvNumber) {
+    const number = Number.parseInt(cctvNumber, 10)
+    if (/4K/i.test(displayName)) {
+      return [number, 0.1, displayName]
+    }
+    if (/America/i.test(displayName)) {
+      return [number, 0.2, displayName]
+    }
+    if (/Europe/i.test(displayName)) {
+      return [number, 0.3, displayName]
+    }
+    return [number, 0, displayName]
+  }
+
+  if (/^CGTN/i.test(displayName)) {
+    return [100, 0, displayName]
+  }
+
+  return [999, 0, displayName]
+}
+
+function compareSortKeys(left, right) {
+  if (!left && !right) return 0
+  if (!left) return 1
+  if (!right) return -1
+
+  const length = Math.max(left.length, right.length)
+  for (let index = 0; index < length; index += 1) {
+    const leftValue = left[index]
+    const rightValue = right[index]
+    if (leftValue === rightValue) {
+      continue
+    }
+    if (typeof leftValue === 'number' && typeof rightValue === 'number') {
+      return leftValue - rightValue
+    }
+    return String(leftValue ?? '').localeCompare(String(rightValue ?? ''), 'zh-Hans-CN')
+  }
+  return 0
 }
 
 function outputGroupRank(groupTitle) {

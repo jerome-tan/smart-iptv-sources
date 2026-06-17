@@ -101,6 +101,104 @@ https://example.test/jx-4k.m3u8
   assert.equal(result.rejected.channelLimit, 1)
 })
 
+test('curateEntries applies curated regional groups and ordering', () => {
+  const entries = [
+    ...parseM3u(`#EXTM3U
+#EXTINF:-1 group-title="General",CCTV-13 (1080p)
+https://example.test/cctv13.m3u8
+#EXTINF:-1 group-title="General",CCTV-1 (1080p)
+https://example.test/cctv1.m3u8
+#EXTINF:-1 group-title="General",CCTV-4K (1080p)
+https://example.test/cctv4k.m3u8
+#EXTINF:-1 group-title="General",CGTN (1080p)
+https://example.test/cgtn.m3u8
+#EXTINF:-1 group-title="General",BRTV 北京卫视 (1080p)
+https://example.test/beijing.m3u8
+#EXTINF:-1 group-title="General",Hunan TV (1080p)
+https://example.test/hunan.m3u8
+`, { ...source, id: 'cn', region: 'CN' }),
+    ...parseM3u(`#EXTM3U
+#EXTINF:-1 group-title="General",RTHK TV 31 (港台電視31) [Geo-blocked] (1080p)
+https://example.test/rthk31.m3u8
+#EXTINF:-1 group-title="General",Random Hong Kong Shopping (1080p)
+https://example.test/hk-shopping.m3u8
+`, { ...source, id: 'hk', region: 'HK' }),
+    ...parseM3u(`#EXTM3U
+#EXTINF:-1 group-title="General",TVBS Asia (1080p)
+https://example.test/tvbs.m3u8
+`, { ...source, id: 'hk', region: 'HK' }),
+    ...parseM3u(`#EXTM3U
+#EXTINF:-1 group-title="News",BBC News (1080p)
+https://example.test/bbc-news.m3u8
+#EXTINF:-1 group-title="General",Minor UK Local (1080p)
+https://example.test/uk-local.m3u8
+`, { ...source, id: 'uk', region: 'UK' }),
+    ...parseM3u(`#EXTM3U
+#EXTINF:-1 group-title="News",ABC News (1080p)
+https://example.test/abc-news.m3u8
+#EXTINF:-1 tvg-id="CCTV.us@SD" group-title="General",Charlotte County CC-TV (Charlotte County FA) (720p)
+https://example.test/charlotte.m3u8
+#EXTINF:-1 group-title="General",Random US Local (1080p)
+https://example.test/us-local.m3u8
+`, { ...source, id: 'us', region: 'US' }),
+  ]
+
+  const result = curateEntries(entries, {
+    aliases: {
+      'BRTV 北京卫视': '北京卫视',
+      'Hunan TV': '湖南卫视',
+    },
+  }, {
+    channelGroups: {
+      defaultGroup: '其他精选',
+      groupOrder: ['央视频道', '地方卫视', '香港', '英国', '美国', '其他精选'],
+      restrictedSourceRegions: ['HK', 'UK', 'US'],
+      rules: [
+        {
+          name: '央视频道',
+          sort: 'cctv',
+          patterns: ['^CCTV', '^CGTN'],
+        },
+        {
+          name: '地方卫视',
+          patterns: ['卫视$'],
+        },
+        {
+          name: '香港',
+          patterns: ['^RTHK', '^TVB', 'ViuTV', '^HOY'],
+        },
+        {
+          name: '英国',
+          sourceRegions: ['UK'],
+          patterns: ['^BBC News$', '^BBC One$', '^BBC Two$', '^ITV', '^Channel 4$', '^Channel 5$', '^Sky News$'],
+        },
+        {
+          name: '美国',
+          sourceRegions: ['US'],
+          patterns: ['^ABC News$', '^CBS News$', '^NBC News NOW$', '^PBS', '^Bloomberg', '^Fox Weather$'],
+        },
+      ],
+    },
+  })
+
+  assert.deepEqual(
+    result.entries.map((entry) => [entry.displayGroup, entry.displayName]),
+    [
+      ['央视频道', 'CCTV-1'],
+      ['央视频道', 'CCTV-4K'],
+      ['央视频道', 'CCTV-13'],
+      ['央视频道', 'CGTN'],
+      ['地方卫视', '北京卫视'],
+      ['地方卫视', '湖南卫视'],
+      ['香港', 'RTHK TV 31 (港台電視31) [Geo-blocked]'],
+      ['香港', 'TVBS Asia'],
+      ['英国', 'BBC News'],
+      ['美国', 'ABC News'],
+    ],
+  )
+  assert.equal(result.rejected.notSelectedRegion, 4)
+})
+
 test('formatM3u writes curated entries with stable attributes and source metadata', () => {
   const entries = curateEntries(parseM3u(`#EXTM3U
 #EXTINF:-1 tvg-id="cctv1.cn" tvg-name="CCTV-1" group-title="央视",CCTV-1 (1080p)
