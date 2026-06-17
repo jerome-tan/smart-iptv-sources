@@ -16,6 +16,7 @@ function assert(condition, message) {
 
 const index = readJson('public/index.json')
 const version = readJson('public/version.json')
+const channelMetadata = readJson('sources/channel-metadata.json')
 const upstreams = readJson('sources/upstreams.json')
 const rules = readJson('sources/curation-rules.json')
 
@@ -24,6 +25,11 @@ assert(Array.isArray(index.playlists), 'public/index.json playlists must be an a
 assert(index.playlists.length > 0, 'public/index.json must contain at least one playlist')
 assert(version.schemaVersion === 1, 'public/version.json schemaVersion must be 1')
 assert(Array.isArray(upstreams.sources), 'sources/upstreams.json sources must be an array')
+assert(channelMetadata.schemaVersion === 1, 'sources/channel-metadata.json schemaVersion must be 1')
+assert(
+  channelMetadata.channels && typeof channelMetadata.channels === 'object' && !Array.isArray(channelMetadata.channels),
+  'sources/channel-metadata.json channels must be an object'
+)
 assert(rules.schemaVersion === 1, 'sources/curation-rules.json schemaVersion must be 1')
 assert(Array.isArray(rules.playlists), 'sources/curation-rules.json playlists must be an array')
 
@@ -63,6 +69,21 @@ for (const source of upstreams.sources) {
   assert(source.name, `upstream source ${source.id} name is required`)
   assert(source.url, `upstream source ${source.id} url is required`)
   assert(/^https?:\/\//.test(source.url), `upstream source ${source.id} must use http(s)`)
+}
+
+for (const [channelName, metadata] of Object.entries(channelMetadata.channels)) {
+  assert(channelName.trim(), 'metadata channel name must not be blank')
+  assert(metadata && typeof metadata === 'object' && !Array.isArray(metadata), `metadata for ${channelName} must be an object`)
+  assert(
+    typeof metadata.description === 'string' && metadata.description.trim().length >= 12,
+    `metadata ${channelName} description must be a useful string`
+  )
+  if (metadata.tags != null) {
+    assert(Array.isArray(metadata.tags), `metadata ${channelName} tags must be an array`)
+    for (const tag of metadata.tags) {
+      assert(typeof tag === 'string' && tag.trim(), `metadata ${channelName} tags must be non-empty strings`)
+    }
+  }
 }
 
 const upstreamIds = new Set(upstreams.sources.map((source) => source.id))

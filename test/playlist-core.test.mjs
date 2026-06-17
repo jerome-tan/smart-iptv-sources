@@ -203,12 +203,40 @@ test('formatM3u writes curated entries with stable attributes and source metadat
   const entries = curateEntries(parseM3u(`#EXTM3U
 #EXTINF:-1 tvg-id="cctv1.cn" tvg-name="CCTV-1" group-title="央视",CCTV-1 (1080p)
 https://example.test/cctv1.m3u8
-`, source), {}, {}).entries
+`, source), {}, {
+    channelMetadata: {
+      channels: {
+        'CCTV-1': {
+          description: '央视综合频道，覆盖新闻、专题、文艺和生活服务节目。',
+          tags: ['央视', '综合', '新闻'],
+        },
+      },
+    },
+  }).entries
 
   assert.equal(formatM3u(entries), `#EXTM3U
-#EXTINF:-1 tvg-id="cctv1.cn" tvg-name="CCTV-1" group-title="央视" x-smart-source="sample-cn" x-smart-resolution="1080",CCTV-1
+#EXTINF:-1 tvg-id="cctv1.cn" tvg-name="CCTV-1" group-title="央视" x-smart-source="sample-cn" x-smart-description="央视综合频道，覆盖新闻、专题、文艺和生活服务节目。" x-smart-tags="央视,综合,新闻" x-smart-resolution="1080",CCTV-1
 https://example.test/cctv1.m3u8
 `)
+})
+
+test('curateEntries matches channel metadata with normalized display names', () => {
+  const entries = curateEntries(parseM3u(`#EXTM3U
+#EXTINF:-1 group-title="央视",CCTV1 (1080p)
+https://example.test/cctv1.m3u8
+`, source), {}, {
+    channelMetadata: {
+      channels: {
+        'CCTV-1': {
+          description: '央视综合频道，覆盖新闻、专题、文艺和生活服务节目。',
+          tags: ['央视', '综合'],
+        },
+      },
+    },
+  }).entries
+
+  assert.equal(entries[0].smartDescription, '央视综合频道，覆盖新闻、专题、文艺和生活服务节目。')
+  assert.deepEqual(entries[0].smartTags, ['央视', '综合'])
 })
 
 test('buildHealthReport summarizes upstream fetches and stream checks', () => {

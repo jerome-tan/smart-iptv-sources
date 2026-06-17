@@ -136,6 +136,7 @@ export function curateEntries(entries, overrides = {}, options = {}) {
       rejected.notSelectedRegion += 1
       continue
     }
+    const metadata = channelMetadataFor(displayName, entry, settings.channelMetadata)
 
     const enriched = {
       ...entry,
@@ -144,6 +145,8 @@ export function curateEntries(entries, overrides = {}, options = {}) {
       groupRank: groupInfo.rank,
       score: scoreEntry(entry, preferredUrls),
       sortKey: groupInfo.sortKey,
+      smartDescription: metadata?.description,
+      smartTags: metadata?.tags,
     }
     const channelEntries = grouped.get(displayName) ?? []
     channelEntries.push(enriched)
@@ -172,6 +175,12 @@ export function formatM3u(entries) {
       'tvg-name': entry.attributes['tvg-name'] ?? entry.displayName,
       'group-title': entry.displayGroup || entry.groupTitle || entry.attributes['group-title'] || '未分组',
       'x-smart-source': entry.sourceId,
+    }
+    if (entry.smartDescription) {
+      attributes['x-smart-description'] = entry.smartDescription
+    }
+    if (Array.isArray(entry.smartTags) && entry.smartTags.length > 0) {
+      attributes['x-smart-tags'] = entry.smartTags.join(',')
     }
     if (entry.resolution != null) {
       attributes['x-smart-resolution'] = String(entry.resolution)
@@ -465,6 +474,65 @@ function classifyChannel(displayName, entry, channelGroups) {
     rank: groupRank(fallbackGroup, channelGroups),
     sortKey: null,
   }
+}
+
+function channelMetadataFor(displayName, entry, channelMetadata) {
+  const channels = channelMetadata?.channels
+  if (!channels || typeof channels !== 'object') {
+    return null
+  }
+
+  const candidates = [
+    displayName,
+    entry.normalizedName,
+    entry.name,
+    entry.attributes?.['tvg-name'],
+  ].filter(Boolean)
+  for (const candidate of candidates) {
+    const metadata = channels[candidate] ?? channels[metadataKey(candidate)]
+    if (metadata) {
+      return normalizeChannelMetadata(metadata)
+    }
+  }
+
+  const normalizedChannels = new Map()
+  for (const [key, metadata] of Object.entries(channels)) {
+    normalizedChannels.set(metadataKey(key), metadata)
+  }
+  for (const candidate of candidates) {
+    const metadata = normalizedChannels.get(metadataKey(candidate))
+    if (metadata) {
+      return normalizeChannelMetadata(metadata)
+    }
+  }
+  return null
+}
+
+function normalizeChannelMetadata(metadata) {
+  if (!metadata || typeof metadata !== 'object') {
+    return null
+  }
+  const description = typeof metadata.description === 'string'
+    ? metadata.description.trim()
+    : ''
+  const tags = Array.isArray(metadata.tags)
+    ? metadata.tags.map((tag) => String(tag).trim()).filter(Boolean)
+    : []
+  if (!description && tags.length === 0) {
+    return null
+  }
+  return {
+    description: description || undefined,
+    tags,
+  }
+}
+
+function metadataKey(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/＋/g, '+')
+    .replace(/plus/g, '+')
+    .replace(/[^a-z0-9\u4e00-\u9fff+]/g, '')
 }
 
 function matchesChannelRule(rule, displayName, entry) {

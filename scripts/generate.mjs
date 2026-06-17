@@ -20,6 +20,7 @@ const streamTimeoutMs = Number.parseInt(process.env.STREAM_TIMEOUT_MS ?? '8000',
 
 const upstreams = readJson('sources/upstreams.json')
 const overrides = readJson('sources/channel-overrides.json')
+const channelMetadata = readJson('sources/channel-metadata.json')
 const rules = readJson('sources/curation-rules.json')
 const enabledSources = upstreams.sources.filter((source) => source.enabled !== false)
 const allEntries = []
@@ -69,7 +70,10 @@ if (!stableCn) {
 
 const sourceIds = new Set(stableCn.upstreamSourceIds)
 const candidateEntries = allEntries.filter((entry) => sourceIds.has(entry.sourceId))
-const curated = curateEntries(candidateEntries, overrides, stableCn)
+const curated = curateEntries(candidateEntries, overrides, {
+  ...stableCn,
+  channelMetadata,
+})
 const limitedEntries = curated.entries.slice(0, stableCn.maxStreams ?? curated.entries.length)
 if (limitedEntries.length === 0) {
   const upstreamSummary = upstreamResults
