@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { gunzipSync } from 'node:zlib'
 
 const root = process.cwd()
 
@@ -17,6 +18,7 @@ function assert(condition, message) {
 const index = readJson('public/index.json')
 const version = readJson('public/version.json')
 const channelMetadata = readJson('sources/channel-metadata.json')
+const epgSources = readJson('sources/epg-sources.json')
 const upstreams = readJson('sources/upstreams.json')
 const rules = readJson('sources/curation-rules.json')
 
@@ -25,6 +27,8 @@ assert(Array.isArray(index.playlists), 'public/index.json playlists must be an a
 assert(index.playlists.length > 0, 'public/index.json must contain at least one playlist')
 assert(version.schemaVersion === 1, 'public/version.json schemaVersion must be 1')
 assert(Array.isArray(upstreams.sources), 'sources/upstreams.json sources must be an array')
+assert(epgSources.schemaVersion === 1, 'sources/epg-sources.json schemaVersion must be 1')
+assert(Array.isArray(epgSources.sources), 'sources/epg-sources.json sources must be an array')
 assert(channelMetadata.schemaVersion === 1, 'sources/channel-metadata.json schemaVersion must be 1')
 assert(
   channelMetadata.channels && typeof channelMetadata.channels === 'object' && !Array.isArray(channelMetadata.channels),
@@ -57,6 +61,15 @@ for (const playlist of index.playlists) {
     assert(Array.isArray(health.streams), `health streams must be an array: ${playlist.healthUrl}`)
     assert(health.streams.length > 0, `health streams must contain at least one item: ${playlist.healthUrl}`)
   }
+
+  if (playlist.epgUrl?.startsWith('/')) {
+    const epgPath = path.join(root, 'public', playlist.epgUrl)
+    assert(fs.existsSync(epgPath), `EPG file not found: ${playlist.epgUrl}`)
+    const content = gunzipSync(fs.readFileSync(epgPath)).toString('utf8')
+    assert(content.includes('<tv'), `EPG must be an XMLTV document: ${playlist.epgUrl}`)
+    assert(content.includes('<channel '), `EPG must contain channel elements: ${playlist.epgUrl}`)
+    assert(content.includes('<programme '), `EPG must contain programme elements: ${playlist.epgUrl}`)
+  }
 }
 
 for (const [playlistId, playlistVersion] of Object.entries(version.playlists ?? {})) {
@@ -69,6 +82,15 @@ for (const source of upstreams.sources) {
   assert(source.name, `upstream source ${source.id} name is required`)
   assert(source.url, `upstream source ${source.id} url is required`)
   assert(/^https?:\/\//.test(source.url), `upstream source ${source.id} must use http(s)`)
+}
+
+for (const source of epgSources.sources) {
+  assert(source.id, 'EPG source id is required')
+  assert(source.name, `EPG source ${source.id} name is required`)
+  if (source.enabled !== false) {
+    assert(source.url, `enabled EPG source ${source.id} url is required`)
+    assert(/^https?:\/\//.test(source.url), `EPG source ${source.id} must use http(s)`)
+  }
 }
 
 for (const [channelName, metadata] of Object.entries(channelMetadata.channels)) {

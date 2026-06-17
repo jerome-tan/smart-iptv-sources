@@ -1,11 +1,33 @@
 {
+  "schemaVersion": 1,
   "sources": [
     {
-      "id": "placeholder",
-      "name": "待配置节目单源",
-      "url": null,
-      "enabled": false
+      "id": "epg-pw-cn",
+      "name": "epg.pw China",
+      "url": "https://epg.pw/xmltv/epg_CN.xml.gz",
+      "region": "CN",
+      "enabled": true
+    },
+    {
+      "id": "epg-pw-hk",
+      "name": "epg.pw Hong Kong",
+      "url": "https://epg.pw/xmltv/epg_HK.xml.gz",
+      "region": "HK",
+      "enabled": true
+    },
+    {
+      "id": "epg-pw-gb",
+      "name": "epg.pw United Kingdom",
+      "url": "https://epg.pw/xmltv/epg_GB.xml.gz",
+      "region": "GB",
+      "enabled": true
+    },
+    {
+      "id": "epg-pw-us",
+      "name": "epg.pw United States",
+      "url": "https://epg.pw/xmltv/epg_US.xml.gz",
+      "region": "US",
+      "enabled": true
     }
   ]
 }
-

@@ -1,6 +1,11 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { gzipSync } from 'node:zlib'
 
+import {
+  buildFilteredXmltv,
+  fetchXmltv,
+} from './lib/epg-core.mjs'
 import {
   buildHealthReport,
   curateEntries,
@@ -19,10 +24,12 @@ const upstreamTimeoutMs = Number.parseInt(process.env.UPSTREAM_TIMEOUT_MS ?? '15
 const streamTimeoutMs = Number.parseInt(process.env.STREAM_TIMEOUT_MS ?? '8000', 10)
 
 const upstreams = readJson('sources/upstreams.json')
+const epgSources = readJson('sources/epg-sources.json')
 const overrides = readJson('sources/channel-overrides.json')
 const channelMetadata = readJson('sources/channel-metadata.json')
 const rules = readJson('sources/curation-rules.json')
 const enabledSources = upstreams.sources.filter((source) => source.enabled !== false)
+const enabledEpgSources = epgSources.sources.filter((source) => source.enabled !== false && source.url)
 const allEntries = []
 const upstreamResults = []
 
@@ -103,6 +110,10 @@ if (publishedEntries.length === 0) {
   throw new Error('No publishable streams after health filtering.')
 }
 
+const epg = await generateEpg(publishedEntries, enabledEpgSources, {
+  generatedAt,
+  timeoutMs: upstreamTimeoutMs,
+})
 const health = buildHealthReport({
   generatedAt,
   streamChecks,
@@ -112,6 +123,7 @@ const health = buildHealthReport({
 })
 
 writeFile('public/playlists/stable-cn.m3u', formatM3u(publishedEntries))
+writeFile('public/epg/stable-cn.xml.gz', gzipSync(Buffer.from(epg.xml, 'utf8')))
 writeJson('public/health.json', health)
 writeJson('public/index.json', {
   schemaVersion: 1,
@@ -127,6 +139,8 @@ writeJson('public/index.json', {
       url: '/playlists/stable-cn.m3u',
       healthUrl: '/health.json',
       epgUrl: '/epg/stable-cn.xml.gz',
+      epgChannelCount: epg.channelCount,
+      epgProgramCount: epg.programCount,
     },
   ],
 })
@@ -138,6 +152,9 @@ writeJson('public/version.json', {
     'stable-cn': {
       streamCount: publishedEntries.length,
       channelCount: new Set(publishedEntries.map((entry) => entry.displayName)).size,
+      epgChannelCount: epg.channelCount,
+      epgProgramCount: epg.programCount,
+      epgUrl: '/epg/stable-cn.xml.gz',
       healthUrl: '/health.json',
       url: '/playlists/stable-cn.m3u',
     },
@@ -145,6 +162,7 @@ writeJson('public/version.json', {
 })
 
 console.log(`Generated stable-cn with ${publishedEntries.length} published streams from ${limitedEntries.length} candidates and ${enabledSources.length} upstreams.`)
+console.log(`Generated EPG with ${epg.channelCount} channels and ${epg.programCount} programs from ${epg.sourceCount} sources.`)
 console.log(`Stream checks: ${checkStreams ? 'enabled' : 'unchecked'}.`)
 
 function readJson(relativePath) {
@@ -177,4 +195,46 @@ async function probeStreams(entries, { timeoutMs }) {
   const workers = Array.from({ length: Math.min(concurrency, entries.length) }, worker)
   await Promise.all(workers)
   return checks
+}
+
+async function generateEpg(entries, sources, { generatedAt, timeoutMs }) {
+  if (sources.length === 0) {
+    throw new Error('sources/epg-sources.json must contain at least one enabled EPG source')
+  }
+
+  const documents = []
+  const errors = []
+  for (const source of sources) {
+    try {
+      const result = await fetchXmltv(source.url, { timeoutMs })
+      if (!result.ok) {
+        errors.push(`${source.id}: HTTP ${result.httpStatus}`)
+        continue
+      }
+      documents.push({
+        id: source.id,
+        xml: result.text,
+      })
+    } catch (error) {
+      errors.push(`${source.id}: ${error.name === 'AbortError' ? 'timeout' : error.message}`)
+    }
+  }
+
+  if (documents.length === 0) {
+    throw new Error(`No EPG sources could be loaded. ${errors.join('; ')}`)
+  }
+
+  const epg = buildFilteredXmltv({
+    documents,
+    entries,
+    generatedAt,
+  })
+  if (epg.programCount === 0) {
+    throw new Error(`Generated EPG contains no programs. Loaded sources: ${documents.map((doc) => doc.id).join(', ')}`)
+  }
+
+  return {
+    ...epg,
+    sourceCount: documents.length,
+  }
 }
