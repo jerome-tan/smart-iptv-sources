@@ -86,14 +86,26 @@ references, upstream source definitions, and curation rule references.
 
 ## Cloudflare Pages
 
-Create a Pages project from this repository with:
+This project is currently deployed at:
+
+- `https://smart-iptv-sources.pages.dev`
+
+It can be deployed manually with Wrangler:
+
+```bash
+npx --yes wrangler pages deploy public --project-name smart-iptv-sources --branch main
+```
+
+For Git-triggered deployments, connect this GitHub repository to Cloudflare
+Pages with:
 
 - Build command: `npm run validate`
 - Build output directory: `public`
 
 The generated `public/_headers` file enables cross-origin reads and short cache
 windows for playlist metadata. The scheduled GitHub Action refreshes `public/`
-and pushes a commit, which can trigger a new Cloudflare Pages deployment.
+and pushes a commit. After the repository is connected through Cloudflare's Git
+integration, those commits will trigger new Pages deployments automatically.
 
 ## Notes
 
