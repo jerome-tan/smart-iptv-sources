@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CCTV1.cn@HD" tvg-logo="https://i.imgur.com/TpA3cUl.png" group-title="央视频道" tvg-name="CCTV-1" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-1
 http://69.30.245.50/live/cctv1.m3u8
+#EXTINF:-1 tvg-id="CCTV1.cn@SD" tvg-logo="https://i.imgur.com/TpA3cUl.png" group-title="央视频道" tvg-name="CCTV-1" x-smart-source="iptv-org-cn" x-smart-resolution="720",CCTV-1
+http://74.91.26.218:82/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV3.cn@SD" tvg-logo="https://i.imgur.com/iFlkIuw.png" group-title="央视频道" tvg-name="CCTV-3" x-smart-source="iptv-org-cn" x-smart-resolution="720",CCTV-3
 http://74.91.26.218:82/live/cctv3hd.m3u8
 #EXTINF:-1 tvg-name="CCTV-4 中文国际（亚） Ⓨ" tvg-logo="https://i.imgur.com/ovUSVEQ.png" tvg-id="CCTV4Asia.cn" tvg-chno="4" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china",CCTV-4 中文国际（亚） Ⓨ
@@ -33,10 +35,14 @@ https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="香港" tvg-name="TVBS Asia" x-smart-source="iptv-org-zho" x-smart-resolution="1080",TVBS Asia
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 tvg-id="GBNews.uk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/GB_News_Logo.svg/960px-GB_News_Logo.svg.png" group-title="英国" tvg-name="GB News" x-smart-source="iptv-org-uk" x-smart-resolution="1080",GB News
+https://amg01076-lightningintern-gbnewsau-samsungau-et7fz.amagi.tv/playlist/amg01076-lightningintern-gbnewsau-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="TalkTV.uk@SD" tvg-logo="https://i.imgur.com/KxHWpQB.png" group-title="英国" tvg-name="TalkTV" x-smart-source="iptv-org-uk" x-smart-resolution="1080",TalkTV
 https://488f4ce4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfVGFsa19ITFM/playlist.m3u8
 #EXTINF:-1 tvg-id="CheddarNews.us@SD" tvg-logo="https://i.imgur.com/tuP9GW8.png" group-title="美国" tvg-name="Cheddar News" x-smart-source="iptv-org-us" x-smart-resolution="1080",Cheddar News
 https://wurlcheddar.global.transmit.live/hls/689ceac9301c34d3919676f3/v1/Cheddar/samsung_us/latest/main/hls/playlist.m3u8
+#EXTINF:-1 tvg-id="FoxWeather.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fox_Weather_logo.svg/960px-Fox_Weather_logo.svg.png" group-title="美国" tvg-name="Fox Weather" x-smart-source="iptv-org-us" x-smart-resolution="1080",Fox Weather
+https://foxweather-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="PBSKids.us@SD" tvg-logo="https://i.imgur.com/q4cUQKW.png" group-title="美国" tvg-name="PBS Kids" x-smart-source="iptv-org-us" x-smart-resolution="720",PBS Kids
 https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
 #EXTINF:-1 tvg-id="ScrippsNews.us@SD" tvg-logo="https://i.imgur.com/W0Jvi5o.png" group-title="美国" tvg-name="Scripps News" x-smart-source="iptv-org-us" x-smart-resolution="1080",Scripps News
@@ -47,6 +53,8 @@ http://cdn6.163189.xyz/163189/8tv
 https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
 #EXTINF:-1 tvg-id="ABNChina.us@SD" tvg-logo="https://i.imgur.com/zagVLQH.png" group-title="其他精选" tvg-name="ABN China" x-smart-source="iptv-org-cn" x-smart-resolution="720",ABN China
 https://mediaserver.abnvideos.com/streams/abnchina.m3u8
+#EXTINF:-1 tvg-id="AndoTV.cn@SD" tvg-logo="https://i.imgur.com/EpTsFVu.png" group-title="其他精选" tvg-name="Ando TV" x-smart-source="iptv-org-cn" x-smart-resolution="1080",Ando TV
+http://play.kankanlive.com/live/1711956137852982.m3u8
 #EXTINF:-1 tvg-id="AngelTV.in@Chinese" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="其他精选" tvg-name="Angel TV Chinese" x-smart-source="iptv-org-cn" x-smart-resolution="720",Angel TV Chinese
 https://janya-digimix.akamaized.net/vglive-sk-999451/chinese/ngrp:angelchinese_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BeautifulLifeTV.tw@SD" tvg-logo="https://i.imgur.com/hkwcBM9.png" group-title="其他精选" tvg-name="Beautiful Life TV" x-smart-source="iptv-org-zho",Beautiful Life TV
@@ -59,6 +67,8 @@ https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CG
 http://play1-qk.nmtv.cn/live/1735546697341033.m3u8
 #EXTINF:-1 tvg-id="ChinaTravel.cn@SD" tvg-logo="https://i.imgur.com/vSgY3CD.png" group-title="其他精选" tvg-name="China Travel" x-smart-source="iptv-org-zho" x-smart-resolution="1080",China Travel
 https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8
+#EXTINF:-1 tvg-id="CreaTVChannel15.us@SD" tvg-logo="https://i.imgur.com/Lwzio0H.png" group-title="其他精选" tvg-name="CreaTV Community Channel 15 (San Jose CA)" x-smart-source="iptv-org-zho" x-smart-resolution="720",CreaTV Community Channel 15 (San Jose CA)
+https://reflect-creatv.cablecast.tv/live-13/live/live.m3u8
 #EXTINF:-1 tvg-id="DAAITV.id@SD" tvg-logo="https://i.imgur.com/YC7JCHo.png" group-title="其他精选" tvg-name="DAAI TV" x-smart-source="iptv-org-zho",DAAI TV
 https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8
 #EXTINF:-1 tvg-id="DiscoveringChina.cn@SD" tvg-logo="https://i.imgur.com/wr2bLaA.png" group-title="其他精选" tvg-name="Discovering China" x-smart-source="iptv-org-zho" x-smart-resolution="1080",Discovering China
@@ -67,6 +77,8 @@ https://amg01314-amg01314c8-distrotv-us-10218.playouts.now.amagi.tv/playlist/amg
 https://online.godstands.tv:5443/WebRTCApp/streams/chineselive.m3u8
 #EXTINF:-1 tvg-id="Good2.tw@SD" tvg-logo="https://i.imgur.com/YxFRoft.png" group-title="其他精选" tvg-name="GOOD TV CH2 真理台" x-smart-source="iptv-org-zho" x-smart-resolution="720",GOOD TV CH2 真理台
 https://live.streamingfast.net/osmflivech2.m3u8
+#EXTINF:-1 tvg-id="GuangzhouTV.cn@SD" tvg-logo="https://i.imgur.com/ff3KQXp.png" group-title="其他精选" tvg-name="Guangzhou TV" x-smart-source="iptv-org-cn",Guangzhou TV
+https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
 #EXTINF:-1 tvg-id="HarbinComprehensiveNewsChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg" group-title="其他精选" tvg-name="Harbin Comprehensive News Channel" x-smart-source="iptv-org-cn",Harbin Comprehensive News Channel
 https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
 #EXTINF:-1 tvg-id="HarbinMovieChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg" group-title="其他精选" tvg-name="Harbin Movie Channel" x-smart-source="iptv-org-cn",Harbin Movie Channel
@@ -79,8 +91,6 @@ https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playl
 https://tglmp04.akamaized.net/out/v1/898b1cbac7c747e3b1f3deb460e9b67e/manifest.mpd
 #EXTINF:-1 tvg-id="NeiMonggolTV.cn@SD" tvg-logo="https://i.imgur.com/WeugJBE.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="其他精选" tvg-name="Nei Monggol TV" x-smart-source="iptv-org-cn" x-smart-resolution="960",Nei Monggol TV
 https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8
-#EXTINF:-1 tvg-id="NTDTV.us@East" tvg-logo="https://i.imgur.com/QtFM5Oo.png" group-title="其他精选" tvg-name="NTD TV" x-smart-source="iptv-org-zho" x-smart-resolution="1080",NTD TV
-https://ntd02.akamaized.net/HD-NY/index.m3u8
 #EXTINF:-1 tvg-id="NTDTVAsiaPacific.us@SD" tvg-logo="https://i.imgur.com/iyFXcDy.png" group-title="其他精选" tvg-name="NTD TV Asia-Pacific" x-smart-source="iptv-org-zho",NTD TV Asia-Pacific
 https://live.ntdtv.com/aplive200/playlist.m3u8
 #EXTINF:-1 tvg-id="NTDTVCanada.us@East" tvg-logo="https://i.imgur.com/iyFXcDy.png" group-title="其他精选" tvg-name="NTD TV Canada" x-smart-source="iptv-org-zho",NTD TV Canada
