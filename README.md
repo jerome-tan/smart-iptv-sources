@@ -61,6 +61,11 @@ which streams were published.
 The Android app should consume `public/index.json` first, then follow the
 playlist and EPG URLs listed there.
 
+Current production endpoint:
+
+- Index: `https://smart-iptv-sources.pages.dev/index.json`
+- Stable CN playlist: `https://smart-iptv-sources.pages.dev/playlists/stable-cn.m3u`
+
 ## Test And Validate
 
 ```bash
