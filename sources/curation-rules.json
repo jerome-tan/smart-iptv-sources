@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "playlists": [
+    {
+      "id": "stable-cn",
+      "name": "国内精选直播",
+      "description": "适合中国大陆网络环境优先使用的精选直播列表",
+      "region": "CN",
+      "quality": "recommended",
+      "upstreamSourceIds": [
+        "iptv-org-cn",
+        "iptv-org-zho",
+        "free-tv-china"
+      ],
+      "includeNot24x7": false,
+      "keepUnknownResolution": true,
+      "maxSourcesPerChannel": 3,
+      "maxStreams": 1200,
+      "minResolution": 720,
+      "publishOnlyHealthy": true
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Smart IPTV Sources",
-  "updatedAt": "2026-06-17T00:00:00Z",
+  "updatedAt": "2026-06-17T03:45:35.555Z",
   "playlists": [
     {
       "id": "stable-cn",
@@ -10,8 +10,8 @@
       "region": "CN",
       "quality": "recommended",
       "url": "/playlists/stable-cn.m3u",
+      "healthUrl": "/health.json",
       "epgUrl": "/epg/stable-cn.xml.gz"
     }
   ]
 }
-

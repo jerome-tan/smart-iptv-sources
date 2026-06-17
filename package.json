@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "generate:check-streams": "CHECK_STREAMS=true node scripts/generate.mjs --check-streams",
+    "test": "node --test",
     "validate": "node scripts/validate.mjs"
   },
   "engines": {
     "node": ">=20"
   }
 }
-

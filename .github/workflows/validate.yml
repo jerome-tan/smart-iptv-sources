@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Run unit tests
+        run: npm test
+
+      - name: Generate static output
+        run: npm run generate
+
       - name: Validate static source files
         run: npm run validate
-
