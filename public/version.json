@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "version": "202606230922",
-  "updatedAt": "2026-06-23T09:22:17.105Z",
+  "version": "202606232325",
+  "updatedAt": "2026-06-23T23:25:20.279Z",
   "playlists": {
     "stable-cn": {
-      "streamCount": 179,
-      "channelCount": 158,
-      "epgChannelCount": 84,
-      "epgProgramCount": 19785,
+      "streamCount": 170,
+      "channelCount": 151,
+      "epgChannelCount": 85,
+      "epgProgramCount": 20463,
       "epgUrl": "/epg/stable-cn.xml.gz",
       "healthUrl": "/health.json",
       "url": "/playlists/stable-cn.m3u"
