@@ -13,6 +13,7 @@
 """
 
 import argparse
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -74,7 +75,27 @@ def main():
         if run(["git", "push"], timeout=120).returncode != 0:
             print("  ⚠️  Git push 失败", flush=True)
             sys.exit(1)
-        print("\n☁️  Git push 完成 → Cloudflare Pages 自动部署中...", flush=True)
+
+    # Step 4: Cloudflare Pages 部署
+    cf_token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
+    cf_account = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "ee9139deeec8d018acdfb0b8c2f9d31c")
+    if cf_token:
+        print("\n☁️  部署到 Cloudflare Pages...", flush=True)
+        deploy_cmd = [
+            "npx", "wrangler", "pages", "deploy", "public/",
+            "--project-name", "smart-iptv-sources",
+            "--branch", "main",
+            "--commit-dirty=true",
+        ]
+        deploy_env = {**os.environ, "CLOUDFLARE_API_TOKEN": cf_token, "CLOUDFLARE_ACCOUNT_ID": cf_account}
+        result = subprocess.run(deploy_cmd, cwd=ROOT, capture_output=True, text=True,
+                                timeout=180, env=deploy_env)
+        if result.returncode == 0:
+            print("  ✅ CF Pages 部署完成", flush=True)
+        else:
+            print(f"  ⚠️  CF 部署失败 (不影响主流程): {result.stderr[-200:]}", flush=True)
+    else:
+        print("\n☁️  跳过 CF 部署 (未设置 CLOUDFLARE_API_TOKEN)", flush=True)
 
     print(f"\n🎉 刷新完成 — {datetime.now(timezone.utc).isoformat()}", flush=True)
 
