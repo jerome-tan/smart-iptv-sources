@@ -103,8 +103,6 @@ https://0472.org/hls/cgtna.m3u8
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVBilliards.cn@HD" tvg-logo="https://i.imgur.com/WK3keM9.png" group-title="央视频道" tvg-name="CCTV-Billiards" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-Billiards
 http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVCultureofQuality.cn@SD" tvg-logo="https://i.imgur.com/Paig8gG.png" group-title="央视频道" tvg-name="CCTV-Culture of Quality" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-Culture of Quality
-http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-logo="https://i.imgur.com/iqJJTmH.png" group-title="央视频道" tvg-name="CCTV-Golf &amp; Tennis" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-Golf & Tennis
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVHealth.cn@HD" tvg-logo="https://i.imgur.com/AzpRtCz.png" group-title="央视频道" tvg-name="CCTV-Health" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-Health
@@ -123,6 +121,8 @@ http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVWorldGeography.cn@SD" tvg-logo="https://i.imgur.com/V2ncOXi.png" group-title="央视频道" tvg-name="CCTV-World Geography" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-World Geography
 http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTVCultureofQuality.cn@SD" tvg-logo="https://i.imgur.com/Paig8gG.png" group-title="央视频道" tvg-name="CCTV-文化 of Quality" x-smart-source="iptv-org-cn" x-smart-resolution="1080",CCTV-文化 of Quality
+http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="CCTV央视台球" tvg-id="央视台球" tvg-logo="https://tb.zbds.top/logo/CCTV央视台球.png" group-title="央视频道" x-smart-source="zbds-iptv4",CCTV央视台球
 https://epg.pw/stream/ca9c1cd4b97fb824cedd7fedfd0c7a950afdd7f00751cfbb7c2d89831d7746a5.m3u8
 #EXTINF:-1 tvg-name="CCTV第一剧场" tvg-id="第一剧场" tvg-logo="https://tb.zbds.top/logo/CCTV第一剧场.png" group-title="央视频道" x-smart-source="zbds-iptv4",CCTV第一剧场
@@ -239,6 +239,8 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226465/index.m3u8
 http://cssbyd.imwork.net:8082/hls/31/index.m3u8
 #EXTINF:-1 tvg-name="海峡卫视" tvg-id="3" tvg-logo="https://tb.zbds.top/logo/海峡卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4",海峡卫视
 http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8
+#EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" group-title="地方卫视" tvg-name="深圳 卫视" x-smart-source="iptv-org-cn" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经" x-smart-resolution="2160",深圳 卫视
+https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
 #EXTINF:-1 tvg-id="shenzhen" tvg-logo="shenzhen.png" tvg-name="深圳卫视" group-title="地方卫视" x-smart-source="burningc4" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经",深圳卫视
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226313/index.m3u8
 #EXTINF:-1 tvg-name="深圳卫视" tvg-id="84" tvg-logo="https://tb.zbds.top/logo/深圳卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经",深圳卫视
@@ -313,7 +315,7 @@ http://112.46.105.20:8009/hls/22/index.m3u8
 http://112.46.105.20:8009/hls/19/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江文体" tvg-id="黑龙江文体" tvg-logo="https://tb.zbds.top/logo/黑龙江文体.png" group-title="综艺娱乐" x-smart-source="zbds-iptv4",黑龙江文体
 https://idclive.hljtv.com:4430/live/hljwy_hd.m3u8
-#EXTINF:-1 tvg-id="BRTVKakuChildrensChannel.cn@SD" tvg-logo="https://i.imgur.com/t8X4wPZ.png" group-title="地方台" tvg-name="BRTV Kaku Childrens Channel" x-smart-source="iptv-org-cn",BRTV Kaku Childrens Channel
+#EXTINF:-1 tvg-id="BRTVKakuChildrensChannel.cn@SD" tvg-logo="https://i.imgur.com/t8X4wPZ.png" group-title="地方台" tvg-name="BRTV Kaku Childrens" x-smart-source="iptv-org-cn",BRTV Kaku Childrens
 http://223.111.191.105/downflv.brtvcloud.com/kkkkasd/winfr.m3u8
 #EXTINF:-1 tvg-id="cetv1" tvg-logo="cetv1.png" tvg-name="CETV-1" group-title="地方台" x-smart-source="burningc4",CETV-1
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225652/index.m3u8
@@ -445,33 +447,29 @@ https://ls.qingting.fm/live/4972/64k.m3u8
 https://ls.qingting.fm/live/4974/64k.m3u8
 #EXTINF:-1 tvg-name="黑龙江都市" tvg-id="黑龙江都市" tvg-logo="https://tb.zbds.top/logo/黑龙江都市.png" group-title="地方台" x-smart-source="zbds-iptv4",黑龙江都市
 https://idclive.hljtv.com:4430/live/dushi_hd.m3u8
-#EXTINF:-1 tvg-id="DisneyChannel.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="儿童频道" tvg-name="Disney Channel" x-smart-source="iptv-org-us" x-smart-resolution="720",Disney Channel
-https://cors-proxy.cooks.fyi/http://212.5.144.156:8080/disney/index.m3u8
 #EXTINF:-1 tvg-id="DisneyJunior.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="儿童频道" tvg-name="Disney Junior" x-smart-source="iptv-org-us" x-smart-resolution="1080",Disney Junior
 http://23.237.104.106:8080/USA_DISNEY_JUNIOR/index.m3u8
-#EXTINF:-1 tvg-id="NickJrPlutoTV.us@US" tvg-logo="https://images.pluto.tv/channels/62bdb75c3afd1200079146a6/colorLogoPNG.png" group-title="儿童频道" tvg-name="Nick Jr. Pluto TV" x-smart-source="iptv-org-us" x-smart-resolution="720",Nick Jr. Pluto TV
+#EXTINF:-1 tvg-id="NickJrPlutoTV.us@US" tvg-logo="https://images.pluto.tv/channels/62bdb75c3afd1200079146a6/colorLogoPNG.png" group-title="儿童频道" tvg-name="Nick Jr. Pluto" x-smart-source="iptv-org-us" x-smart-resolution="720",Nick Jr. Pluto
 https://jmp2.uk/plu-5ca6748a37b88b269472dad9.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.us@East" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="儿童频道" tvg-name="Nickelodeon" x-smart-source="iptv-org-us" x-smart-resolution="1080",Nickelodeon
 http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
-#EXTINF:-1 tvg-id="PBSKids.us@SD" tvg-logo="https://i.imgur.com/q4cUQKW.png" group-title="儿童频道" tvg-name="PBS Kids" x-smart-source="iptv-org-us" x-smart-resolution="720",PBS Kids
-https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
 #EXTINF:-1 tvg-id="btvchild" tvg-logo="btvchild.png" tvg-name="卡酷少儿" group-title="儿童频道" x-smart-source="burningc4",卡酷少儿
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-id="11" tvg-logo="https://tb.zbds.top/logo/卡酷少儿.png" group-title="儿童频道" x-smart-source="zbds-iptv4",卡酷少儿
 http://218.13.170.98:9901/tsfile/live/1021_1.m3u8
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-id="42" tvg-logo="https://tb.zbds.top/logo/金鹰卡通.png" group-title="儿童频道" x-smart-source="zbds-iptv4",金鹰卡通
 http://183.11.239.36:808/hls/69/index.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@US" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg TV" x-smart-source="iptv-org-us" x-smart-resolution="1080",Bloomberg TV
+#EXTINF:-1 tvg-id="BloombergTV.us@US" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg" x-smart-source="iptv-org-us" x-smart-resolution="1080",Bloomberg
 http://23.237.104.106:8080/USA_BLOOMBERG/index.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@LiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg TV US Live Event" x-smart-source="iptv-org-us" x-smart-resolution="720",Bloomberg TV US Live Event
+#EXTINF:-1 tvg-id="BloombergTV.us@LiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg  US Live Event" x-smart-source="iptv-org-us" x-smart-resolution="720",Bloomberg  US Live Event
 https://bloomberg.com/media-manifest/streams/us-event.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@PoliticsLiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg TV US Politics Live Event" x-smart-source="iptv-org-us" x-smart-resolution="720",Bloomberg TV US Politics Live Event
+#EXTINF:-1 tvg-id="BloombergTV.us@PoliticsLiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg  US Politics Live Event" x-smart-source="iptv-org-us" x-smart-resolution="720",Bloomberg  US Politics Live Event
 https://bloomberg.com/media-manifest/streams/politics.m3u8
 #EXTINF:-1 tvg-id="CNBCUK.uk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际新闻" tvg-name="CNBC" x-smart-source="iptv-org-uk" x-smart-resolution="1080",CNBC
 https://amg01079-nbcuuk-amg01079c2-samsung-gb-1258.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CNBC.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际新闻" tvg-name="CNBC" x-smart-source="iptv-org-us" x-smart-resolution="720",CNBC
 http://rezofoot.tv/CNBC/index.m3u8
-#EXTINF:-1 tvg-id="i24NEWSEnglishUSA.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="国际新闻" tvg-name="i24NEWS English USA" x-smart-source="iptv-org-us" x-smart-resolution="1080",i24NEWS English USA
+#EXTINF:-1 tvg-id="i24NEWSEnglishUSA.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="国际新闻" tvg-name="i24新闻 English USA" x-smart-source="iptv-org-us" x-smart-resolution="1080",i24新闻 English USA
 https://fastly.live.brightcove.com/6386790908112/eu-central-1/5377161796001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZXJmajYzLmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNTM3NzE2MTc5NjAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI1Mzc3MTYxNzk2MDAxIl0sImp0aSI6IjYzODY3OTA5MDgxMTIifQ._w5c3EwfnEecDCEpDaKuVz07uuEyUb3vXvQN3svv-oU/chunklist.m3u8
 #EXTINF:-1 tvg-id="BBCEarth.uk@US" tvg-logo="https://i.imgur.com/nGSsUd4.png" group-title="科教探索" tvg-name="BBC Earth" x-smart-source="iptv-org-us" x-smart-description="BBC地球频道，以壮丽的自然景观和野生动植物纪录片为特色。" x-smart-tags="科教,自然,纪录片,BBC" x-smart-resolution="1080",BBC Earth
 https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist.m3u8
@@ -485,33 +483,31 @@ https://amg01515-amg01515c17-xumo-us-2489.playouts.now.amagi.tv/bamus-lovenature
 http://198.58.104.90:8989/natgeo/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographicWild.us@HDEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" group-title="科教探索" tvg-name="National Geographic Wild HD East" x-smart-source="iptv-org-us" x-smart-resolution="720",National Geographic Wild HD East
 http://198.58.104.90:8989/natgeowild/index.m3u8
-#EXTINF:-1 tvg-id="SmithsonianChannel.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png" group-title="科教探索" tvg-name="Smithsonian Channel" x-smart-source="iptv-org-us" x-smart-description="史密森尼频道，以美国史密森尼学会博物馆为背景，出品科学、历史和文化纪录片。" x-smart-tags="科教,科学,历史,纪录片" x-smart-resolution="720",Smithsonian Channel
-http://185.246.209.113/SmithsonianHD/index.m3u8
 #EXTINF:-1 tvg-name="人与自然" tvg-id="人与自然" tvg-logo="https://tb.zbds.top/logo/人与自然.png" group-title="科教探索" x-smart-source="zbds-iptv4",人与自然
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8
 #EXTINF:-1 tvg-name="地理中国" tvg-id="地理中国" tvg-logo="https://tb.zbds.top/logo/地理中国.png" group-title="科教探索" x-smart-source="zbds-iptv4",地理中国
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8
 #EXTINF:-1 tvg-name="自然传奇" tvg-id="自然传奇" tvg-logo="https://tb.zbds.top/logo/自然传奇.png" group-title="科教探索" x-smart-source="zbds-iptv4",自然传奇
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/81a1ad3a661748bfb8560c92d38204ca/1200.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk@SD" tvg-logo="https://i.imgur.com/NfVZPTT.png" group-title="香港" tvg-name="HOY  [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",HOY  [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch77/index.m3u8
 #EXTINF:-1 tvg-id="HOYInfotainment.hk@HD" tvg-logo="https://i.imgur.com/LNokYLQ.png" group-title="香港" tvg-name="HOY Infotainment [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",HOY Infotainment [Geo-blocked]
 https://hoytv-live-stream.hoy.tv/ch78/index.m3u8
-#EXTINF:-1 tvg-id="HongKongInternationalBusinessChannel.hk@SD" tvg-logo="https://i.imgur.com/jaIdkbz.png" group-title="香港" tvg-name="HOY International Business Channel [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",HOY International Business Channel [Geo-blocked]
+#EXTINF:-1 tvg-id="HongKongInternationalBusinessChannel.hk@SD" tvg-logo="https://i.imgur.com/jaIdkbz.png" group-title="香港" tvg-name="HOY International Business  [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",HOY International Business  [Geo-blocked]
 https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
-#EXTINF:-1 tvg-id="HOYTV.hk@SD" tvg-logo="https://i.imgur.com/NfVZPTT.png" group-title="香港" tvg-name="HOY TV [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",HOY TV [Geo-blocked]
-https://hoytv-live-stream.hoy.tv/ch77/index.m3u8
-#EXTINF:-1 tvg-id="RTHKTV31.hk@SD" tvg-logo="https://i.imgur.com/kf818kM.png" group-title="香港" tvg-name="RTHK TV 31 (港台電視31) [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",RTHK TV 31 (港台電視31) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTHKTV31.hk@SD" tvg-logo="https://i.imgur.com/kf818kM.png" group-title="香港" tvg-name="RTHK  31 (港台電視31) [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",RTHK  31 (港台電視31) [Geo-blocked]
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV32.hk@SD" tvg-logo="https://i.imgur.com/MXLuUoU.png" group-title="香港" tvg-name="RTHK TV 32 (港台電視32) [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",RTHK TV 32 (港台電視32) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTHKTV32.hk@SD" tvg-logo="https://i.imgur.com/MXLuUoU.png" group-title="香港" tvg-name="RTHK  32 (港台電視32) [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",RTHK  32 (港台電視32) [Geo-blocked]
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV33.hk@SD" tvg-logo="https://i.imgur.com/2MProun.png" group-title="香港" tvg-name="RTHK TV 33 (港台電視33) [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",RTHK TV 33 (港台電視33) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTHKTV33.hk@SD" tvg-logo="https://i.imgur.com/2MProun.png" group-title="香港" tvg-name="RTHK  33 (港台電視33) [Geo-blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",RTHK  33 (港台電視33) [Geo-blocked]
 https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV34.hk@SD" tvg-logo="https://i.imgur.com/Kq5A6Qn.png" group-title="香港" tvg-name="RTHK TV 34 (港台電視34) [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",RTHK TV 34 (港台電視34) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTHKTV34.hk@SD" tvg-logo="https://i.imgur.com/Kq5A6Qn.png" group-title="香港" tvg-name="RTHK  34 (港台電視34) [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",RTHK  34 (港台電視34) [Geo-blocked]
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV35.hk@HD" tvg-logo="https://i.imgur.com/FQmNKDS.png" group-title="香港" tvg-name="RTHK TV 35 (港台電視35) [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",RTHK TV 35 (港台電視35) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTHKTV35.hk@HD" tvg-logo="https://i.imgur.com/FQmNKDS.png" group-title="香港" tvg-name="RTHK  35 (港台電視35) [Geo-blocked]" x-smart-source="iptv-org-hk" x-smart-resolution="1080",RTHK  35 (港台電視35) [Geo-blocked]
 https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
 #EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="香港" tvg-name="TVBS Asia" x-smart-source="iptv-org-zho" x-smart-resolution="1080",TVBS Asia
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBSNews.tw@SD" tvg-logo="https://i.imgur.com/171lwfg.png" group-title="香港" tvg-name="TVBS News (TVBS新聞台) [Geo-blocked]" x-smart-source="iptv-org-zho",TVBS News (TVBS新聞台) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVBSNews.tw@SD" tvg-logo="https://i.imgur.com/171lwfg.png" group-title="香港" tvg-name="TVBS 新闻 (TVBS新聞台) [Geo-blocked]" x-smart-source="iptv-org-zho",TVBS 新闻 (TVBS新聞台) [Geo-blocked]
 http://seb.sason.top/sc/tvbsxw_fhd.m3u8
 #EXTINF:-1 tvg-id="PhoenixChineseChannel.hk@SD" tvg-logo="https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/Phoenix1.png" group-title="香港" tvg-name="凤凰中文" x-smart-source="iptv-org-zho" x-smart-resolution="720",凤凰中文
 http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
@@ -569,23 +565,13 @@ http://149.102.245.111/1197/index.m3u8
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCTwo.uk@Wales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two Wales [Geo-blocked]" x-smart-source="iptv-org-uk" x-smart-resolution="720",BBC Two Wales [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_wales_digital/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="Channel4.uk@UK" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1621.png" group-title="英国" tvg-name="Channel 4" x-smart-source="iptv-org-uk" x-smart-description="英国公共服务商业频道，播出纪录片、新闻、喜剧、剧集和社会议题节目。" x-smart-tags="英国,综合,纪录" x-smart-resolution="1080",Channel 4
-http://80.194.62.172:50002/stream/channelid/1940621521
-#EXTINF:-1 tvg-id="Channel5.uk@SD" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1800.png" group-title="英国" tvg-name="Channel 5" x-smart-source="iptv-org-uk" x-smart-description="英国免费综合频道，播出新闻、纪录片、娱乐节目、剧集和生活内容。" x-smart-tags="英国,综合,生活" x-smart-resolution="1080",Channel 5
-http://149.102.245.111/1242/index.m3u8
-#EXTINF:-1 tvg-id="GBNews.uk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/GB_News_Logo.svg/960px-GB_News_Logo.svg.png" group-title="英国" tvg-name="GB News" x-smart-source="iptv-org-uk" x-smart-resolution="1080",GB News
-https://amg01076-lightningintern-gbnewsau-samsungau-et7fz.amagi.tv/playlist/amg01076-lightningintern-gbnewsau-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV1.uk@London" tvg-logo="https://i.imgur.com/xwPekCF.png" group-title="英国" tvg-name="ITV1" x-smart-source="iptv-org-uk" x-smart-description="英国商业电视主频道，播出新闻、娱乐节目、剧集、体育和真人秀。" x-smart-tags="英国,综合,娱乐" x-smart-resolution="1080",ITV1
 http://80.194.62.172:50002/stream/channelid/95929545
 #EXTINF:-1 tvg-id="ITV2.uk@SD" tvg-logo="https://i.imgur.com/2BpUK0W.png" group-title="英国" tvg-name="ITV2" x-smart-source="iptv-org-uk" x-smart-resolution="1080",ITV2
 http://80.194.62.172:50002/stream/channelid/404728797
 #EXTINF:-1 tvg-id="TalkTV.uk@SD" tvg-logo="https://i.imgur.com/KxHWpQB.png" group-title="英国" tvg-name="TalkTV" x-smart-source="iptv-org-uk" x-smart-resolution="1080",TalkTV
 https://488f4ce4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfVGFsa19ITFM/playlist.m3u8
-#EXTINF:-1 tvg-id="CBSNews247.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/CBS_News_247_logo.svg/960px-CBS_News_247_logo.svg.png" group-title="美国" tvg-name="CBS News 24/7" x-smart-source="iptv-org-us" x-smart-resolution="720",CBS News 24/7
-https://jmp2.uk/plu-6350fdd266e9ea0007bedec5.m3u8
-#EXTINF:-1 tvg-id="CheddarNews.us@SD" tvg-logo="https://i.imgur.com/tuP9GW8.png" group-title="美国" tvg-name="Cheddar News" x-smart-source="iptv-org-us" x-smart-resolution="1080",Cheddar News
-https://wurlcheddar.global.transmit.live/hls/689ceac9301c34d3919676f3/v1/Cheddar/samsung_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxWeather.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fox_Weather_logo.svg/960px-Fox_Weather_logo.svg.png" group-title="美国" tvg-name="Fox Weather" x-smart-source="iptv-org-us" x-smart-description="美国天气资讯频道，提供实时天气、灾害预警、现场报道和气象解读。" x-smart-tags="美国,天气,资讯" x-smart-resolution="1080",Fox Weather
 https://foxweather-xumo.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="ScrippsNews.us@SD" tvg-logo="https://i.imgur.com/W0Jvi5o.png" group-title="美国" tvg-name="Scripps News" x-smart-source="iptv-org-us" x-smart-resolution="1080",Scripps News
-https://aegis-cloudfront-1.tubi.video/7e1c26b7-7975-4240-9a4f-480eaa8f3ea4/playlist.m3u8
+#EXTINF:-1 tvg-id="NewsmaxTV.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Newsmax_logo.svg/960px-Newsmax_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="美国" tvg-name="Newsmax" x-smart-source="iptv-org-us" x-smart-resolution="1080",Newsmax
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/newsmax-tv/index.m3u8?ads.vf=Td2nCUXB4ha

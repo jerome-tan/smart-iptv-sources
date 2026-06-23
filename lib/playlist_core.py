@@ -62,6 +62,90 @@ def parse_m3u(content: str, source: Mapping[str, Any]) -> List[Dict[str, Any]]:
     return entries
 
 
+# ── 拼音→中文归一化映射 ──
+_PINYIN_MAP: Dict[str, str] = {}
+
+def _build_pinyin_map() -> Dict[str, str]:
+    """构建拼音→中文映射表（只构建一次）"""
+    if _PINYIN_MAP:
+        return _PINYIN_MAP
+    # 省份/直辖市/自治区
+    regions = {
+        "beijing": "北京", "shanghai": "上海", "tianjin": "天津", "chongqing": "重庆",
+        "guangdong": "广东", "zhejiang": "浙江", "jiangsu": "江苏", "shandong": "山东",
+        "sichuan": "四川", "fujian": "福建", "henan": "河南", "hubei": "湖北",
+        "hebei": "河北", "liaoning": "辽宁", "jilin": "吉林", "heilongjiang": "黑龙江",
+        "hunan": "湖南", "anhui": "安徽", "jiangxi": "江西", "guangxi": "广西", "guizhou": "贵州",
+        "yunnan": "云南", "hainan": "海南", "gansu": "甘肃", "shaaxi": "陕西",
+        "shaanxi": "陕西", "shanxi": "山西", "xinjiang": "新疆", "xizang": "西藏",
+        "ningxia": "宁夏", "qinghai": "青海", "neimenggu": "内蒙古", "nei menggu": "内蒙古",
+    }
+    # 城市
+    cities = {
+        "shenzhen": "深圳", "guangzhou": "广州", "nanjing": "南京", "hangzhou": "杭州",
+        "wuhan": "武汉", "chengdu": "成都", "xian": "西安", "haerbin": "哈尔滨",
+        "changchun": "长春", "shenyang": "沈阳", "dalian": "大连", "qingdao": "青岛",
+        "xiamen": "厦门", "ningbo": "宁波", "changsha": "长沙", "suzhou": "苏州",
+        "wuxi": "无锡", "dongguan": "东莞", "yantai": "烟台", "shaoxing": "绍兴",
+        "jiaxing": "嘉兴", "huzhou": "湖州", "foshan": "佛山", "wenzhou": "温州",
+    }
+    # 频道类型后缀
+    types = {
+        "news": "新闻", "xinwen": "新闻",
+        "sports": "体育", "tiyu": "体育",
+        "children": "少儿", "shaoer": "少儿", "kids": "少儿",
+        "economy": "经济", "jingji": "经济",
+        "entertainment": "综艺", "yule": "娱乐",
+        "movie": "影视", "dianying": "电影", "film": "影视",
+        "public": "公共", "gonggong": "公共",
+        "life": "生活", "shenghuo": "生活",
+        "education": "教育", "jiaoyu": "教育",
+        "science": "科教", "kejiao": "科教",
+        "satellite": "卫视", "weishi": "卫视",
+        "comprehensive": "综合", "zonghe": "综合",
+        "agriculture": "农业", "nongye": "农业",
+        "rural": "乡村", "xiangcun": "乡村",
+        "culture": "文化", "wenhua": "文化",
+        "travel": "旅游", "lvyou": "旅游",
+        "drama": "戏曲", "opera": "戏曲",
+        "variety": "综艺",
+        "channel": "", "tv": "", "television": "",
+    }
+    _PINYIN_MAP.update(regions)
+    _PINYIN_MAP.update(cities)
+    _PINYIN_MAP.update(types)
+    # CCTV 变体
+    _PINYIN_MAP["cctv"] = "CCTV"
+    return _PINYIN_MAP
+
+
+def _normalize_pinyin_name(name: str) -> str:
+    """将拼音频道名归一化为中文，方便后续白名单匹配"""
+    pinyin_map = _build_pinyin_map()
+    # 分词（按空白/数字/分隔符切分，保留分隔符）
+    tokens = re.split(r"([\s\-/0-9+]+)", name)
+    result: List[str] = []
+    for token in tokens:
+        token_lower = token.lower().strip()
+        if not token_lower:
+            result.append(token)
+            continue
+        # 保留已有的中文字符
+        if re.search(r"[\u4e00-\u9fff]", token):
+            result.append(token)
+            continue
+        # 查拼音映射
+        if token_lower in pinyin_map:
+            mapped = pinyin_map[token_lower]
+            if mapped:
+                result.append(mapped)
+            # mapped="" 表示删除（如 "tv", "channel"）
+        else:
+            result.append(token)
+    normalized = "".join(result)
+    return normalized.strip() or name
+
+
 def curate_entries(
     entries: Iterable[Mapping[str, Any]],
     overrides: Optional[Mapping[str, Any]] = None,
@@ -101,6 +185,8 @@ def curate_entries(
         url_key = _normalize_url(entry.get("url", ""))
         normalized_name = aliases.get(entry.get("normalizedName"), entry.get("normalizedName"))
         display_name = str(normalized_name or "").strip()
+        # 拼音→中文归一化
+        display_name = _normalize_pinyin_name(display_name)
 
         if not _is_http_url(entry.get("url", "")):
             rejected["invalidUrl"] += 1
