@@ -40,31 +40,37 @@ async def fetch_xmltv(url: str, timeout_ms: int = 30000, client: Optional[httpx.
 def build_filtered_xmltv(documents: Iterable[Mapping[str, str]], entries: Iterable[Mapping[str, Any]], generated_at: str) -> Dict[str, Any]:
     keys = collect_playlist_guide_keys(entries)
     output_channel_ids: Set[str] = set()
-    channel_id_map: Dict[str, str] = {}
     channels: List[str] = []
     programs: List[str] = []
     document_list = list(documents)
 
     for document in document_list:
+        # ── 每个文档独立处理，避免跨文档 channel_id 覆盖 ──
+        doc_channel_map: Dict[str, str] = {}
+        doc_channels: List[str] = []
+
         try:
             xmltodict.parse(document["xml"])
         except Exception:
             pass
+
         for block in _extract_blocks(document["xml"], "channel"):
             channel_id = _xml_attribute(block, "id")
             if not channel_id:
                 continue
             output_id = _resolve_output_id(block, keys)
             if output_id:
-                channel_id_map[channel_id] = output_id
+                doc_channel_map[channel_id] = output_id
                 if output_id not in output_channel_ids:
                     output_channel_ids.add(output_id)
-                    channels.append(_rewrite_xml_attribute(block.strip(), "id", output_id))
+                    doc_channels.append(_rewrite_xml_attribute(block.strip(), "id", output_id))
 
-    for document in document_list:
+        channels.extend(doc_channels)
+
+        # 用本文档的 channel map 处理本文档的 programme
         for block in _extract_blocks(document["xml"], "programme"):
             channel_id = _xml_attribute(block, "channel")
-            output_id = channel_id_map.get(channel_id) if channel_id else None
+            output_id = doc_channel_map.get(channel_id) if channel_id else None
             if output_id:
                 programs.append(_rewrite_xml_attribute(block.strip(), "channel", output_id))
 
@@ -116,7 +122,7 @@ def collect_playlist_guide_keys(entries: Iterable[Mapping[str, Any]]) -> Dict[st
 
 def decode_xmltv_payload(payload: bytes, url: str = "") -> str:
     data = bytes(payload)
-    if data.startswith(GZIP_MAGIC) or re.search(r"\.gz(?:[?#].*)?$", url, re.I):
+    if data.startswith(GZIP_MAGIC):
         return gzip.decompress(data).decode("utf-8")
     return data.decode("utf-8")
 

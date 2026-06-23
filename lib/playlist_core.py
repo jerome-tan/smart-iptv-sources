@@ -324,7 +324,7 @@ async def _probe_stream_url(url: str, client: httpx.AsyncClient, depth: int) -> 
     else:
         headers["Range"] = "bytes=0-2047"
 
-    response = await _request_probe(client, url, headers)
+    response = await _request_probe(client, url, headers, force_get=is_playlist)
     if not 200 <= response.status_code < 300:
         return {"httpStatus": response.status_code, "status": "http-error"}
     if not is_playlist or depth >= 2:
@@ -336,13 +336,14 @@ async def _probe_stream_url(url: str, client: httpx.AsyncClient, depth: int) -> 
     return await _probe_stream_url(first_media_url, client, depth + 1)
 
 
-async def _request_probe(client: httpx.AsyncClient, url: str, headers: Mapping[str, str]) -> httpx.Response:
-    try:
-        response = await client.head(url, headers=headers)
-        if response.status_code not in (405, 501):
-            return response
-    except httpx.HTTPError:
-        pass
+async def _request_probe(client: httpx.AsyncClient, url: str, headers: Mapping[str, str], force_get: bool = False) -> httpx.Response:
+    if not force_get:
+        try:
+            response = await client.head(url, headers=headers)
+            if response.status_code not in (405, 501):
+                return response
+        except httpx.HTTPError:
+            pass
     return await client.get(url, headers=headers)
 
 
