@@ -89,11 +89,11 @@ def _build_pinyin_map() -> Dict[str, str]:
         "wuxi": "无锡", "dongguan": "东莞", "yantai": "烟台", "shaoxing": "绍兴",
         "jiaxing": "嘉兴", "huzhou": "湖州", "foshan": "佛山", "wenzhou": "温州",
     }
-    # 频道类型后缀
+    # 频道类型后缀 + 英文→中文映射
     types = {
         "news": "新闻", "xinwen": "新闻",
         "sports": "体育", "tiyu": "体育",
-        "children": "少儿", "shaoer": "少儿", "kids": "少儿",
+        "children": "少儿", "shaoer": "少儿", "kids": "少儿", "junior": "少儿",
         "economy": "经济", "jingji": "经济",
         "entertainment": "综艺", "yule": "娱乐",
         "movie": "影视", "dianying": "电影", "film": "影视",
@@ -109,6 +109,27 @@ def _build_pinyin_map() -> Dict[str, str]:
         "travel": "旅游", "lvyou": "旅游",
         "drama": "戏曲", "opera": "戏曲",
         "variety": "综艺",
+        # CCTV 子频道英文名
+        "health": "卫生健康", "billiards": "台球", "golf": "高尔夫",
+        "tennis": "网球", "nostalgia": "怀旧", "theater": "剧场",
+        "storm": "风云", "football": "足球", "weapon": "兵器",
+        "technology": "科技", "women": "女性", "fashion": "时尚",
+        "world": "世界", "geography": "地理",
+        # 纪录片/科教频道
+        "national": "国家", "geographic": "地理", "discovery": "探索",
+        "animal": "动物", "planet": "星球", "earth": "地球",
+        "history": "历史", "smithsonian": "史密森尼",
+        "nature": "自然", "wild": "野生", "love": "爱",
+        # 方向/语言
+        "hd": "高清", "east": "东", "west": "西", "north": "北", "south": "南",
+        "china": "中国", "america": "美洲", "asia": "亚洲", "europe": "欧洲",
+        "international": "国际", "business": "商业", "global": "环球",
+        "english": "英语", "francais": "法语", "french": "法语",
+        "espanol": "西语", "spanish": "西语",
+        "biz": "财经",
+        # 品牌
+        "disney": "迪士尼", "bloomberg": "彭博", "fox": "福克斯",
+        "weather": "天气", "nick": "尼克", "nickelodeon": "尼克",
         "channel": "", "tv": "", "television": "",
     }
     _PINYIN_MAP.update(regions)
@@ -122,14 +143,11 @@ def _build_pinyin_map() -> Dict[str, str]:
 def _normalize_pinyin_name(name: str) -> str:
     """将拼音频道名归一化为中文，方便后续白名单匹配"""
     pinyin_map = _build_pinyin_map()
-    # 分词（按空白/数字/分隔符切分，保留分隔符）
-    tokens = re.split(r"([\s\-/0-9+]+)", name)
+    # 分词（按空白/数字/分隔符切分，不保留分隔符）
+    tokens = [t for t in re.split(r"[\s\-/]+", name) if t]
     result: List[str] = []
     for token in tokens:
         token_lower = token.lower().strip()
-        if not token_lower:
-            result.append(token)
-            continue
         # 保留已有的中文字符
         if re.search(r"[\u4e00-\u9fff]", token):
             result.append(token)
@@ -139,10 +157,10 @@ def _normalize_pinyin_name(name: str) -> str:
             mapped = pinyin_map[token_lower]
             if mapped:
                 result.append(mapped)
-            # mapped="" 表示删除（如 "tv", "channel"）
         else:
             result.append(token)
-    normalized = "".join(result)
+    # 用空格连接（保留英文分词边界）
+    normalized = " ".join(result)
     return normalized.strip() or name
 
 
