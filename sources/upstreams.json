@@ -60,6 +60,14 @@
       "region": "CN",
       "priority": 30,
       "enabled": true
+    },
+    {
+      "id": "suxuang",
+      "name": "suxuang myIPTV (公网优先)",
+      "url": "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
+      "region": "CN",
+      "priority": 40,
+      "enabled": true
     }
   ]
 }

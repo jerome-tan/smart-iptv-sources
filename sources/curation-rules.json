@@ -15,7 +15,8 @@
         "iptv-org-hk",
         "iptv-org-uk",
         "iptv-org-us",
-        "burningc4"
+        "burningc4",
+        "suxuang"
       ],
       "blockedKeywords": [
         "adult", "xxx", "porn", "博彩", "成人",
@@ -306,7 +307,8 @@
               "^Phoenix Hong Kong$",
               "^Phoenix Movies$",
               "^凤凰",
-              "Hong Kong International Business Channel"
+              "Hong Kong International Business Channel",
+              "^香港卫视$"
             ]
           },
           {
