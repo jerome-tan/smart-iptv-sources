@@ -17,11 +17,11 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8
 http://120.76.248.139/live/bfgd/4200000063.m3u8
 #EXTINF:-1 tvg-name="CCTV-4 中文国际（亚） Ⓨ" tvg-logo="https://i.imgur.com/ovUSVEQ.png" tvg-id="CCTV4Asia.cn" tvg-chno="4" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视中文国际频道亚洲版，面向亚洲华语观众。",CCTV 4 中文国际（亚） Ⓨ
 https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live
-#EXTINF:-1 tvg-id="CCTV4Asia.cn@SD" tvg-logo="https://i.imgur.com/tWt4Wou.png" group-title="央视频道" tvg-name="CCTV 4 亚洲" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道亚洲版，面向亚洲华语观众提供综合节目。" x-smart-resolution="720",CCTV 4 亚洲
+#EXTINF:-1 tvg-id="CCTV4Asia.cn@SD" tvg-logo="https://i.imgur.com/tWt4Wou.png" group-title="央视频道" tvg-name="CCTV-4 Asia (CCTV 4 亚洲)" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道亚洲版，面向亚洲华语观众提供综合节目。" x-smart-resolution="720",CCTV-4 Asia (CCTV 4 亚洲)
 http://74.91.26.218:82/live/cctv4hd.m3u8
-#EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="央视频道" tvg-name="CCTV 4 欧洲" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道欧洲版，面向欧洲华语观众提供新闻和专题。",CCTV 4 欧洲
+#EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="央视频道" tvg-name="CCTV-4 Europe (CCTV 4 欧洲)" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道欧洲版，面向欧洲华语观众提供新闻和专题。",CCTV-4 Europe (CCTV 4 欧洲)
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
-#EXTINF:-1 tvg-id="CCTV4America.cn@SD" tvg-logo="https://i.imgur.com/gBbLyqh.png" group-title="央视频道" tvg-name="CCTV 4 美洲" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道美洲版，面向北美华语观众提供新闻、文化和专题节目。" x-smart-resolution="1080",CCTV 4 美洲
+#EXTINF:-1 tvg-id="CCTV4America.cn@SD" tvg-logo="https://i.imgur.com/gBbLyqh.png" group-title="央视频道" tvg-name="CCTV-4 America (CCTV 4 美洲)" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道美洲版，面向北美华语观众提供新闻、文化和专题节目。" x-smart-resolution="1080",CCTV-4 America (CCTV 4 美洲)
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 tvg-id="CCTV4K.cn@HD" tvg-logo="https://i.imgur.com/fxusYlX.png" group-title="央视频道" tvg-name="CCTV 4K" x-smart-source="iptv-org-cn" x-smart-description="央视超高清频道，以4K分辨率播出纪录片、体育赛事和文艺节目。" x-smart-resolution="1080",CCTV 4K
 http://198.204.240.250:82/live/cctv4k.m3u8
@@ -89,7 +89,7 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-name="CGTN" tvg-id="CGTN" tvg-logo="https://tb.zbds.top/logo/CGTN.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国国际电视台英语频道，提供全球新闻、评论和中国视角报道。" x-smart-tags="新闻,国际,英语",CGTN
 https://0472.org/hls/cgtn.m3u8
-#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="https://i.imgur.com/qBmomnF.png" group-title="央视频道" tvg-name="CGTN 环球 财经" x-smart-source="iptv-org-zho" x-smart-description="中国环球电视网财经频道，以英语提供全球经济新闻和市场资讯。" x-smart-resolution="1080",CGTN 环球 财经
+#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="https://i.imgur.com/qBmomnF.png" group-title="央视频道" tvg-name="CGTN Global Biz (CGTN环球财经)" x-smart-source="iptv-org-zho" x-smart-description="中国环球电视网财经频道，以英语提供全球经济新闻和市场资讯。" x-smart-resolution="1080",CGTN Global Biz (CGTN环球财经)
 https://amg01314-amg01314c6-distrotv-us-10220.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnglobalbiz-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-id="CGTN俄语" tvg-logo="https://tb.zbds.top/logo/CGTN俄语.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国环球电视网俄语频道，面向俄语区观众提供新闻和文化节目。",CGTN俄语
 https://0472.org/hls/cgtne.m3u8
@@ -101,29 +101,29 @@ https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
 https://0472.org/hls/cgtnx.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-id="CGTN阿语" tvg-logo="https://tb.zbds.top/logo/CGTN阿语.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国环球电视网阿拉伯语频道，面向阿拉伯语观众提供新闻节目。",CGTN阿语
 https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-id="CCTVTheFirstTheater.cn@HD" tvg-logo="https://i.imgur.com/eFxD3hq.png" group-title="央视频道" tvg-name="CCTV The First 剧场" x-smart-source="iptv-org-cn" x-smart-description="央视第一剧场频道，首播优质国产剧和引进剧。" x-smart-resolution="1080",CCTV The First 剧场
+#EXTINF:-1 tvg-id="CCTVTheFirstTheater.cn@HD" tvg-logo="https://i.imgur.com/eFxD3hq.png" group-title="央视频道" tvg-name="CCTV-The First Theater (CCTV The First剧场)" x-smart-source="iptv-org-cn" x-smart-description="央视第一剧场频道，首播优质国产剧和引进剧。" x-smart-resolution="1080",CCTV-The First Theater (CCTV The First剧场)
 http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVWomensFashion.cn@SD" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="央视频道" tvg-name="CCTV Women&#x27;s 时尚" x-smart-source="iptv-org-cn" x-smart-description="央视女性时尚频道，聚焦时尚潮流、美妆和生活态度。" x-smart-resolution="1080",CCTV Women's 时尚
+#EXTINF:-1 tvg-id="CCTVWomensFashion.cn@SD" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="央视频道" tvg-name="CCTV-Women&#x27;s Fashion (CCTV Women&#x27;s时尚)" x-smart-source="iptv-org-cn" x-smart-description="央视女性时尚频道，聚焦时尚潮流、美妆和生活态度。" x-smart-resolution="1080",CCTV-Women's Fashion (CCTV Women's时尚)
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVWorldGeography.cn@SD" tvg-logo="https://i.imgur.com/V2ncOXi.png" group-title="央视频道" tvg-name="CCTV 世界 地理" x-smart-source="iptv-org-cn" x-smart-description="央视世界地理频道，播出全球地理探索和人文纪录片。" x-smart-resolution="1080",CCTV 世界 地理
+#EXTINF:-1 tvg-id="CCTVWorldGeography.cn@SD" tvg-logo="https://i.imgur.com/V2ncOXi.png" group-title="央视频道" tvg-name="CCTV-World Geography (CCTV世界地理)" x-smart-source="iptv-org-cn" x-smart-description="央视世界地理频道，播出全球地理探索和人文纪录片。" x-smart-resolution="1080",CCTV-World Geography (CCTV世界地理)
 http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVWeaponTechnology.cn@HD" tvg-logo="https://i.imgur.com/QlF96eS.png" group-title="央视频道" tvg-name="CCTV 兵器 &amp; 科技" x-smart-source="iptv-org-cn" x-smart-description="央视兵器科技频道，探索军事装备和国防科技。" x-smart-resolution="1080",CCTV 兵器 & 科技
+#EXTINF:-1 tvg-id="CCTVWeaponTechnology.cn@HD" tvg-logo="https://i.imgur.com/QlF96eS.png" group-title="央视频道" tvg-name="CCTV-Weapon &amp; Technology (CCTV兵器 &amp; 科技)" x-smart-source="iptv-org-cn" x-smart-description="央视兵器科技频道，探索军事装备和国防科技。" x-smart-resolution="1080",CCTV-Weapon & Technology (CCTV兵器 & 科技)
 http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVHealth.cn@HD" tvg-logo="https://i.imgur.com/AzpRtCz.png" group-title="央视频道" tvg-name="CCTV 卫生健康" x-smart-source="iptv-org-cn" x-smart-description="央视卫生健康频道，提供医学知识、养生保健和健康资讯。" x-smart-resolution="1080",CCTV 卫生健康
+#EXTINF:-1 tvg-id="CCTVHealth.cn@HD" tvg-logo="https://i.imgur.com/AzpRtCz.png" group-title="央视频道" tvg-name="CCTV-Health (CCTV卫生健康)" x-smart-source="iptv-org-cn" x-smart-description="央视卫生健康频道，提供医学知识、养生保健和健康资讯。" x-smart-resolution="1080",CCTV-Health (CCTV卫生健康)
 http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVBilliards.cn@HD" tvg-logo="https://i.imgur.com/WK3keM9.png" group-title="央视频道" tvg-name="CCTV 台球" x-smart-source="iptv-org-cn" x-smart-description="央视台球频道，聚焦国内外台球赛事直播和教学节目。" x-smart-resolution="1080",CCTV 台球
+#EXTINF:-1 tvg-id="CCTVBilliards.cn@HD" tvg-logo="https://i.imgur.com/WK3keM9.png" group-title="央视频道" tvg-name="CCTV-Billiards (CCTV台球)" x-smart-source="iptv-org-cn" x-smart-description="央视台球频道，聚焦国内外台球赛事直播和教学节目。" x-smart-resolution="1080",CCTV-Billiards (CCTV台球)
 http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVNostalgiaTheater.cn@HD" tvg-logo="https://i.imgur.com/TVs9PBc.png" group-title="央视频道" tvg-name="CCTV 怀旧 剧场" x-smart-source="iptv-org-cn" x-smart-description="央视怀旧剧场频道，播出经典电视剧和怀旧影视作品。" x-smart-resolution="1080",CCTV 怀旧 剧场
+#EXTINF:-1 tvg-id="CCTVNostalgiaTheater.cn@HD" tvg-logo="https://i.imgur.com/TVs9PBc.png" group-title="央视频道" tvg-name="CCTV-Nostalgia Theater (CCTV怀旧剧场)" x-smart-source="iptv-org-cn" x-smart-description="央视怀旧剧场频道，播出经典电视剧和怀旧影视作品。" x-smart-resolution="1080",CCTV-Nostalgia Theater (CCTV怀旧剧场)
 http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVCultureofQuality.cn@SD" tvg-logo="https://i.imgur.com/Paig8gG.png" group-title="央视频道" tvg-name="CCTV 文化 of Quality" x-smart-source="iptv-org-cn" x-smart-description="央视文化精品频道，精选播出文化、艺术和经典节目。" x-smart-resolution="1080",CCTV 文化 of Quality
+#EXTINF:-1 tvg-id="CCTVCultureofQuality.cn@SD" tvg-logo="https://i.imgur.com/Paig8gG.png" group-title="央视频道" tvg-name="CCTV-Culture of Quality (CCTV文化of Quality)" x-smart-source="iptv-org-cn" x-smart-description="央视文化精品频道，精选播出文化、艺术和经典节目。" x-smart-resolution="1080",CCTV-Culture of Quality (CCTV文化of Quality)
 http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVStormTheater.cn@HD" tvg-logo="https://i.imgur.com/rEttkKm.png" group-title="央视频道" tvg-name="CCTV 风云 剧场" x-smart-source="iptv-org-cn" x-smart-description="央视风云剧场频道，播出热门电视剧和电视电影。" x-smart-resolution="1080",CCTV 风云 剧场
+#EXTINF:-1 tvg-id="CCTVStormTheater.cn@HD" tvg-logo="https://i.imgur.com/rEttkKm.png" group-title="央视频道" tvg-name="CCTV-Storm Theater (CCTV风云剧场)" x-smart-source="iptv-org-cn" x-smart-description="央视风云剧场频道，播出热门电视剧和电视电影。" x-smart-resolution="1080",CCTV-Storm Theater (CCTV风云剧场)
 http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVStormFootball.cn@HD" tvg-logo="https://i.imgur.com/Fy6HkX0.png" group-title="央视频道" tvg-name="CCTV 风云 足球" x-smart-source="iptv-org-cn" x-smart-description="央视风云足球频道，直播国内外足球联赛和杯赛。" x-smart-resolution="1080",CCTV 风云 足球
+#EXTINF:-1 tvg-id="CCTVStormFootball.cn@HD" tvg-logo="https://i.imgur.com/Fy6HkX0.png" group-title="央视频道" tvg-name="CCTV-Storm Football (CCTV风云足球)" x-smart-source="iptv-org-cn" x-smart-description="央视风云足球频道，直播国内外足球联赛和杯赛。" x-smart-resolution="1080",CCTV-Storm Football (CCTV风云足球)
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVStormMusic.cn@HD" tvg-logo="https://i.imgur.com/IiiRmrf.png" group-title="央视频道" tvg-name="CCTV 风云音乐" x-smart-source="iptv-org-cn" x-smart-description="央视音乐类付费频道，精选演唱会、MV、音乐专题和经典现场。" x-smart-tags="央视,音乐,演唱会" x-smart-resolution="1080",CCTV 风云音乐
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-logo="https://i.imgur.com/iqJJTmH.png" group-title="央视频道" tvg-name="CCTV 高尔夫 &amp; 网球" x-smart-source="iptv-org-cn" x-smart-description="央视高尔夫网球频道，直播高尔夫和网球职业赛事。" x-smart-resolution="1080",CCTV 高尔夫 & 网球
+#EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-logo="https://i.imgur.com/iqJJTmH.png" group-title="央视频道" tvg-name="CCTV-Golf &amp; Tennis (CCTV高尔夫 &amp; 网球)" x-smart-source="iptv-org-cn" x-smart-description="央视高尔夫网球频道，直播高尔夫和网球职业赛事。" x-smart-resolution="1080",CCTV-Golf & Tennis (CCTV高尔夫 & 网球)
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="CCTV央视台球" tvg-id="央视台球" tvg-logo="https://tb.zbds.top/logo/CCTV央视台球.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视台球频道，聚焦国内外台球赛事直播和教学。",CCTV央视台球
 https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e0308ed017.m3u8
@@ -131,6 +131,8 @@ https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e030
 https://epg.pw/stream/6d7bf281e3d739806a73f5373acaa6e01988ec9739f5ac1355ce54b47a928472.m3u8
 #EXTINF:-1 tvg-name="CCTV风云足球" tvg-id="风云足球" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视风云足球频道，直播国内外足球联赛和杯赛。",CCTV风云足球
 https://epg.pw/stream/ac8062ec9484078061d3bef507c15a423ac57ae4144e3fcc4b0a198dd420f911.m3u8
+#EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" group-title="地方卫视" tvg-name="Shenzhen Satellite TV (深圳卫视)" x-smart-source="iptv-org-cn" x-smart-description="深圳市综合卫星频道，聚焦改革开放前沿和粤港澳大湾区。" x-smart-resolution="2160",Shenzhen Satellite TV (深圳卫视)
+https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
 #EXTINF:-1 tvg-name="上海卫视" tvg-id="上海卫视" tvg-logo="https://tb.zbds.top/logo/上海卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="东方卫视（上海卫视），上海广播电视台综合卫星频道，以新闻和综艺见长。",上海卫视
 http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 tvg-id="dongnan" tvg-logo="dongnan.png" tvg-name="东南卫视" group-title="地方卫视" x-smart-source="burningc4" x-smart-description="福建省广播影视集团综合卫星频道，以海峡两岸新闻和综艺为特色。",东南卫视
@@ -241,8 +243,6 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226465/index.m3u8
 http://120.76.248.139/live/bfgd/4200000473.m3u8
 #EXTINF:-1 tvg-name="海峡卫视" tvg-id="3" tvg-logo="https://tb.zbds.top/logo/海峡卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="福建省海峡卫视，以闽台新闻交流和海洋文化为特色。",海峡卫视
 http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8
-#EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" group-title="地方卫视" tvg-name="深圳 卫视" x-smart-source="iptv-org-cn" x-smart-description="深圳市综合卫星频道，聚焦改革开放前沿和粤港澳大湾区。" x-smart-resolution="2160",深圳 卫视
-https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
 #EXTINF:-1 tvg-id="shenzhen" tvg-logo="shenzhen.png" tvg-name="深圳卫视" group-title="地方卫视" x-smart-source="burningc4" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经",深圳卫视
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226313/index.m3u8
 #EXTINF:-1 tvg-name="深圳卫视" tvg-id="33" tvg-logo="https://tb.zbds.top/logo/深圳卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经",深圳卫视
@@ -457,57 +457,39 @@ https://idclive.hljtv.com:4430/live/dushi_hd.m3u8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-id="11" tvg-logo="https://tb.zbds.top/logo/卡酷少儿.png" group-title="儿童频道" x-smart-source="zbds-iptv4" x-smart-description="北京广播电视台卡酷少儿频道，播出动画片和儿童教育娱乐节目。",卡酷少儿
 http://218.13.170.98:9901/tsfile/live/1021_1.m3u8
-#EXTINF:-1 tvg-id="NickJrPlutoTV.us@US" tvg-logo="https://images.pluto.tv/channels/62bdb75c3afd1200079146a6/colorLogoPNG.png" group-title="儿童频道" tvg-name="尼克 Jr. Pluto" x-smart-source="iptv-org-us" x-smart-resolution="720",尼克 Jr. Pluto
-https://jmp2.uk/plu-5ca6748a37b88b269472dad9.m3u8
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-id="42" tvg-logo="https://tb.zbds.top/logo/金鹰卡通.png" group-title="儿童频道" x-smart-source="zbds-iptv4" x-smart-description="湖南广播电视台金鹰卡通卫视，全国性少儿专业卫星频道。",金鹰卡通
 http://183.11.239.36:808/hls/69/index.m3u8
 #EXTINF:-1 tvg-id="CNBCUK.uk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际新闻" tvg-name="CNBC" x-smart-source="iptv-org-uk" x-smart-description="美国消费者新闻与商业频道，全球财经新闻和市场实时数据。" x-smart-resolution="1080",CNBC
 https://amg01079-nbcuuk-amg01079c2-samsung-gb-1258.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="CNBC.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际新闻" tvg-name="CNBC" x-smart-source="iptv-org-us" x-smart-description="美国消费者新闻与商业频道，全球财经新闻和市场实时数据。" x-smart-resolution="720",CNBC
-http://rezofoot.tv/CNBC/index.m3u8
-#EXTINF:-1 tvg-id="i24NEWSEnglishUSA.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="国际新闻" tvg-name="i24NEWS 英语 USA" x-smart-source="iptv-org-us" x-smart-resolution="1080",i24NEWS 英语 USA
-https://fastly.live.brightcove.com/6386790908112/eu-central-1/5377161796001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZXJmajYzLmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNTM3NzE2MTc5NjAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI1Mzc3MTYxNzk2MDAxIl0sImp0aSI6IjYzODY3OTA5MDgxMTIifQ._w5c3EwfnEecDCEpDaKuVz07uuEyUb3vXvQN3svv-oU/chunklist.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@US" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="彭博" x-smart-source="iptv-org-us" x-smart-resolution="1080",彭博
-http://23.237.104.106:8080/USA_BLOOMBERG/index.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@LiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="彭博 US Live Event" x-smart-source="iptv-org-us" x-smart-resolution="720",彭博 US Live Event
-https://bloomberg.com/media-manifest/streams/us-event.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@PoliticsLiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="彭博 US Politics Live Event" x-smart-source="iptv-org-us" x-smart-resolution="720",彭博 US Politics Live Event
-https://bloomberg.com/media-manifest/streams/politics.m3u8
+#EXTINF:-1 tvg-id="LoveNature.ca@SD" tvg-logo="https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png" group-title="科教探索" tvg-name="Love Nature (爱自然)" x-smart-source="iptv-org-zho" x-smart-description="Love Nature自然频道，以4K画质播出全球野生动物和自然纪录片。" x-smart-resolution="1080",Love Nature (爱自然)
+https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveNature.ca@HD" tvg-logo="https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png" group-title="科教探索" tvg-name="Love Nature HD (爱自然高清)" x-smart-source="iptv-org-zho" x-smart-description="Love Nature自然频道高清版，展现壮丽的自然景观和野生动物。" x-smart-resolution="720",Love Nature HD (爱自然高清)
+http://185.246.209.113/LOVENATUREHD/index.m3u8
 #EXTINF:-1 tvg-name="人与自然" tvg-id="人与自然" tvg-logo="https://tb.zbds.top/logo/人与自然.png" group-title="科教探索" x-smart-source="zbds-iptv4" x-smart-description="央视经典自然栏目，展现野生动物和生态环境保护。",人与自然
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8
-#EXTINF:-1 tvg-id="NationalGeographicWild.us@HDEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" group-title="科教探索" tvg-name="国家 地理 野生 高清 东" x-smart-source="iptv-org-us" x-smart-description="国家地理野生频道高清版，聚焦野生动物和自然生态纪录片。" x-smart-resolution="720",国家 地理 野生 高清 东
-http://198.58.104.90:8989/natgeowild/index.m3u8
-#EXTINF:-1 tvg-id="NationalGeographic.us@HDEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" group-title="科教探索" tvg-name="国家 地理 高清 东" x-smart-source="iptv-org-us" x-smart-description="国家地理高清频道东海岸版，播出探索类纪录片。" x-smart-resolution="720",国家 地理 高清 东
-http://198.58.104.90:8989/natgeo/index.m3u8
 #EXTINF:-1 tvg-name="地理中国" tvg-id="地理中国" tvg-logo="https://tb.zbds.top/logo/地理中国.png" group-title="科教探索" x-smart-source="zbds-iptv4" x-smart-description="央视科教频道栏目，以地理探索和人文科普为主题。",地理中国
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8
-#EXTINF:-1 tvg-id="LoveNature.ca@SD" tvg-logo="https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png" group-title="科教探索" tvg-name="爱 自然" x-smart-source="iptv-org-zho" x-smart-description="Love Nature自然频道，以4K画质播出全球野生动物和自然纪录片。" x-smart-resolution="1080",爱 自然
-https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
-#EXTINF:-1 tvg-id="LoveNatureenEspanol.us@SD" tvg-logo="https://i.imgur.com/7uNdcWB.png" group-title="科教探索" tvg-name="爱 自然 en 西语 [Geo blocked]" x-smart-source="iptv-org-us" x-smart-description="Love Nature自然频道西班牙语版（存在地域限制）。" x-smart-resolution="1080",爱 自然 en 西语 [Geo blocked]
-https://amg01515-amg01515c17-xumo-us-2489.playouts.now.amagi.tv/bamus-lovenaturespanish-roku/playlist.m3u8
-#EXTINF:-1 tvg-id="LoveNature.ca@HD" tvg-logo="https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png" group-title="科教探索" tvg-name="爱 自然 高清" x-smart-source="iptv-org-zho" x-smart-description="Love Nature自然频道高清版，展现壮丽的自然景观和野生动物。" x-smart-resolution="720",爱 自然 高清
-http://185.246.209.113/LOVENATUREHD/index.m3u8
 #EXTINF:-1 tvg-name="自然传奇" tvg-id="自然传奇" tvg-logo="https://tb.zbds.top/logo/自然传奇.png" group-title="科教探索" x-smart-source="zbds-iptv4" x-smart-description="央视自然纪实栏目，以纪录片讲述自然故事。",自然传奇
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/81a1ad3a661748bfb8560c92d38204ca/1200.m3u8
 #EXTINF:-1 tvg-id="HOYInfotainment.hk@HD" tvg-logo="https://i.imgur.com/LNokYLQ.png" group-title="香港" tvg-name="HOY Infotainment [Geo blocked]" x-smart-source="iptv-org-hk" x-smart-description="香港HOY资讯台，时事新闻和专题报道（存在地域限制）。" x-smart-resolution="1080",HOY Infotainment [Geo blocked]
 https://hoytv-live-stream.hoy.tv/ch78/index.m3u8
+#EXTINF:-1 tvg-id="HongKongInternationalBusinessChannel.hk@SD" tvg-logo="https://i.imgur.com/jaIdkbz.png" group-title="香港" tvg-name="HOY International Business Channel [Geo-blocked] (HOY国际商业 [Geo blocked])" x-smart-source="iptv-org-zho" x-smart-resolution="1080",HOY International Business Channel [Geo-blocked] (HOY国际商业 [Geo blocked])
+https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
 #EXTINF:-1 tvg-id="HOYTV.hk@SD" tvg-logo="https://i.imgur.com/NfVZPTT.png" group-title="香港" tvg-name="HOY [Geo blocked]" x-smart-source="iptv-org-hk" x-smart-description="香港HOY TV综合频道（存在地域限制）。" x-smart-resolution="1080",HOY [Geo blocked]
 https://hoytv-live-stream.hoy.tv/ch77/index.m3u8
-#EXTINF:-1 tvg-id="HongKongInternationalBusinessChannel.hk@SD" tvg-logo="https://i.imgur.com/jaIdkbz.png" group-title="香港" tvg-name="HOY 国际 商业 [Geo blocked]" x-smart-source="iptv-org-zho" x-smart-resolution="1080",HOY 国际 商业 [Geo blocked]
-https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
-#EXTINF:-1 tvg-id="RTHKTV31.hk@SD" tvg-logo="https://i.imgur.com/kf818kM.png" group-title="香港" tvg-name="RTHK 31 (港台電視31) [Geo blocked]" x-smart-source="iptv-org-zho" x-smart-description="香港电台电视31台，综合新闻和公共事务节目（存在地域限制）。" x-smart-resolution="1080",RTHK 31 (港台電視31) [Geo blocked]
+#EXTINF:-1 tvg-id="RTHKTV31.hk@SD" tvg-logo="https://i.imgur.com/kf818kM.png" group-title="香港" tvg-name="RTHK TV 31 (港台電視31) [Geo-blocked] (RTHK 31 (港台電視31) [Geo blocked])" x-smart-source="iptv-org-zho" x-smart-description="香港电台电视31台，综合新闻和公共事务节目（存在地域限制）。" x-smart-resolution="1080",RTHK TV 31 (港台電視31) [Geo-blocked] (RTHK 31 (港台電視31) [Geo blocked])
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV32.hk@SD" tvg-logo="https://i.imgur.com/MXLuUoU.png" group-title="香港" tvg-name="RTHK 32 (港台電視32) [Geo blocked]" x-smart-source="iptv-org-zho" x-smart-description="香港电台电视32台，直播立法会会议和重大公共事件（存在地域限制）。" x-smart-resolution="1080",RTHK 32 (港台電視32) [Geo blocked]
+#EXTINF:-1 tvg-id="RTHKTV32.hk@SD" tvg-logo="https://i.imgur.com/MXLuUoU.png" group-title="香港" tvg-name="RTHK TV 32 (港台電視32) [Geo-blocked] (RTHK 32 (港台電視32) [Geo blocked])" x-smart-source="iptv-org-zho" x-smart-description="香港电台电视32台，直播立法会会议和重大公共事件（存在地域限制）。" x-smart-resolution="1080",RTHK TV 32 (港台電視32) [Geo-blocked] (RTHK 32 (港台電視32) [Geo blocked])
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV33.hk@SD" tvg-logo="https://i.imgur.com/2MProun.png" group-title="香港" tvg-name="RTHK 33 (港台電視33) [Geo blocked]" x-smart-source="iptv-org-zho" x-smart-description="香港电台电视33台，转播中央电视台综合频道CCTV-1（存在地域限制）。" x-smart-resolution="1080",RTHK 33 (港台電視33) [Geo blocked]
+#EXTINF:-1 tvg-id="RTHKTV33.hk@SD" tvg-logo="https://i.imgur.com/2MProun.png" group-title="香港" tvg-name="RTHK TV 33 (港台電視33) [Geo-blocked] (RTHK 33 (港台電視33) [Geo blocked])" x-smart-source="iptv-org-zho" x-smart-description="香港电台电视33台，转播中央电视台综合频道CCTV-1（存在地域限制）。" x-smart-resolution="1080",RTHK TV 33 (港台電視33) [Geo-blocked] (RTHK 33 (港台電視33) [Geo blocked])
 https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV34.hk@SD" tvg-logo="https://i.imgur.com/Kq5A6Qn.png" group-title="香港" tvg-name="RTHK 34 (港台電視34) [Geo blocked]" x-smart-source="iptv-org-hk" x-smart-description="香港电台电视34台，英语国际新闻和文化节目（存在地域限制）。" x-smart-resolution="1080",RTHK 34 (港台電視34) [Geo blocked]
+#EXTINF:-1 tvg-id="RTHKTV34.hk@SD" tvg-logo="https://i.imgur.com/Kq5A6Qn.png" group-title="香港" tvg-name="RTHK TV 34 (港台電視34) [Geo-blocked] (RTHK 34 (港台電視34) [Geo blocked])" x-smart-source="iptv-org-hk" x-smart-description="香港电台电视34台，英语国际新闻和文化节目（存在地域限制）。" x-smart-resolution="1080",RTHK TV 34 (港台電視34) [Geo-blocked] (RTHK 34 (港台電視34) [Geo blocked])
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV35.hk@HD" tvg-logo="https://i.imgur.com/FQmNKDS.png" group-title="香港" tvg-name="RTHK 35 (港台電視35) [Geo blocked]" x-smart-source="iptv-org-hk" x-smart-description="香港电台电视35台，面向少数族裔播出多语种节目（存在地域限制）。" x-smart-resolution="1080",RTHK 35 (港台電視35) [Geo blocked]
+#EXTINF:-1 tvg-id="RTHKTV35.hk@HD" tvg-logo="https://i.imgur.com/FQmNKDS.png" group-title="香港" tvg-name="RTHK TV 35 (港台電視35) [Geo-blocked] (RTHK 35 (港台電視35) [Geo blocked])" x-smart-source="iptv-org-hk" x-smart-description="香港电台电视35台，面向少数族裔播出多语种节目（存在地域限制）。" x-smart-resolution="1080",RTHK TV 35 (港台電視35) [Geo-blocked] (RTHK 35 (港台電視35) [Geo blocked])
 https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
-#EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="香港" tvg-name="TVBS 亚洲" x-smart-source="iptv-org-zho" x-smart-description="TVBS亚洲台，面向亚洲播出的综合频道。" x-smart-resolution="1080",TVBS 亚洲
+#EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="香港" tvg-name="TVBS Asia (TVBS亚洲)" x-smart-source="iptv-org-zho" x-smart-description="TVBS亚洲台，面向亚洲播出的综合频道。" x-smart-resolution="1080",TVBS Asia (TVBS亚洲)
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBSNews.tw@SD" tvg-logo="https://i.imgur.com/171lwfg.png" group-title="香港" tvg-name="TVBS 新闻 (TVBS新聞台) [Geo blocked]" x-smart-source="iptv-org-zho" x-smart-description="TVBS新闻台，24小时新闻直播和深度报道（存在地域限制）。",TVBS 新闻 (TVBS新聞台) [Geo blocked]
+#EXTINF:-1 tvg-id="TVBSNews.tw@SD" tvg-logo="https://i.imgur.com/171lwfg.png" group-title="香港" tvg-name="TVBS News (TVBS新聞台) [Geo-blocked] (TVBS新闻 (TVBS新聞台) [Geo blocked])" x-smart-source="iptv-org-zho" x-smart-description="TVBS新闻台，24小时新闻直播和深度报道（存在地域限制）。",TVBS News (TVBS新聞台) [Geo-blocked] (TVBS新闻 (TVBS新聞台) [Geo blocked])
 http://seb.sason.top/sc/tvbsxw_fhd.m3u8
 #EXTINF:-1 tvg-id="PhoenixChineseChannel.hk@SD" tvg-logo="https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/Phoenix1.png" group-title="香港" tvg-name="凤凰中文" x-smart-source="iptv-org-zho" x-smart-description="凤凰卫视中文台，面向全球华语的新闻资讯和文化综合频道。" x-smart-resolution="720",凤凰中文
 http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
@@ -515,61 +497,59 @@ http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
 http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8
 #EXTINF:-1 tvg-id="BBCOne.uk@London" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One" x-smart-source="iptv-org-uk" x-smart-description="BBC 旗舰综合频道，播出新闻、剧集、纪录片、体育和大型直播节目。" x-smart-tags="英国,综合,BBC" x-smart-resolution="1080",BBC One
 http://149.102.245.111/1196/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@LondonHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One London 高清" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道伦敦高清版，面向伦敦地区播出综合节目。" x-smart-resolution="720",BBC One London 高清
+#EXTINF:-1 tvg-id="BBCOne.uk@EastMidlands" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One East Midlands (BBC One东Midlands)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东米德兰兹版，播出该地区新闻和本地节目（存在地域限制）。" x-smart-resolution="1080",BBC One East Midlands (BBC One东Midlands)
+http://149.102.245.111/1263/index.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@EastMidlandsHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One East Midlands (HEVC) [Geo-blocked] (BBC One东Midlands (HEVC) [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东米德兰兹版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One East Midlands (HEVC) [Geo-blocked] (BBC One东Midlands (HEVC) [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/hevc_iptv_mse_v0.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One East [Geo-blocked] (BBC One东 [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东部版（存在地域限制）。" x-smart-resolution="720",BBC One East [Geo-blocked] (BBC One东 [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@LondonHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One London HD (BBC One London高清)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道伦敦高清版，面向伦敦地区播出综合节目。" x-smart-resolution="720",BBC One London HD (BBC One London高清)
 http://193.46.58.239:8080/BBCOneHD/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@NorthernIrelandHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Northern Ireland 高清 (HEVC) [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道北爱尔兰高清版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One Northern Ireland 高清 (HEVC) [Geo blocked]
+#EXTINF:-1 tvg-id="BBCOne.uk@NorthEastCumbriaHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One North East (HEVC) [Geo-blocked] (BBC One北东 (HEVC) [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东北部版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One North East (HEVC) [Geo-blocked] (BBC One北东 (HEVC) [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/hevc_iptv_mse_v0.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@NorthEastCumbria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One North East [Geo-blocked] (BBC One北东 [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东北部版（存在地域限制）。" x-smart-resolution="720",BBC One North East [Geo-blocked] (BBC One北东 [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@NorthWest" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One North West (BBC One北西)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西北部版，面向曼彻斯特及西北英格兰地区。" x-smart-resolution="1080",BBC One North West (BBC One北西)
+http://149.102.245.111/916/index.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@NorthWestHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One North West (HEVC) [Geo-blocked] (BBC One北西 (HEVC) [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西北部版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One North West (HEVC) [Geo-blocked] (BBC One北西 (HEVC) [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/hevc_iptv_mse_v0.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@NorthernIrelandHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Northern Ireland HD (HEVC) [Geo-blocked] (BBC One Northern Ireland高清 (HEVC) [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道北爱尔兰高清版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One Northern Ireland HD (HEVC) [Geo-blocked] (BBC One Northern Ireland高清 (HEVC) [Geo blocked])
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@NorthernIreland" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Northern Ireland 高清 [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道北爱尔兰高清版（存在地域限制）。" x-smart-resolution="720",BBC One Northern Ireland 高清 [Geo blocked]
+#EXTINF:-1 tvg-id="BBCOne.uk@NorthernIreland" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Northern Ireland HD [Geo-blocked] (BBC One Northern Ireland高清 [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道北爱尔兰高清版（存在地域限制）。" x-smart-resolution="720",BBC One Northern Ireland HD [Geo-blocked] (BBC One Northern Ireland高清 [Geo blocked])
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@ScotlandHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Scotland 高清" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道苏格兰高清版，面向苏格兰地区。" x-smart-resolution="1080",BBC One Scotland 高清
+#EXTINF:-1 tvg-id="BBCOne.uk@ScotlandHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Scotland HD (BBC One Scotland高清)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道苏格兰高清版，面向苏格兰地区。" x-smart-resolution="1080",BBC One Scotland HD (BBC One Scotland高清)
 http://149.102.245.111/225/index.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@SouthEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One South East [Geo-blocked] (BBC One南东 [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东南部版（存在地域限制）。" x-smart-resolution="720",BBC One South East [Geo-blocked] (BBC One南东 [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_east/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@SouthWest" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One South West (BBC One南西)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西南部版，面向西南英格兰地区播出综合节目。" x-smart-resolution="1080",BBC One South West (BBC One南西)
+http://149.102.245.111/51/index.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@South" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One South [Geo-blocked] (BBC One南 [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道南部版（存在地域限制）。" x-smart-resolution="720",BBC One South [Geo-blocked] (BBC One南 [Geo blocked])
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-id="BBCOne.uk@WalesHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Wales HD (BBC One Wales高清)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道威尔士高清版，面向威尔士地区。" x-smart-resolution="1080",BBC One Wales HD (BBC One Wales高清)
+http://149.102.245.111/927/index.m3u8
 #EXTINF:-1 tvg-id="BBCOne.uk@Wales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Wales [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道威尔士版（存在地域限制）。" x-smart-resolution="720",BBC One Wales [Geo blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_wales_hd/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@WalesHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Wales 高清" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道威尔士高清版，面向威尔士地区。" x-smart-resolution="1080",BBC One Wales 高清
-http://149.102.245.111/927/index.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@West" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One West (BBC One西)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西部版，面向西米德兰兹地区。" x-smart-resolution="1080",BBC One West (BBC One西)
+http://149.102.245.111/305/index.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@WestMidlands" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One West Midlands (BBC One西Midlands)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西米德兰兹版。" x-smart-resolution="1080",BBC One West Midlands (BBC One西Midlands)
+http://149.102.245.111/1261/index.m3u8
 #EXTINF:-1 tvg-id="BBCOne.uk@Yorkshire" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Yorks [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道约克郡版（存在地域限制）。" x-smart-resolution="720",BBC One Yorks [Geo blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOne.uk@YorkshireLincolnshire" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Yorkshire &amp; Lincolnshire" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道约克郡和林肯郡版。" x-smart-resolution="1080",BBC One Yorkshire & Lincolnshire
 http://92.114.85.72:8000/play/a0mp
-#EXTINF:-1 tvg-id="BBCOne.uk@YorkshireHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Yorkshire 高清" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道约克郡高清版。" x-smart-resolution="1080",BBC One Yorkshire 高清
+#EXTINF:-1 tvg-id="BBCOne.uk@YorkshireHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One Yorkshire HD (BBC One Yorkshire高清)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道约克郡高清版。" x-smart-resolution="1080",BBC One Yorkshire HD (BBC One Yorkshire高清)
 http://149.102.245.111/918/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@EastMidlands" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 东 Midlands" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东米德兰兹版，播出该地区新闻和本地节目（存在地域限制）。" x-smart-resolution="1080",BBC One 东 Midlands
-http://149.102.245.111/1263/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@EastMidlandsHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 东 Midlands (HEVC) [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东米德兰兹版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One 东 Midlands (HEVC) [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 东 [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东部版（存在地域限制）。" x-smart-resolution="720",BBC One 东 [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@NorthEastCumbriaHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 北 东 (HEVC) [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东北部版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One 北 东 (HEVC) [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@NorthEastCumbria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 北 东 [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东北部版（存在地域限制）。" x-smart-resolution="720",BBC One 北 东 [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@NorthWest" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 北 西" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西北部版，面向曼彻斯特及西北英格兰地区。" x-smart-resolution="1080",BBC One 北 西
-http://149.102.245.111/916/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@NorthWestHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 北 西 (HEVC) [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西北部版HEVC编码（存在地域限制）。" x-smart-resolution="1080",BBC One 北 西 (HEVC) [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@South" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 南 [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道南部版（存在地域限制）。" x-smart-resolution="720",BBC One 南 [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@SouthEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 南 东 [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东南部版（存在地域限制）。" x-smart-resolution="720",BBC One 南 东 [Geo blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_east/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-id="BBCOne.uk@SouthWest" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 南 西" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西南部版，面向西南英格兰地区播出综合节目。" x-smart-resolution="1080",BBC One 南 西
-http://149.102.245.111/51/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@West" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 西" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西部版，面向西米德兰兹地区。" x-smart-resolution="1080",BBC One 西
-http://149.102.245.111/305/index.m3u8
-#EXTINF:-1 tvg-id="BBCOne.uk@WestMidlands" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One 西 Midlands" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道西米德兰兹版。" x-smart-resolution="1080",BBC One 西 Midlands
-http://149.102.245.111/1261/index.m3u8
 #EXTINF:-1 tvg-id="BBCTwo.uk@England" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two" x-smart-source="iptv-org-uk" x-smart-description="BBC 综合频道，偏重纪录片、文化节目、喜剧、知识类和特色剧集。" x-smart-tags="英国,文化,纪录",BBC Two
 https://x.canlitvapp.com/u-bbc2/index.m3u8
-#EXTINF:-1 tvg-id="BBCTwo.uk@NorthernIrelandHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two Northern Ireland 高清 [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第二频道北爱尔兰高清版（存在地域限制）。" x-smart-resolution="720",BBC Two Northern Ireland 高清 [Geo blocked]
+#EXTINF:-1 tvg-id="BBCTwo.uk@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two HD (BBC Two高清)" x-smart-source="iptv-org-uk" x-smart-description="BBC第二频道高清版，播出深度文化、艺术和纪录片。" x-smart-resolution="1080",BBC Two HD (BBC Two高清)
+http://149.102.245.111/1197/index.m3u8
+#EXTINF:-1 tvg-id="BBCTwo.uk@NorthernIrelandHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two Northern Ireland HD [Geo-blocked] (BBC Two Northern Ireland高清 [Geo blocked])" x-smart-source="iptv-org-uk" x-smart-description="BBC第二频道北爱尔兰高清版（存在地域限制）。" x-smart-resolution="720",BBC Two Northern Ireland HD [Geo-blocked] (BBC Two Northern Ireland高清 [Geo blocked])
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCTwo.uk@Wales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two Wales [Geo blocked]" x-smart-source="iptv-org-uk" x-smart-description="BBC第二频道威尔士版（存在地域限制）。" x-smart-resolution="720",BBC Two Wales [Geo blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_wales_digital/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="BBCTwo.uk@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png" group-title="英国" tvg-name="BBC Two 高清" x-smart-source="iptv-org-uk" x-smart-description="BBC第二频道高清版，播出深度文化、艺术和纪录片。" x-smart-resolution="1080",BBC Two 高清
-http://149.102.245.111/1197/index.m3u8
 #EXTINF:-1 tvg-id="ITV1.uk@London" tvg-logo="https://i.imgur.com/xwPekCF.png" group-title="英国" tvg-name="ITV1" x-smart-source="iptv-org-uk" x-smart-description="英国商业电视主频道，播出新闻、娱乐节目、剧集、体育和真人秀。" x-smart-tags="英国,综合,娱乐" x-smart-resolution="1080",ITV1
 http://80.194.62.172:50002/stream/channelid/95929545
 #EXTINF:-1 tvg-id="ITV2.uk@SD" tvg-logo="https://i.imgur.com/2BpUK0W.png" group-title="英国" tvg-name="ITV2" x-smart-source="iptv-org-uk" x-smart-description="英国独立电视台第二频道，以年轻观众的娱乐和真人秀节目为主。" x-smart-resolution="1080",ITV2
 http://80.194.62.172:50002/stream/channelid/404728797
 #EXTINF:-1 tvg-id="TalkTV.uk@SD" tvg-logo="https://i.imgur.com/KxHWpQB.png" group-title="英国" tvg-name="TalkTV" x-smart-source="iptv-org-uk" x-smart-description="英国TalkTV新闻评论频道，以观点鲜明的时事讨论和访谈为特色。" x-smart-resolution="1080",TalkTV
 https://488f4ce4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfVGFsa19ITFM/playlist.m3u8
-#EXTINF:-1 tvg-id="NewsmaxTV.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Newsmax_logo.svg/960px-Newsmax_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="美国" tvg-name="Newsmax" x-smart-source="iptv-org-us" x-smart-description="美国Newsmax新闻频道，以保守派视角提供政治新闻和分析。" x-smart-resolution="1080",Newsmax
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/newsmax-tv/index.m3u8?ads.vf=Td2nCUXB4ha

@@ -164,6 +164,30 @@ def _normalize_pinyin_name(name: str) -> str:
     return normalized.strip() or name
 
 
+def _bilingual_name(original: str, normalized: str) -> str:
+    """生成双语展示名。只对含英文且翻译后有中文的国外频道做双语。"""
+    if not original or original == normalized:
+        return normalized
+    # 检查：原始名含英文（至少3个连续字母）
+    has_ascii = bool(re.search(r"[A-Za-z]{3,}", original))
+    if not has_ascii:
+        return normalized
+    # 检查：归一化后含中文
+    has_cn = bool(re.search(r"[\u4e00-\u9fff]", normalized))
+    if not has_cn:
+        return normalized
+    # 去掉分隔符后比较（CCTV-1 vs CCTV1 不应出双语）
+    original_compact = re.sub(r"[\s\-]+", "", original).lower()
+    norm_compact = re.sub(r"[\s\-]+", "", normalized).lower()
+    if original_compact == norm_compact:
+        return normalized
+    # 生成双语：中文部分去空格，英文部分保留
+    cn = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])", "", normalized)
+    cn = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[A-Za-z])", "", cn)
+    cn = re.sub(r"(?<=[A-Za-z])\s+(?=[\u4e00-\u9fff])", "", cn)
+    return f"{original} ({cn})"
+
+
 def curate_entries(
     entries: Iterable[Mapping[str, Any]],
     overrides: Optional[Mapping[str, Any]] = None,
@@ -202,9 +226,11 @@ def curate_entries(
         entry = dict(original)
         url_key = _normalize_url(entry.get("url", ""))
         normalized_name = aliases.get(entry.get("normalizedName"), entry.get("normalizedName"))
-        display_name = str(normalized_name or "").strip()
-        # 拼音→中文归一化
-        display_name = _normalize_pinyin_name(display_name)
+        raw_name = str(normalized_name or "").strip()
+        # 拼音→中文归一化（用于分类）
+        display_name = _normalize_pinyin_name(raw_name)
+        # 双语展示名：英文原名 + 中文翻译
+        display_label = _bilingual_name(raw_name, display_name)
 
         if not _is_http_url(entry.get("url", "")):
             rejected["invalidUrl"] += 1
@@ -244,7 +270,7 @@ def curate_entries(
         enriched = dict(entry)
         enriched.update(
             {
-                "displayName": display_name,
+                "displayName": display_label,
                 "displayGroup": group_info["name"],
                 "groupRank": group_info["rank"],
                 "score": _score_entry(entry, preferred_urls),
@@ -256,13 +282,18 @@ def curate_entries(
         grouped.setdefault(display_name, []).append(enriched)
 
     accepted = []
+    # 记录每个分组首次出现时的双语标签
+    group_labels: Dict[str, str] = {}
     for channel_name, channel_entries in grouped.items():
         sorted_entries = sorted(channel_entries, key=_entry_sort_key)
         kept = sorted_entries[: settings["maxSourcesPerChannel"]]
         rejected["channelLimit"] += max(0, len(sorted_entries) - len(kept))
+        # 用该组首个条目的双语标签
+        label = group_labels.get(channel_name) or kept[0].get("displayName", channel_name)
+        group_labels[channel_name] = label
         for entry in kept:
             item = dict(entry)
-            item["displayName"] = channel_name
+            item["displayName"] = label
             accepted.append(item)
 
     return {"entries": sorted(accepted, key=_output_sort_key), "rejected": rejected}
