@@ -352,12 +352,12 @@ async def probe_streams(entries: Iterable[Mapping[str, Any]], timeout_ms: int = 
             async def _probe_one(url: str) -> Dict[str, Any]:
                 checked_at = _iso_now()
                 try:
-                    response = await _asyncio.wait_for(
-                        _request_probe(client, url, {"User-Agent": USER_AGENT}, force_get=_is_hls_url(url)),
+                    result = await _asyncio.wait_for(
+                        _probe_stream_url(url, client, depth=0),
                         timeout=timeout_sec,
                     )
-                    ok = 200 <= response.status_code < 300
-                    return {"checkedAt": checked_at, "httpStatus": response.status_code, "status": "ok" if ok else "http-error"}
+                    result["checkedAt"] = checked_at
+                    return result
                 except (_asyncio.TimeoutError, httpx.TimeoutException):
                     return {"checkedAt": checked_at, "status": "timeout"}
                 except Exception as e:
@@ -474,6 +474,15 @@ def parse_resolution(name: str) -> Optional[int]:
     return best
 
 
+def _parse_m3u8_resolution(playlist_text: str) -> Optional[int]:
+    """从 M3U8 播放列表解析最高分辨率（高度），如 RESOLUTION=1920x1080 → 1080"""
+    best = None
+    for match in re.finditer(r"RESOLUTION=(\d+)x(\d+)", playlist_text, re.I):
+        h = int(match.group(2))
+        best = max(best or 0, h)
+    return best
+
+
 async def _probe_stream_url(url: str, client: httpx.AsyncClient, depth: int) -> Dict[str, Any]:
     is_playlist = _is_hls_url(url)
     headers = {"User-Agent": USER_AGENT}
@@ -488,13 +497,20 @@ async def _probe_stream_url(url: str, client: httpx.AsyncClient, depth: int) -> 
     # 测速：响应体大小 / 耗时
     content_len = len(response.content) if response.content else 0
     speed_bps = int(content_len / elapsed) if elapsed > 0 and content_len > 0 else 0
+    # 解析 M3U8 声明的分辨率（响应内容以 #EXTM3U 开头即认为是播放列表）
+    is_m3u = is_playlist or (response.text or "").lstrip().startswith("#EXTM3U")
+    stream_res = _parse_m3u8_resolution(response.text) if is_m3u else None
     if not is_playlist or depth >= 2:
-        return {"httpStatus": response.status_code, "status": "ok", "speedBps": speed_bps}
+        return {"httpStatus": response.status_code, "status": "ok", "speedBps": speed_bps, "streamResolution": stream_res}
 
     first_media_url = _find_first_media_url(response.text, url)
     if not first_media_url:
-        return {"httpStatus": response.status_code, "status": "ok"}
-    return await _probe_stream_url(first_media_url, client, depth + 1)
+        return {"httpStatus": response.status_code, "status": "ok", "speedBps": speed_bps, "streamResolution": stream_res}
+    result = await _probe_stream_url(first_media_url, client, depth + 1)
+    # 深层探测结果可能没有分辨率，用当前这层的
+    if stream_res and not result.get("streamResolution"):
+        result["streamResolution"] = stream_res
+    return result
 
 
 async def _request_probe(client: httpx.AsyncClient, url: str, headers: Mapping[str, str], force_get: bool = False) -> httpx.Response:
