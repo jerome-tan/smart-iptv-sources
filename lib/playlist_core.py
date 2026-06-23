@@ -161,6 +161,8 @@ def _normalize_pinyin_name(name: str) -> str:
             result.append(token)
     # 用空格连接（保留英文分词边界）
     normalized = " ".join(result)
+    # 剥离常见后缀，避免同名频道被拆成多个（如 凤凰中文台→凤凰中文）
+    normalized = re.sub(r"(\s*高清|\s*标清|\s*超清|\s*4K|\s*HD|\s*台)$", "", normalized)
     return normalized.strip() or name
 
 

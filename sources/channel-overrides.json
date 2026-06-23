@@ -58,5 +58,9 @@
   },
   "blacklistUrls": [],
   "blacklistNames": [],
-  "preferredUrls": {}
+  "preferredUrls": {
+    "http://cdn6.163189.xyz/163189/fhzw": 10,
+    "http://cdn6.163189.xyz/163189/fhzx": 10,
+    "http://cdn6.163189.xyz/163189/fhhk": 10
+  }
 }
