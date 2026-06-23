@@ -21,6 +21,9 @@
         "groupOrder": [
           "央视频道",
           "地方卫视",
+          "地方台",
+          "国际新闻",
+          "科教探索",
           "香港",
           "英国",
           "美国",
@@ -63,6 +66,69 @@
               "^Henan TV$",
               "^Hubei TV$",
               "^Jiangxi TV$"
+            ]
+          },
+          {
+            "name": "地方台",
+            "sourceRegions": ["CN"],
+            "patterns": [
+              "^BRTV",
+              "^上海新闻综合",
+              "^上海都市",
+              "^广东体育",
+              "^广东新闻",
+              "^北京新闻",
+              "^深圳都市",
+              "^深圳公共",
+              "^广州综合",
+              "^广州新闻",
+              "新闻综合$",
+              "都市频道$",
+              "公共频道$",
+              "经济生活$",
+              "影视$",
+              "^SMG"
+            ]
+          },
+          {
+            "name": "国际新闻",
+            "patterns": [
+              "^BBC News$",
+              "^BBC World News$",
+              "^Sky News$",
+              "^France 24",
+              "^DW English$",
+              "^DW$",
+              "^NHK World",
+              "^Al Jazeera English$",
+              "^Al Jazeera$",
+              "^Euronews",
+              "^CNA$",
+              "^Channel News Asia$",
+              "^RT America$",
+              "^RT UK$",
+              "^WION$",
+              "^i24NEWS"
+            ]
+          },
+          {
+            "name": "科教探索",
+            "patterns": [
+              "^National Geographic",
+              "^Nat Geo",
+              "^Discovery Channel$",
+              "^Discovery Science$",
+              "^Discovery Turbo$",
+              "^BBC Earth$",
+              "^Animal Planet$",
+              "^History$",
+              "^History Channel$",
+              "^Smithsonian Channel$",
+              "^Smithsonian Earth$",
+              "^Curiosity$",
+              "^NASA TV$",
+              "^Nature$",
+              "^Love Nature$"
             ]
           },
           {
@@ -120,7 +186,7 @@
       },
       "includeNot24x7": false,
       "keepUnknownResolution": true,
-      "maxSourcesPerChannel": 3,
+      "maxSourcesPerChannel": 2,
       "maxStreams": 1200,
       "minResolution": 720,
       "publishOnlyHealthy": true

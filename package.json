@@ -1,13 +1,17 @@
 {
   "name": "smart-iptv-sources",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "node scripts/generate.mjs",
-    "generate:check-streams": "CHECK_STREAMS=true node scripts/generate.mjs --check-streams",
-    "test": "node --test",
-    "validate": "node scripts/validate.mjs"
+    "generate": "python3 generate.py",
+    "generate:check-streams": "python3 generate.py --check-streams",
+    "generate:node": "node scripts/generate.mjs",
+    "validate": "python3 validate.py",
+    "validate:node": "node scripts/validate.mjs",
+    "test": "python3 validate.py",
+    "refresh": "python3 scripts/refresh.py",
+    "refresh:dry": "python3 scripts/refresh.py --dry-run"
   },
   "engines": {
     "node": ">=20"

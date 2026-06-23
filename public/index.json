@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Smart IPTV Sources",
-  "updatedAt": "2026-06-22T05:02:14.443Z",
+  "updatedAt": "2026-06-22T16:20:09.280Z",
   "playlists": [
     {
       "id": "stable-cn",
@@ -12,8 +12,8 @@
       "url": "/playlists/stable-cn.m3u",
       "healthUrl": "/health.json",
       "epgUrl": "/epg/stable-cn.xml.gz",
-      "epgChannelCount": 86,
-      "epgProgramCount": 21418
+      "epgChannelCount": 123,
+      "epgProgramCount": 33613
     }
   ]
 }

@@ -4,3 +4,9 @@ dist/
 .env
 .env.local
 .wrangler/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
