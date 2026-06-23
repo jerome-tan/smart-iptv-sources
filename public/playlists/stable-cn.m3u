@@ -807,20 +807,20 @@ http://api.kkitv.itv888.vip:8080/streams/i76tznm59xp/index.m3u8
 http://r.jdshipin.com/TcKr2
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/ViuTV.png" group-title="香港" x-smart-source="suxuang" x-smart-description="香港免费电视娱乐频道，播出原创综艺、剧集、音乐和本地节目。" x-smart-tags="香港,娱乐,剧集",ViuTV
 http://r.jdshipin.com/vSJvl
-#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视中文台.png" group-title="香港" x-smart-source="suxuang" x-smart-description="凤凰卫视中文台，面向全球华语的新闻资讯和文化综合频道。",凤凰中文
-http://cdn6.163189.xyz/163189/fhzw
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/凤凰中文台.png" http-user-agent="iPhone" group-title="香港" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}" x-smart-source="suxuang" x-smart-description="凤凰卫视中文台，面向全球华语的新闻资讯和文化综合频道。",凤凰中文
 http://101.35.240.114:88/phenix.php?id=fhzw
+#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视中文台.png" group-title="香港" x-smart-source="suxuang" x-smart-description="凤凰卫视中文台，面向全球华语的新闻资讯和文化综合频道。",凤凰中文
+http://43.152.143.193:80/1.v.smtcdns.net/tvlive.fengshows.cn/live/0701pcc72.flv
 #EXTINF:-1 tvg-name="凤凰电影" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix4.png" group-title="香港" x-smart-source="suxuang",凤凰电影
 http://iot-mqqt.111yao.cn:8080/live/diyp_fhdy.m3u8
-#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视资讯台.png" group-title="香港" x-smart-source="suxuang" x-smart-description="凤凰卫视资讯台，华人视角的全球时事新闻报道。",凤凰资讯
-http://cdn6.163189.xyz/163189/fhzx
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/凤凰资讯台.png" http-user-agent="iPhone" group-title="香港" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}" x-smart-source="suxuang" x-smart-description="凤凰卫视资讯台，华人视角的全球时事新闻报道。",凤凰资讯
 http://101.35.240.114:88/phenix.php?id=fhzx
-#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视香港台.png" group-title="香港" x-smart-source="suxuang",凤凰香港
-http://cdn6.163189.xyz/163189/fhhk
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视资讯台.png" group-title="香港" x-smart-source="suxuang" x-smart-description="凤凰卫视资讯台，华人视角的全球时事新闻报道。",凤凰资讯
+http://43.152.143.193:80/1.v.smtcdns.net/tvlive.fengshows.cn/live/0701pin72.flv
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/凤凰香港台.png" http-user-agent="iPhone" group-title="香港" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}" x-smart-source="suxuang",凤凰香港
 http://101.35.240.114:88/phenix.php?id=fhhk
+#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视香港台.png" group-title="香港" x-smart-source="suxuang",凤凰香港
+http://43.152.143.193:80/1.v.smtcdns.net/tvlive.fengshows.cn/live/0701phk72.flv
 #EXTINF:-1 tvg-id="BBCOne.uk@London" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One" x-smart-source="iptv-org-uk" x-smart-description="BBC 旗舰综合频道，播出新闻、剧集、纪录片、体育和大型直播节目。" x-smart-tags="英国,综合,BBC" x-smart-resolution="1080",BBC One
 http://149.102.245.111/1196/index.m3u8
 #EXTINF:-1 tvg-id="BBCOne.uk@EastMidlands" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png" group-title="英国" tvg-name="BBC One East Midlands (BBC One东Midlands)" x-smart-source="iptv-org-uk" x-smart-description="BBC第一频道东米德兰兹版，播出该地区新闻和本地节目（存在地域限制）。" x-smart-resolution="1080",BBC One East Midlands (BBC One东Midlands)

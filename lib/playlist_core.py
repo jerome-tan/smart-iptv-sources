@@ -464,11 +464,14 @@ async def _probe_stream_url(url: str, client: httpx.AsyncClient, depth: int) -> 
     else:
         headers["Range"] = "bytes=0-2047"
 
-    response = await _request_probe(client, url, headers, force_get=is_playlist)
+    response, elapsed = await _request_probe_timed(client, url, headers, force_get=is_playlist)
     if not 200 <= response.status_code < 300:
         return {"httpStatus": response.status_code, "status": "http-error"}
+    # 测速：响应体大小 / 耗时
+    content_len = len(response.content) if response.content else 0
+    speed_bps = int(content_len / elapsed) if elapsed > 0 and content_len > 0 else 0
     if not is_playlist or depth >= 2:
-        return {"httpStatus": response.status_code, "status": "ok"}
+        return {"httpStatus": response.status_code, "status": "ok", "speedBps": speed_bps}
 
     first_media_url = _find_first_media_url(response.text, url)
     if not first_media_url:
@@ -485,6 +488,15 @@ async def _request_probe(client: httpx.AsyncClient, url: str, headers: Mapping[s
         except httpx.HTTPError:
             pass
     return await client.get(url, headers=headers)
+
+
+async def _request_probe_timed(client: httpx.AsyncClient, url: str, headers: Mapping[str, str], force_get: bool = False) -> tuple[httpx.Response, float]:
+    """同 _request_probe，额外返回耗时（秒）"""
+    import time as _time
+    t0 = _time.monotonic()
+    response = await _request_probe(client, url, headers, force_get=force_get)
+    elapsed = _time.monotonic() - t0
+    return response, elapsed
 
 
 def _parse_extinf_attributes(extinf: str) -> Dict[str, str]:
@@ -525,8 +537,9 @@ def _contains_blocked_keyword(value: str, keywords: Iterable[str]) -> bool:
 
 def _score_entry(entry: Mapping[str, Any], preferred_urls: Mapping[str, Any]) -> int:
     preferred = preferred_urls.get(entry.get("url"), 0)
-    resolution_score = entry.get("resolution") or 800
-    return preferred * 10000 + resolution_score + (entry.get("sourcePriority") or 0)
+    resolution_score = (entry.get("resolution") or 800) * 10
+    speed_score = entry.get("speedBps", 0) // 10000
+    return preferred * 10000 + resolution_score + speed_score + (entry.get("sourcePriority") or 0)
 
 
 def _entry_sort_key(entry: Mapping[str, Any]) -> Tuple[Any, ...]:
