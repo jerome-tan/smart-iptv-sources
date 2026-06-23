@@ -426,6 +426,9 @@ def _classify_channel(display_name: str, entry: Mapping[str, Any], channel_group
     if entry.get("sourceRegion") in (channel_groups.get("restrictedSourceRegions") or []):
         return None
 
+    if channel_groups.get("rejectUnmatched"):
+        return None
+
     fallback_group = channel_groups.get("defaultGroup") or entry.get("groupTitle") or "未分组"
     return {"name": fallback_group, "rank": _group_rank(fallback_group, channel_groups), "sortKey": None}
 

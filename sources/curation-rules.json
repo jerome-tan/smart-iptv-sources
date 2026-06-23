@@ -16,18 +16,27 @@
         "iptv-org-uk",
         "iptv-org-us"
       ],
+      "blockedKeywords": [
+        "adult", "xxx", "porn", "博彩", "成人",
+        "NTD", "新唐人", "法轮功", "大纪元", "epoch",
+        "VOA", "美国之音", "自由亚洲", "RFA",
+        "God Stands", "GodStands", "Peace TV",
+        "DaAi", "大愛", "大爱", "慈济",
+        "gay", "lesbian", "queer",
+        "casino", "赌博", "彩票"
+      ],
       "channelGroups": {
-        "defaultGroup": "其他精选",
+        "rejectUnmatched": true,
         "groupOrder": [
           "央视频道",
           "地方卫视",
           "地方台",
+          "儿童频道",
           "国际新闻",
           "科教探索",
           "香港",
           "英国",
-          "美国",
-          "其他精选"
+          "美国"
         ],
         "restrictedSourceRegions": [
           "HK",
@@ -65,7 +74,8 @@
               "^Shandong TV$",
               "^Henan TV$",
               "^Hubei TV$",
-              "^Jiangxi TV$"
+              "^Jiangxi TV$",
+              "^东方卫视"
             ]
           },
           {
@@ -75,19 +85,71 @@
               "^BRTV",
               "^上海新闻综合",
               "^上海都市",
+              "^上海第一财经",
               "^广东体育",
               "^广东新闻",
+              "^广东珠江",
+              "^广东民生",
+              "^广东少儿",
               "^北京新闻",
               "^深圳都市",
               "^深圳公共",
               "^广州综合",
               "^广州新闻",
+              "^浙江(?!卫视)",
+              "^福建(?!卫视)",
+              "^江西(?!卫视)",
+              "^陕西(?!卫视)",
+              "^河北(?!卫视)",
+              "^山东(?!卫视)",
+              "^海南(?!卫视)",
+              "^黑龙江(?!卫视)",
+              "^吉林(?!卫视)",
+              "^辽宁(?!卫视)",
+              "^新疆(?!卫视)",
+              "^广西(?!卫视)",
+              "^甘肃(?!卫视)",
+              "^湖南(?!卫视)",
+              "^江苏(?!卫视)",
+              "^安徽(?!卫视)",
+              "^湖北(?!卫视)",
+              "^河南(?!卫视)",
+              "^四川(?!卫视)",
+              "^贵州(?!卫视)",
+              "^云南(?!卫视)",
               "新闻综合$",
               "都市频道$",
               "公共频道$",
               "经济生活$",
               "影视$",
+              "^CETV",
+              "^中国教育",
               "^SMG"
+            ]
+          },
+          {
+            "name": "儿童频道",
+            "patterns": [
+              "^CCTV-14",
+              "^卡酷少儿$",
+              "^金鹰卡通$",
+              "^哈哈炫动$",
+              "^嘉佳卡通$",
+              "^优漫卡通$",
+              "^央视少儿$",
+              "少儿频道$",
+              "^CBeebies$",
+              "^CBBC$",
+              "^PBS Kids$",
+              "^Disney Channel$",
+              "^Disney Junior$",
+              "^Nickelodeon$",
+              "^Nick Jr",
+              "^Cartoon Network$",
+              "^Boomerang$",
+              "^Cartoonito$",
+              "^BabyTV$",
+              "^Duck TV$"
             ]
           },
           {
@@ -105,10 +167,11 @@
               "^Euronews",
               "^CNA$",
               "^Channel News Asia$",
-              "^RT America$",
-              "^RT UK$",
               "^WION$",
-              "^i24NEWS"
+              "^i24NEWS",
+              "^CNBC$",
+              "^Bloomberg TV",
+              "^Bloomberg Television"
             ]
           },
           {
@@ -127,8 +190,10 @@
               "^Smithsonian Earth$",
               "^Curiosity$",
               "^NASA TV$",
-              "^Nature$",
-              "^Love Nature$"
+              "^Love Nature",
+              "^地理中国$",
+              "^自然传奇$",
+              "^人与自然$"
             ]
           },
           {
@@ -139,15 +204,17 @@
               "TVBS",
               "ViuTV",
               "^HOY",
-              "^Phoenix (Chinese|Hong Kong|InfoNews|Movies)",
+              "^Phoenix InfoNews$",
+              "^Phoenix Chinese$",
+              "^Phoenix Hong Kong$",
+              "^Phoenix Movies$",
+              "^凤凰",
               "Hong Kong International Business Channel"
             ]
           },
           {
             "name": "英国",
-            "sourceRegions": [
-              "UK"
-            ],
+            "sourceRegions": ["UK"],
             "patterns": [
               "^BBC One",
               "^BBC Two",
@@ -162,9 +229,7 @@
           },
           {
             "name": "美国",
-            "sourceRegions": [
-              "US"
-            ],
+            "sourceRegions": ["US"],
             "patterns": [
               "^ABC News$",
               "^CBS News$",
@@ -172,12 +237,8 @@
               "^NBC News NOW$",
               "^PBS$",
               "^PBS Kids$",
-              "^Bloomberg TV$",
-              "^Bloomberg Television$",
-              "^Bloomberg TV US$",
               "^Fox Weather$",
               "^Scripps News$",
-              "^CNBC$",
               "^Cheddar News$",
               "^Newsmax$"
             ]
