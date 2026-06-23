@@ -1,8 +1,9 @@
-name: Refresh Curated Sources
+name: Refresh Curated Sources (Manual)
+
+# ⚠️ 已迁移到本地 Cron（每天凌晨 3 点，Hermes 调度）
+# 此 Workflow 仅保留手动触发作为备用
 
 on:
-  schedule:
-    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -18,23 +19,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: 20
+          python-version: '3.11'
 
-      - name: Run unit tests
-        run: npm test
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
       - name: Generate curated playlist with stream checks
-        run: npm run generate:check-streams
+        run: python3 generate.py --check-streams
 
       - name: Validate generated output
-        run: npm run validate
+        run: python3 validate.py
 
       - name: Deploy generated output to Cloudflare Pages
         if: env.CLOUDFLARE_API_TOKEN != ''
-        run: >
+        run: >-
           npx --yes wrangler pages deploy public
           --project-name smart-iptv-sources
           --branch main
