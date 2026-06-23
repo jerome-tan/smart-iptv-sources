@@ -347,7 +347,7 @@
       "maxSourcesPerChannel": 2,
       "maxStreams": 1200,
       "minResolution": 720,
-      "publishOnlyHealthy": true
+      "publishOnlyHealthy": false
     }
   ]
 }
