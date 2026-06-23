@@ -338,17 +338,35 @@ async def probe_stream(url: str, timeout_ms: int = 8000, client: Optional[httpx.
             await client.aclose()
 
 
-async def probe_streams(entries: Iterable[Mapping[str, Any]], timeout_ms: int = 8000, concurrency: int = 8) -> Dict[str, Dict[str, Any]]:
+async def probe_streams(entries: Iterable[Mapping[str, Any]], timeout_ms: int = 8000, concurrency: int = 30) -> Dict[str, Dict[str, Any]]:
+    """并发探测流连通性。使用 httpx 连接限制 + asyncio.wait_for 硬超时，分批避免死锁。"""
+    import asyncio as _asyncio
     checks: Dict[str, Dict[str, Any]] = {}
-    semaphore = asyncio.Semaphore(max(1, concurrency))
-    timeout = httpx.Timeout(timeout_ms / 1000)
+    entry_list = list(entries)
+    limits = httpx.Limits(max_connections=concurrency, max_keepalive_connections=concurrency)
+    timeout_sec = timeout_ms / 1000
 
-    async with httpx.AsyncClient(follow_redirects=True, trust_env=False, timeout=timeout) as client:
-        async def worker(entry: Mapping[str, Any]) -> None:
-            async with semaphore:
-                checks[entry["url"]] = await probe_stream(entry["url"], timeout_ms=timeout_ms, client=client)
+    async with httpx.AsyncClient(follow_redirects=True, trust_env=False, limits=limits) as client:
+        for i in range(0, len(entry_list), concurrency):
+            batch = entry_list[i : i + concurrency]
+            async def _probe_one(url: str) -> Dict[str, Any]:
+                checked_at = _iso_now()
+                try:
+                    response = await _asyncio.wait_for(
+                        _request_probe(client, url, {"User-Agent": USER_AGENT}, force_get=_is_hls_url(url)),
+                        timeout=timeout_sec,
+                    )
+                    ok = 200 <= response.status_code < 300
+                    return {"checkedAt": checked_at, "httpStatus": response.status_code, "status": "ok" if ok else "http-error"}
+                except (_asyncio.TimeoutError, httpx.TimeoutException):
+                    return {"checkedAt": checked_at, "status": "timeout"}
+                except Exception as e:
+                    return {"checkedAt": checked_at, "status": "network-error", "error": str(e)[:100]}
 
-        await asyncio.gather(*(worker(entry) for entry in entries))
+            tasks = [_probe_one(e["url"]) for e in batch]
+            results = await _asyncio.gather(*tasks)
+            for entry, result in zip(batch, results):
+                checks[entry["url"]] = result
     return checks
 
 
