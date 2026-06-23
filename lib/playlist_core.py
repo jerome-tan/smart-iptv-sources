@@ -229,8 +229,7 @@ def curate_entries(
         raw_name = str(normalized_name or "").strip()
         # 拼音→中文归一化（用于分类）
         display_name = _normalize_pinyin_name(raw_name)
-        # 双语展示名：英文原名 + 中文翻译
-        display_label = _bilingual_name(raw_name, display_name)
+        # 双语标签稍后根据分组决定
 
         if not _is_http_url(entry.get("url", "")):
             rejected["invalidUrl"] += 1
@@ -265,6 +264,10 @@ def curate_entries(
         if not group_info:
             rejected["notSelectedRegion"] += 1
             continue
+        # 国内频道用纯中文名，国际频道用双语
+        group_name = group_info["name"]
+        is_international = group_name in ("英国", "美国", "国际新闻", "科教探索", "香港")
+        display_label = _bilingual_name(raw_name, display_name) if is_international else display_name
         metadata = _channel_metadata_for(display_name, entry, settings.get("channelMetadata"))
 
         enriched = dict(entry)

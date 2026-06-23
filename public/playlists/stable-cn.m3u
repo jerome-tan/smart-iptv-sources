@@ -17,11 +17,11 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8
 http://120.76.248.139/live/bfgd/4200000063.m3u8
 #EXTINF:-1 tvg-name="CCTV-4 中文国际（亚） Ⓨ" tvg-logo="https://i.imgur.com/ovUSVEQ.png" tvg-id="CCTV4Asia.cn" tvg-chno="4" tvg-country="CN" group-title="央视频道" x-smart-source="free-tv-china" x-smart-description="央视中文国际频道亚洲版，面向亚洲华语观众。",CCTV 4 中文国际（亚） Ⓨ
 https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live
-#EXTINF:-1 tvg-id="CCTV4Asia.cn@SD" tvg-logo="https://i.imgur.com/tWt4Wou.png" group-title="央视频道" tvg-name="CCTV-4 Asia (CCTV 4 亚洲)" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道亚洲版，面向亚洲华语观众提供综合节目。" x-smart-resolution="720",CCTV-4 Asia (CCTV 4 亚洲)
+#EXTINF:-1 tvg-id="CCTV4Asia.cn@SD" tvg-logo="https://i.imgur.com/tWt4Wou.png" group-title="央视频道" tvg-name="CCTV 4 亚洲" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道亚洲版，面向亚洲华语观众提供综合节目。" x-smart-resolution="720",CCTV 4 亚洲
 http://74.91.26.218:82/live/cctv4hd.m3u8
-#EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="央视频道" tvg-name="CCTV-4 Europe (CCTV 4 欧洲)" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道欧洲版，面向欧洲华语观众提供新闻和专题。",CCTV-4 Europe (CCTV 4 欧洲)
+#EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="央视频道" tvg-name="CCTV 4 欧洲" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道欧洲版，面向欧洲华语观众提供新闻和专题。",CCTV 4 欧洲
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
-#EXTINF:-1 tvg-id="CCTV4America.cn@SD" tvg-logo="https://i.imgur.com/gBbLyqh.png" group-title="央视频道" tvg-name="CCTV-4 America (CCTV 4 美洲)" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道美洲版，面向北美华语观众提供新闻、文化和专题节目。" x-smart-resolution="1080",CCTV-4 America (CCTV 4 美洲)
+#EXTINF:-1 tvg-id="CCTV4America.cn@SD" tvg-logo="https://i.imgur.com/gBbLyqh.png" group-title="央视频道" tvg-name="CCTV 4 美洲" x-smart-source="iptv-org-zho" x-smart-description="央视中文国际频道美洲版，面向北美华语观众提供新闻、文化和专题节目。" x-smart-resolution="1080",CCTV 4 美洲
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 tvg-id="CCTV4K.cn@HD" tvg-logo="https://i.imgur.com/fxusYlX.png" group-title="央视频道" tvg-name="CCTV 4K" x-smart-source="iptv-org-cn" x-smart-description="央视超高清频道，以4K分辨率播出纪录片、体育赛事和文艺节目。" x-smart-resolution="1080",CCTV 4K
 http://198.204.240.250:82/live/cctv4k.m3u8
@@ -89,7 +89,7 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-name="CGTN" tvg-id="CGTN" tvg-logo="https://tb.zbds.top/logo/CGTN.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国国际电视台英语频道，提供全球新闻、评论和中国视角报道。" x-smart-tags="新闻,国际,英语",CGTN
 https://0472.org/hls/cgtn.m3u8
-#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="https://i.imgur.com/qBmomnF.png" group-title="央视频道" tvg-name="CGTN Global Biz (CGTN环球财经)" x-smart-source="iptv-org-zho" x-smart-description="中国环球电视网财经频道，以英语提供全球经济新闻和市场资讯。" x-smart-resolution="1080",CGTN Global Biz (CGTN环球财经)
+#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="https://i.imgur.com/qBmomnF.png" group-title="央视频道" tvg-name="CGTN 环球 财经" x-smart-source="iptv-org-zho" x-smart-description="中国环球电视网财经频道，以英语提供全球经济新闻和市场资讯。" x-smart-resolution="1080",CGTN 环球 财经
 https://amg01314-amg01314c6-distrotv-us-10220.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnglobalbiz-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-id="CGTN俄语" tvg-logo="https://tb.zbds.top/logo/CGTN俄语.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国环球电视网俄语频道，面向俄语区观众提供新闻和文化节目。",CGTN俄语
 https://0472.org/hls/cgtne.m3u8
@@ -101,29 +101,29 @@ https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
 https://0472.org/hls/cgtnx.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-id="CGTN阿语" tvg-logo="https://tb.zbds.top/logo/CGTN阿语.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="中国环球电视网阿拉伯语频道，面向阿拉伯语观众提供新闻节目。",CGTN阿语
 https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-id="CCTVTheFirstTheater.cn@HD" tvg-logo="https://i.imgur.com/eFxD3hq.png" group-title="央视频道" tvg-name="CCTV-The First Theater (CCTV The First剧场)" x-smart-source="iptv-org-cn" x-smart-description="央视第一剧场频道，首播优质国产剧和引进剧。" x-smart-resolution="1080",CCTV-The First Theater (CCTV The First剧场)
+#EXTINF:-1 tvg-id="CCTVTheFirstTheater.cn@HD" tvg-logo="https://i.imgur.com/eFxD3hq.png" group-title="央视频道" tvg-name="CCTV The First 剧场" x-smart-source="iptv-org-cn" x-smart-description="央视第一剧场频道，首播优质国产剧和引进剧。" x-smart-resolution="1080",CCTV The First 剧场
 http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVWomensFashion.cn@SD" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="央视频道" tvg-name="CCTV-Women&#x27;s Fashion (CCTV Women&#x27;s时尚)" x-smart-source="iptv-org-cn" x-smart-description="央视女性时尚频道，聚焦时尚潮流、美妆和生活态度。" x-smart-resolution="1080",CCTV-Women's Fashion (CCTV Women's时尚)
+#EXTINF:-1 tvg-id="CCTVWomensFashion.cn@SD" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="央视频道" tvg-name="CCTV Women&#x27;s 时尚" x-smart-source="iptv-org-cn" x-smart-description="央视女性时尚频道，聚焦时尚潮流、美妆和生活态度。" x-smart-resolution="1080",CCTV Women's 时尚
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVWorldGeography.cn@SD" tvg-logo="https://i.imgur.com/V2ncOXi.png" group-title="央视频道" tvg-name="CCTV-World Geography (CCTV世界地理)" x-smart-source="iptv-org-cn" x-smart-description="央视世界地理频道，播出全球地理探索和人文纪录片。" x-smart-resolution="1080",CCTV-World Geography (CCTV世界地理)
+#EXTINF:-1 tvg-id="CCTVWorldGeography.cn@SD" tvg-logo="https://i.imgur.com/V2ncOXi.png" group-title="央视频道" tvg-name="CCTV 世界 地理" x-smart-source="iptv-org-cn" x-smart-description="央视世界地理频道，播出全球地理探索和人文纪录片。" x-smart-resolution="1080",CCTV 世界 地理
 http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVWeaponTechnology.cn@HD" tvg-logo="https://i.imgur.com/QlF96eS.png" group-title="央视频道" tvg-name="CCTV-Weapon &amp; Technology (CCTV兵器 &amp; 科技)" x-smart-source="iptv-org-cn" x-smart-description="央视兵器科技频道，探索军事装备和国防科技。" x-smart-resolution="1080",CCTV-Weapon & Technology (CCTV兵器 & 科技)
+#EXTINF:-1 tvg-id="CCTVWeaponTechnology.cn@HD" tvg-logo="https://i.imgur.com/QlF96eS.png" group-title="央视频道" tvg-name="CCTV 兵器 &amp; 科技" x-smart-source="iptv-org-cn" x-smart-description="央视兵器科技频道，探索军事装备和国防科技。" x-smart-resolution="1080",CCTV 兵器 & 科技
 http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVHealth.cn@HD" tvg-logo="https://i.imgur.com/AzpRtCz.png" group-title="央视频道" tvg-name="CCTV-Health (CCTV卫生健康)" x-smart-source="iptv-org-cn" x-smart-description="央视卫生健康频道，提供医学知识、养生保健和健康资讯。" x-smart-resolution="1080",CCTV-Health (CCTV卫生健康)
+#EXTINF:-1 tvg-id="CCTVHealth.cn@HD" tvg-logo="https://i.imgur.com/AzpRtCz.png" group-title="央视频道" tvg-name="CCTV 卫生健康" x-smart-source="iptv-org-cn" x-smart-description="央视卫生健康频道，提供医学知识、养生保健和健康资讯。" x-smart-resolution="1080",CCTV 卫生健康
 http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVBilliards.cn@HD" tvg-logo="https://i.imgur.com/WK3keM9.png" group-title="央视频道" tvg-name="CCTV-Billiards (CCTV台球)" x-smart-source="iptv-org-cn" x-smart-description="央视台球频道，聚焦国内外台球赛事直播和教学节目。" x-smart-resolution="1080",CCTV-Billiards (CCTV台球)
+#EXTINF:-1 tvg-id="CCTVBilliards.cn@HD" tvg-logo="https://i.imgur.com/WK3keM9.png" group-title="央视频道" tvg-name="CCTV 台球" x-smart-source="iptv-org-cn" x-smart-description="央视台球频道，聚焦国内外台球赛事直播和教学节目。" x-smart-resolution="1080",CCTV 台球
 http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVNostalgiaTheater.cn@HD" tvg-logo="https://i.imgur.com/TVs9PBc.png" group-title="央视频道" tvg-name="CCTV-Nostalgia Theater (CCTV怀旧剧场)" x-smart-source="iptv-org-cn" x-smart-description="央视怀旧剧场频道，播出经典电视剧和怀旧影视作品。" x-smart-resolution="1080",CCTV-Nostalgia Theater (CCTV怀旧剧场)
+#EXTINF:-1 tvg-id="CCTVNostalgiaTheater.cn@HD" tvg-logo="https://i.imgur.com/TVs9PBc.png" group-title="央视频道" tvg-name="CCTV 怀旧 剧场" x-smart-source="iptv-org-cn" x-smart-description="央视怀旧剧场频道，播出经典电视剧和怀旧影视作品。" x-smart-resolution="1080",CCTV 怀旧 剧场
 http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVCultureofQuality.cn@SD" tvg-logo="https://i.imgur.com/Paig8gG.png" group-title="央视频道" tvg-name="CCTV-Culture of Quality (CCTV文化of Quality)" x-smart-source="iptv-org-cn" x-smart-description="央视文化精品频道，精选播出文化、艺术和经典节目。" x-smart-resolution="1080",CCTV-Culture of Quality (CCTV文化of Quality)
+#EXTINF:-1 tvg-id="CCTVCultureofQuality.cn@SD" tvg-logo="https://i.imgur.com/Paig8gG.png" group-title="央视频道" tvg-name="CCTV 文化 of Quality" x-smart-source="iptv-org-cn" x-smart-description="央视文化精品频道，精选播出文化、艺术和经典节目。" x-smart-resolution="1080",CCTV 文化 of Quality
 http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVStormTheater.cn@HD" tvg-logo="https://i.imgur.com/rEttkKm.png" group-title="央视频道" tvg-name="CCTV-Storm Theater (CCTV风云剧场)" x-smart-source="iptv-org-cn" x-smart-description="央视风云剧场频道，播出热门电视剧和电视电影。" x-smart-resolution="1080",CCTV-Storm Theater (CCTV风云剧场)
+#EXTINF:-1 tvg-id="CCTVStormTheater.cn@HD" tvg-logo="https://i.imgur.com/rEttkKm.png" group-title="央视频道" tvg-name="CCTV 风云 剧场" x-smart-source="iptv-org-cn" x-smart-description="央视风云剧场频道，播出热门电视剧和电视电影。" x-smart-resolution="1080",CCTV 风云 剧场
 http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVStormFootball.cn@HD" tvg-logo="https://i.imgur.com/Fy6HkX0.png" group-title="央视频道" tvg-name="CCTV-Storm Football (CCTV风云足球)" x-smart-source="iptv-org-cn" x-smart-description="央视风云足球频道，直播国内外足球联赛和杯赛。" x-smart-resolution="1080",CCTV-Storm Football (CCTV风云足球)
+#EXTINF:-1 tvg-id="CCTVStormFootball.cn@HD" tvg-logo="https://i.imgur.com/Fy6HkX0.png" group-title="央视频道" tvg-name="CCTV 风云 足球" x-smart-source="iptv-org-cn" x-smart-description="央视风云足球频道，直播国内外足球联赛和杯赛。" x-smart-resolution="1080",CCTV 风云 足球
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVStormMusic.cn@HD" tvg-logo="https://i.imgur.com/IiiRmrf.png" group-title="央视频道" tvg-name="CCTV 风云音乐" x-smart-source="iptv-org-cn" x-smart-description="央视音乐类付费频道，精选演唱会、MV、音乐专题和经典现场。" x-smart-tags="央视,音乐,演唱会" x-smart-resolution="1080",CCTV 风云音乐
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-logo="https://i.imgur.com/iqJJTmH.png" group-title="央视频道" tvg-name="CCTV-Golf &amp; Tennis (CCTV高尔夫 &amp; 网球)" x-smart-source="iptv-org-cn" x-smart-description="央视高尔夫网球频道，直播高尔夫和网球职业赛事。" x-smart-resolution="1080",CCTV-Golf & Tennis (CCTV高尔夫 & 网球)
+#EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-logo="https://i.imgur.com/iqJJTmH.png" group-title="央视频道" tvg-name="CCTV 高尔夫 &amp; 网球" x-smart-source="iptv-org-cn" x-smart-description="央视高尔夫网球频道，直播高尔夫和网球职业赛事。" x-smart-resolution="1080",CCTV 高尔夫 & 网球
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="CCTV央视台球" tvg-id="央视台球" tvg-logo="https://tb.zbds.top/logo/CCTV央视台球.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视台球频道，聚焦国内外台球赛事直播和教学。",CCTV央视台球
 https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e0308ed017.m3u8
@@ -131,8 +131,6 @@ https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e030
 https://epg.pw/stream/6d7bf281e3d739806a73f5373acaa6e01988ec9739f5ac1355ce54b47a928472.m3u8
 #EXTINF:-1 tvg-name="CCTV风云足球" tvg-id="风云足球" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png" group-title="央视频道" x-smart-source="zbds-iptv4" x-smart-description="央视风云足球频道，直播国内外足球联赛和杯赛。",CCTV风云足球
 https://epg.pw/stream/ac8062ec9484078061d3bef507c15a423ac57ae4144e3fcc4b0a198dd420f911.m3u8
-#EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" group-title="地方卫视" tvg-name="Shenzhen Satellite TV (深圳卫视)" x-smart-source="iptv-org-cn" x-smart-description="深圳市综合卫星频道，聚焦改革开放前沿和粤港澳大湾区。" x-smart-resolution="2160",Shenzhen Satellite TV (深圳卫视)
-https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
 #EXTINF:-1 tvg-name="上海卫视" tvg-id="上海卫视" tvg-logo="https://tb.zbds.top/logo/上海卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="东方卫视（上海卫视），上海广播电视台综合卫星频道，以新闻和综艺见长。",上海卫视
 http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 tvg-id="dongnan" tvg-logo="dongnan.png" tvg-name="东南卫视" group-title="地方卫视" x-smart-source="burningc4" x-smart-description="福建省广播影视集团综合卫星频道，以海峡两岸新闻和综艺为特色。",东南卫视
@@ -243,6 +241,8 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226465/index.m3u8
 http://120.76.248.139/live/bfgd/4200000473.m3u8
 #EXTINF:-1 tvg-name="海峡卫视" tvg-id="3" tvg-logo="https://tb.zbds.top/logo/海峡卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="福建省海峡卫视，以闽台新闻交流和海洋文化为特色。",海峡卫视
 http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8
+#EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" group-title="地方卫视" tvg-name="深圳 卫视" x-smart-source="iptv-org-cn" x-smart-description="深圳市综合卫星频道，聚焦改革开放前沿和粤港澳大湾区。" x-smart-resolution="2160",深圳 卫视
+https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
 #EXTINF:-1 tvg-id="shenzhen" tvg-logo="shenzhen.png" tvg-name="深圳卫视" group-title="地方卫视" x-smart-source="burningc4" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经",深圳卫视
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226313/index.m3u8
 #EXTINF:-1 tvg-name="深圳卫视" tvg-id="33" tvg-logo="https://tb.zbds.top/logo/深圳卫视.png" group-title="地方卫视" x-smart-source="zbds-iptv4" x-smart-description="深圳广播电影电视集团卫视频道，关注城市创新、财经资讯和综合节目。" x-smart-tags="地方卫视,深圳,财经",深圳卫视
@@ -457,14 +457,32 @@ https://idclive.hljtv.com:4430/live/dushi_hd.m3u8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-id="11" tvg-logo="https://tb.zbds.top/logo/卡酷少儿.png" group-title="儿童频道" x-smart-source="zbds-iptv4" x-smart-description="北京广播电视台卡酷少儿频道，播出动画片和儿童教育娱乐节目。",卡酷少儿
 http://218.13.170.98:9901/tsfile/live/1021_1.m3u8
+#EXTINF:-1 tvg-id="NickJrPlutoTV.us@US" tvg-logo="https://images.pluto.tv/channels/62bdb75c3afd1200079146a6/colorLogoPNG.png" group-title="儿童频道" tvg-name="尼克 Jr. Pluto" x-smart-source="iptv-org-us" x-smart-resolution="720",尼克 Jr. Pluto
+https://jmp2.uk/plu-5ca6748a37b88b269472dad9.m3u8
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-id="42" tvg-logo="https://tb.zbds.top/logo/金鹰卡通.png" group-title="儿童频道" x-smart-source="zbds-iptv4" x-smart-description="湖南广播电视台金鹰卡通卫视，全国性少儿专业卫星频道。",金鹰卡通
 http://183.11.239.36:808/hls/69/index.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@US" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg TV (彭博)" x-smart-source="iptv-org-us" x-smart-resolution="1080",Bloomberg TV (彭博)
+http://23.237.104.106:8080/USA_BLOOMBERG/index.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@LiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg TV US Live Event (彭博US Live Event)" x-smart-source="iptv-org-us" x-smart-resolution="720",Bloomberg TV US Live Event (彭博US Live Event)
+https://bloomberg.com/media-manifest/streams/us-event.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@PoliticsLiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="国际新闻" tvg-name="Bloomberg TV US Politics Live Event (彭博US Politics Live Event)" x-smart-source="iptv-org-us" x-smart-resolution="720",Bloomberg TV US Politics Live Event (彭博US Politics Live Event)
+https://bloomberg.com/media-manifest/streams/politics.m3u8
 #EXTINF:-1 tvg-id="CNBCUK.uk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际新闻" tvg-name="CNBC" x-smart-source="iptv-org-uk" x-smart-description="美国消费者新闻与商业频道，全球财经新闻和市场实时数据。" x-smart-resolution="1080",CNBC
 https://amg01079-nbcuuk-amg01079c2-samsung-gb-1258.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBC.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际新闻" tvg-name="CNBC" x-smart-source="iptv-org-us" x-smart-description="美国消费者新闻与商业频道，全球财经新闻和市场实时数据。" x-smart-resolution="720",CNBC
+http://rezofoot.tv/CNBC/index.m3u8
+#EXTINF:-1 tvg-id="i24NEWSEnglishUSA.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="国际新闻" tvg-name="i24NEWS English USA (i24NEWS英语USA)" x-smart-source="iptv-org-us" x-smart-resolution="1080",i24NEWS English USA (i24NEWS英语USA)
+https://fastly.live.brightcove.com/6386790908112/eu-central-1/5377161796001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZXJmajYzLmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNTM3NzE2MTc5NjAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI1Mzc3MTYxNzk2MDAxIl0sImp0aSI6IjYzODY3OTA5MDgxMTIifQ._w5c3EwfnEecDCEpDaKuVz07uuEyUb3vXvQN3svv-oU/chunklist.m3u8
 #EXTINF:-1 tvg-id="LoveNature.ca@SD" tvg-logo="https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png" group-title="科教探索" tvg-name="Love Nature (爱自然)" x-smart-source="iptv-org-zho" x-smart-description="Love Nature自然频道，以4K画质播出全球野生动物和自然纪录片。" x-smart-resolution="1080",Love Nature (爱自然)
 https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
 #EXTINF:-1 tvg-id="LoveNature.ca@HD" tvg-logo="https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png" group-title="科教探索" tvg-name="Love Nature HD (爱自然高清)" x-smart-source="iptv-org-zho" x-smart-description="Love Nature自然频道高清版，展现壮丽的自然景观和野生动物。" x-smart-resolution="720",Love Nature HD (爱自然高清)
 http://185.246.209.113/LOVENATUREHD/index.m3u8
+#EXTINF:-1 tvg-id="LoveNatureenEspanol.us@SD" tvg-logo="https://i.imgur.com/7uNdcWB.png" group-title="科教探索" tvg-name="Love Nature en Espanol [Geo-blocked] (爱自然en西语 [Geo blocked])" x-smart-source="iptv-org-us" x-smart-description="Love Nature自然频道西班牙语版（存在地域限制）。" x-smart-resolution="1080",Love Nature en Espanol [Geo-blocked] (爱自然en西语 [Geo blocked])
+https://amg01515-amg01515c17-xumo-us-2489.playouts.now.amagi.tv/bamus-lovenaturespanish-roku/playlist.m3u8
+#EXTINF:-1 tvg-id="NationalGeographic.us@HDEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" group-title="科教探索" tvg-name="National Geographic HD East (国家地理高清东)" x-smart-source="iptv-org-us" x-smart-description="国家地理高清频道东海岸版，播出探索类纪录片。" x-smart-resolution="720",National Geographic HD East (国家地理高清东)
+http://198.58.104.90:8989/natgeo/index.m3u8
+#EXTINF:-1 tvg-id="NationalGeographicWild.us@HDEast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" group-title="科教探索" tvg-name="National Geographic Wild HD East (国家地理野生高清东)" x-smart-source="iptv-org-us" x-smart-description="国家地理野生频道高清版，聚焦野生动物和自然生态纪录片。" x-smart-resolution="720",National Geographic Wild HD East (国家地理野生高清东)
+http://198.58.104.90:8989/natgeowild/index.m3u8
 #EXTINF:-1 tvg-name="人与自然" tvg-id="人与自然" tvg-logo="https://tb.zbds.top/logo/人与自然.png" group-title="科教探索" x-smart-source="zbds-iptv4" x-smart-description="央视经典自然栏目，展现野生动物和生态环境保护。",人与自然
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8
 #EXTINF:-1 tvg-name="地理中国" tvg-id="地理中国" tvg-logo="https://tb.zbds.top/logo/地理中国.png" group-title="科教探索" x-smart-source="zbds-iptv4" x-smart-description="央视科教频道栏目，以地理探索和人文科普为主题。",地理中国
@@ -553,3 +571,5 @@ http://80.194.62.172:50002/stream/channelid/95929545
 http://80.194.62.172:50002/stream/channelid/404728797
 #EXTINF:-1 tvg-id="TalkTV.uk@SD" tvg-logo="https://i.imgur.com/KxHWpQB.png" group-title="英国" tvg-name="TalkTV" x-smart-source="iptv-org-uk" x-smart-description="英国TalkTV新闻评论频道，以观点鲜明的时事讨论和访谈为特色。" x-smart-resolution="1080",TalkTV
 https://488f4ce4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfVGFsa19ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="NewsmaxTV.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Newsmax_logo.svg/960px-Newsmax_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="美国" tvg-name="Newsmax" x-smart-source="iptv-org-us" x-smart-description="美国Newsmax新闻频道，以保守派视角提供政治新闻和分析。" x-smart-resolution="1080",Newsmax
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/newsmax-tv/index.m3u8?ads.vf=Td2nCUXB4ha
