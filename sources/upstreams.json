@@ -52,6 +52,14 @@
       "region": "US",
       "priority": 10,
       "enabled": true
+    },
+    {
+      "id": "burningc4",
+      "name": "BurningC4 Chinese-IPTV",
+      "url": "https://iptv.burningc4.com/TV-IPV4.m3u",
+      "region": "CN",
+      "priority": 30,
+      "enabled": true
     }
   ]
 }
